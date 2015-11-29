@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Sawanoboly.net</title>
+    <link>http://sawanoboly.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Sawanoboly.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 29 Nov 2015 17:20:22 +0900</lastBuildDate>
+    <atom:link href="http://sawanoboly.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ブログをhugoにしておく</title>
+      <link>http://sawanoboly.github.io/2015/11/blog-hugo/</link>
+      <pubDate>Sun, 29 Nov 2015 17:20:22 +0900</pubDate>
+      
+      <guid>http://sawanoboly.github.io/2015/11/blog-hugo/</guid>
+      <description>&lt;p&gt;ひとつ前は、何かしらまともな運営をしているブログサービスの使い勝手がみたかったのという理由でSuarespaceに置いていた。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sawanoboly.squarespace.com&#34;&gt;https://sawanoboly.squarespace.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;普通にブログするなら多分いいとこだ。&lt;/p&gt;
+
+&lt;p&gt;それはそれとして、gfmでそのまま保存できそうなのでhugoに。&lt;/p&gt;
+
+&lt;p&gt;以前の記事も今度移しておこう。&lt;/p&gt;
+</description>
+    </item>
+    
+    
+  </channel>
+</rss>
