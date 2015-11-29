@@ -1,0 +1,13 @@
+.human-avatar {
+    border-radius: 50px;
+    float: left;
+    margin-left: 1em;
+}
+
+.header a {
+  color: #222;
+}
+
+.posts a {
+  color: #222;
+}

@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+<div class="pure-g">
+  <div class="pure-u-4-24"></div>
+  <div class="pure-u-16-24">
+
+    {{ partial "brand.html" . }}
+
+    <div class="posts">
+      <h1 class="content-subhead" >Recent Posts</h1>
+      {{ $baseurl := .Site.BaseURL }}
+      {{ range $name, $page := .Site.Pages }}
+      {{ if eq .Type "post" }}
+      <section class="post">
+        <h2 class="post-title"><a href="{{ .Permalink }}">{{ $page.Title }}</a></h2>
+
+        <p class="post-meta">
+
+        <time datetime="{{ $page.Date.Format "2006-01-02T15:04:05Z07:00" }}" class="post-list timeago">{{ $page.Date.Format "2006-01-02" }}</time>
+        {{ with $page.Params.tags }}
+        {{ range $page.Params.tags}}<a class="post-category" href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}
+        {{ end }}
+
+        </p>
+        </section>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  <div class="pure-u-4-24"></div>
+</div>
+
+{{ partial "footer.html" . }}
+</body>
+</html>

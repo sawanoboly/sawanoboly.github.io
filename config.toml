@@ -1,0 +1,22 @@
+baseurl = "http://sawanoboly.github.io"
+languageCode = "ja-JP"
+title = "Sawanoboly.net"
+copyright = ""
+theme = "pure-hugoboly"
+paginate = 20
+
+[permalinks]
+    post = "/:year/:month/:slug/"
+
+
+[params]
+    description = "via www"
+    author = "SAWANOBORI Yukihiko"
+    twitterName = 'sawanoboly'
+    githubName = 'sawanoboly'
+    facebookName = 'yukihiko.sawanobori'
+    linkedinlink = "SAWANOBORIYukihiko"
+    gravatar_icon = "50bbf334b745f1468246a76b93fe2dde"
+    gravatar_human = "1b05d5de54a5fd1e010508905be56a6b"
+    google_analytics = "UA-70801805-1"
+
