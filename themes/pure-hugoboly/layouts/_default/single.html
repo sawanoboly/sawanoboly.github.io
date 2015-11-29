@@ -23,6 +23,7 @@
 
       <div class="post-content">
         {{ .Content }}
+        {{ partial "share_icons.html" . }}
       </div>
     </div>
   </div>
@@ -30,5 +31,6 @@
 </div>
 
 {{ partial "footer.html" . }}
+{{ partial "share.html" . }}
 </body>
 </html>
