@@ -7,9 +7,9 @@ title = "ブログをhugoにしておく"
 
 +++
 
-ひとつ前は、何かしらまともな運営をしているブログサービスの使い勝手がみたかったのという理由でSuarespaceに置いていた。
+ひとつ前は、何かしらまともな運営をしているブログサービスの使い勝手がみたかったのという理由でSquarespaceに置いていた。
 
--  [https://sawanoboly.squarespace.com](https://sawanoboly.squarespace.com)
+-  [ひとつ前のブログ](https://sawanoboly.squarespace.com)
 
 普通にブログするなら多分いいとこだ。
 
