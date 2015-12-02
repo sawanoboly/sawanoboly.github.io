@@ -3,7 +3,7 @@ date = "2015-12-01T14:17:10+09:00"
 draft = false
 slug = "tk-shell-verifier-merged-into-master"
 tags = ["test-kitchen"]
-title = "Test-KitchenのShell-Verifierがマージされた。"
+title = "Test-KitchenのShell-Verifierがマージされた"
 
 +++
 
