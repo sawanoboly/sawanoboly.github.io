@@ -59,5 +59,134 @@
     </item>
     
     
+    
+    <item>
+      <title>Chef-Solo, Chef-Client LocalMode, Knife-Solo, Knife-Zero and us.</title>
+      <link>http://sawanoboly.github.io/2014/12/chef-solo-zero-knife-solo-zero/</link>
+      <pubDate>Thu, 25 Dec 2014 00:00:00 +0900</pubDate>
+      
+      <guid>http://sawanoboly.github.io/2014/12/chef-solo-zero-knife-solo-zero/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;※旧ブログから移植。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Chef-Soloが無くなるので、他の何かに乗り換える必要があるのか。 という話に対してKnife-Zeroをダシに何か言っておこう。&lt;/p&gt;
+
+&lt;p&gt;最初に言っておくと、今Chef-Solo、Knife-Soloを使っている人、多分何もしなくていい。&lt;/p&gt;
+
+&lt;h2 id=&#34;登場人物一覧:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;登場人物一覧&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Chef-Solo
+
+&lt;ul&gt;
+&lt;li&gt;Chef-Server無しでローカルサーバにChefのレシピを適用する。Chef-Server非互換(11でほぼ改善)。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Chef-Client LocalMode
+
+&lt;ul&gt;
+&lt;li&gt;Chef-Server無しでローカルサーバにChefのレシピを適用する。Chef-Server互換。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Knife-Solo
+
+&lt;ul&gt;
+&lt;li&gt;レシピ一式を転送し、Chef-Soloをリモートサーバに適用する。&lt;/li&gt;
+&lt;li&gt;(追記)全体のワークフローは、VagrantのProvisionerに近い。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Knife-Zero
+
+&lt;ul&gt;
+&lt;li&gt;レシピ一式を転送せず、SSH越しにChef-Client LocalModeを実行する。&lt;/li&gt;
+&lt;li&gt;(追記)従来のClient／Serverワークフローを踏襲。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;全てのchef-solo関連がにchef-zero-chef-client-localmode-に変更されるというのは飛躍的な判断:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;全てのChef-Solo関連がにChef-Zero(Chef-Client LocalMode)に変更されるというのは飛躍的な判断&lt;/h2&gt;
+
+&lt;p&gt;なんとなく騒がれているのは、これの元記事からなのかしら。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.creationline.com/lab/6085&#34;&gt;[和訳] ソロからゼロへ: Chef Clientローカルモードへの移行 #opschefja #getchefja « CREATIONLINE, INC.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;基本的にこれはサーバのローカルで実行する場合についての話でしょう、まあそれならChef-Client LocalModeに変えるのはほとんど何も変更はいらないのでよくわかります。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;参考： Chef-RFC031 『This means that chef-solo using &amp;ldquo;local mode&amp;rdquo; must be 100% backwards-compatible with existing chef-solo usage.』&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;で、リモートでやるKnife-Soloについて考えた時に、&amp;rdquo;Chef-Solo無くなる&amp;rdquo;＝&amp;rdquo;Knife-Solo使えなくなる&amp;rdquo;でもないわけです。 Knife-Soloは単なる非公式のプラグインであって、公式がこういう記事でいちいち言及しないでしょうね。&lt;/p&gt;
+
+&lt;h3 id=&#34;少なくともknife-soloはchef-soloと心中なんてしないだろう:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;少なくともKnife-SoloはChef-Soloと心中なんてしないだろう&lt;/h3&gt;
+
+&lt;p&gt;日本でKnife-Soloがそこそこ広い認知度を持っているのは、&lt;a href=&#34;http://www.amazon.co.jp/dp/B00BSPH158&#34;&gt;伊藤直也さんの入門Chef Solo - Infrastructure as Code&lt;/a&gt;によるところが大きいでしょう。多分そう、部分的にそう。&lt;/p&gt;
+
+&lt;p&gt;この本で覚えたフローや使い方が今後できなくなるかって言うと多分そんなことはなくて。 Knife-Solo開発陣はChefの動向をちゃんと追っています。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/matschaffer/knife-solo/issues/353&#34;&gt;add local_mode to solo.rb · Issue #353 · matschaffer/knife-solo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;(関連ディレクトリをまるまる転送、リモートでLocalMode相当の実行形式に変更など)&lt;/p&gt;
+
+&lt;p&gt;ということでKnife-Soloでやっているものは、基本的にそのまま使い続けることもできそうだと思ってます。 実際Chef-Soloって無くなるのかも不明、もしかしたらChef14とか15になれば居なくなるのかもしれませんね。&lt;/p&gt;
+
+&lt;h2 id=&#34;knife-zeroはミニマムなchef-server環境とのアップ-ダウングレード移行パス:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;Knife-ZeroはミニマムなChef-Server環境とのアップ/ダウングレード移行パス&lt;/h2&gt;
+
+&lt;p&gt;じゃあKnife-Zeroはどういう位置かというと、Chef-Server環境との相互移行がやりやすいChefの導入方法(の一つ)です。 SSH越しにリモートで実行されるChef-ClientはLocalModeではなく、通常のClientモードとしてChef-Server(SSH元のChef-Zero)に対して接続します。&lt;/p&gt;
+
+&lt;p&gt;なのでKnife-Solo(そもそも私は使ってない)の代わりではなく、既存のChef-Serverを畳む用途で作りました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Knife-Zeroではじめて、Node数が増えてきたらChef-Serverへ&lt;/li&gt;
+&lt;li&gt;Node数が少ないChef-ServerをたたんでKnife-Zeroへ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Knife-Zeroは、概ねお一人様用Chef-Serverという感じです。node情報ををgit管理できたり、エディタで手元からしれっとattributeを追加できたりという利点とかありますが。 大人数で保守する場合や、継続的にChef-Clientを実行したい場合、Nodeがとても多い場合は多分Chef-Serverのほうがよいのかと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;knife-zero豆知識:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;Knife-Zero豆知識&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Chef-Zeroは2,000nodeくらいまでなら性能的に問題ない。 (&lt;a href=&#34;http://qiita.com/sawanoboly/items/35dd2f117262f4f21969&#34;&gt;Chef-Zeroのキャパシティが気になったのでRubyでベンチマークをとった - Qiita&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Knife-Zero制作のきっかけはlightchef(&lt;a href=&#34;https://github.com/ryotarai/itamae&#34;&gt;現itamae(github link)&lt;/a&gt;)
+
+&lt;ul&gt;
+&lt;li&gt;Severspec的発想がいいと思った。&lt;/li&gt;
+&lt;li&gt;しかし同時に、『インベントリも収集せずに(light)Chefとはどういう了見か』と思った。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Facebookの中の人も、SSH越しのLocalMode(Chef-Zero)を使っている。
+
+&lt;ul&gt;
+&lt;li&gt;手抜きのために考える事は同じだなと思いました。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/chef/chef-zero/issues/86&#34;&gt;SSL support · Issue #86 · opscode/chef-zero&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;最初は本家へのPull Requestとして作成していた
+
+&lt;ul&gt;
+&lt;li&gt;とても煩雑なコードになって、説明するのが面倒に。&lt;/li&gt;
+&lt;li&gt;とりあえずリリースを優先、楽なKnifeのプラグインとして作成。&lt;/li&gt;
+&lt;li&gt;本家にマージしたい。(最近はそうでもない。)&lt;/li&gt;
+&lt;li&gt;Chef本体からあまりコードの量的に離れたくない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;リリース当初の私が書いたコードはほとんど残っていない。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/yasushia&#34;&gt;@yasushia&lt;/a&gt;氏によってリファクタリングが行われ、とてもスッキリしたのでv1.0.0を付けた。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;(Fixed) Chef12のRC版ではローカルモードが盛大にクラッシュする。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/opscode/chef/issues/2433&#34;&gt;The localmode doesn&amp;rsquo;t create node object correctly on chef 12. · Issue #2433 · opscode/chef&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Knife-Zeroは自分では便利なので12対応はしておきたいんだけど。&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;羅列したこの記事のタイトルで、一番寿命が先に来るのは、もしかしてKnife-Zeroかもしれないよ。&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;(New) 治した！ &lt;a href=&#34;https://github.com/chef/chef/pull/2482&#34;&gt;use Chef::JSONCompat.parse for filecontents #2433 by sawanoboly · Pull Request #2482 · opscode/chef&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;つらつらと書きましたが、Knife-Zeroは色々と楽をできるように作ったので、新規のシステムをChefで作り始めるとか、既存のシステムにChefを導入するとかならKnife-Zeroをおすすめします。&lt;/p&gt;
+</description>
+    </item>
+    
+    
   </channel>
 </rss>
