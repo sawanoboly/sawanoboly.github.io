@@ -4,11 +4,10 @@
   <div class="pure-u-20-24 pure-u-md-16-24">
 
     {{ partial "brand.html" . }}
-
     <div class="posts">
       <h1 class="content-subhead" >Recent Posts</h1>
       {{ $baseurl := .Site.BaseURL }}
-      {{ range $name, $page := .Site.Pages }}
+      {{ range $name, $page := .Data.Pages }}
       {{ if eq .Type "post" }}
       <section class="post">
         <h2 class="post-title"><a href="{{ .Permalink }}">{{ $page.Title }}</a></h2>
