@@ -11,3 +11,23 @@
 .post-title a {
   color: #222;
 }
+
+.post blockquote {
+    background-color: #eee;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 100%;
+    text-align: left;
+    margin: 1.5em;
+    padding: 1em;
+}
+
+.post-content h2 {
+  margin-top: 1.5em;
+  border-bottom: 2px double #ddd;
+}
+
+.post-content h3 {
+  margin-top: 1.5em;
+  font-weight: bold;
+}
