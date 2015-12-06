@@ -6,8 +6,246 @@
     <description>Recent content in Posts on Sawanoboly.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Tue, 01 Dec 2015 14:17:10 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 07 Dec 2015 00:00:00 +0900</lastBuildDate>
     <atom:link href="http://sawanoboly.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AMIMOTO DIE HARD - 死んでも死なないタフさが必要だ。</title>
+      <link>http://sawanoboly.github.io/2015/12/ad2015-amimoto_die_hard/</link>
+      <pubDate>Mon, 07 Dec 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://sawanoboly.github.io/2015/12/ad2015-amimoto_die_hard/</guid>
+      <description>
+
+&lt;p&gt;この記事は&lt;a href=&#34;http://www.adventar.org/calendars/1107&#34;&gt;AMIMOTO Advent Calendar 2015&lt;/a&gt; 、12月7日(月)のエントリです。&lt;/p&gt;
+
+&lt;img src=&#34;http://sawanoboly.github.io/images/2015/amimoto_banner.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+
+&lt;h2 id=&#34;あらすじ:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;あらすじ&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://ja.amimoto-ami.com&#34;&gt;AMIMOTO AMI&lt;/a&gt;はAWSのPublic AMIとして生まれ、好評を博したのちAWS MarketPlaceに進出した&lt;a href=&#34;https://wordpress.com/&#34;&gt;WordPress&lt;/a&gt;のAMIである。自前で構築するより大抵楽で、今日ではそこいらのWordPress環境より当然応答が速いチートガイに成長した。&lt;/p&gt;
+
+&lt;p&gt;(調べればすぐ判ることなので)詳細は割愛するが、AMIMOTOでは最新のWordPressおよびミドルウェアにいち早く対応するため、AMIには外部処理の取得手続きのみを埋め込み、起動時にWordPressをセットアップしている。&lt;/p&gt;
+
+&lt;p&gt;物語はAMIMOTOを起動したユーザの、ある連絡で幕を開ける。&lt;/p&gt;
+
+&lt;p&gt;『WordPressが動いていない。』&lt;/p&gt;
+
+&lt;p&gt;セットアップを前述のポリシーで行っているAMIMOTOでは、まれに起こるとされる既知の問題としてデジタルキューブ組長も頭を抱える。&lt;br /&gt;
+原因はたいていAmazon LinuxのRPMリポジトリ更新による&lt;code&gt;yum update&lt;/code&gt;か、セットアップ手順の変更に起因していた。&lt;/p&gt;
+
+&lt;p&gt;少なくともユーザより先に(AMIからみた)外部要因による問題の発生を検知し、いち早く修正を行なえるようにしたいという相談に対して私が提供した仕組みとは．．．？&lt;/p&gt;
+
+&lt;h2 id=&#34;主要登場物:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;主要登場物&lt;/h2&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&#34;https://ja.amimoto-ami.com&#34;&gt;AMIMOTO AMI&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;特徴はあらすじを参照。&lt;br /&gt;シリーズにはVirtualizationのタイプに応じたPVM版とHVM版、およびPHPの実行エンジンにHHVMを採用した(タイプはHVM)の3種類がある。&lt;/dd&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/test-kitchen/test-kitchen&#34;&gt;Test-Kitchen&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;マシンリソースの調達/破棄を管理し、プロビジョニングとテストを実行するツール。&lt;br /&gt;今作ではCircleCI上で稼働し、AMIからインスタンスの作成およびyum updateを実行、Infratasterの起動を担当した。&lt;/dd&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/ryotarai/infrataster&#34;&gt;Infrataster&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;インフラの振る舞いをテストするフレームワーク。&lt;br /&gt;得意のCapybaraを使い、WordPressの振る舞いテストを行なう。Javascriptのエラー程度ならば大目に見る(※設定次第)寛大さを持つ。&lt;/dd&gt;
+&lt;dt&gt;&lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;CI、いわゆるContinuous Integrationのサービス。&lt;br /&gt;Test-Kitchenの実行と、安否のレポートをする。家訓を守り10分間の沈黙は死とみなすが、今作では回避手段をとられてしまう。&lt;/dd&gt;
+&lt;dt&gt;&lt;a href=&#34;https://www.heroku.com&#34;&gt;heroku&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;アプリケーション実行のプラットフォーム。&lt;br /&gt;裏設定としてスケジュールタスクが登録されており、CircleCIのビルドを定期的にキックする役で登場。&lt;/dd&gt;
+&lt;dt&gt;&lt;a href=&#34;https://ifttt.com/&#34;&gt;IFTTT&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;条件によってシンプルなタスクを実行するサービス。&lt;br /&gt;セットアップタスクの変更をRSSで取得し、CircleCIのビルドをキックする遊撃手として暗躍する。&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h2 id=&#34;amimoto-die-hard-解説:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;『AMIMOTO DIE HARD』 解説&lt;/h2&gt;
+
+&lt;p&gt;結論からいうと、次の条件でテストを回すことにした。対象はAMIMOTOシリーズ全部。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;定期的、毎日一回。
+
+&lt;ul&gt;
+&lt;li&gt;リポジトリの変更によるクラッシュを検知。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;セットアップ用コードの変更。
+
+&lt;ul&gt;
+&lt;li&gt;セットアップの不備を検知。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;後者もそもそもが、何かのパッケージ更新との合わせ技による発生が主ではあったようだ。&lt;br /&gt;
+AMI起動からの大元の仕組みが変わることも考慮にいれて、『ただWordPressがつかえる状態か』のみを確かめる仕組みとしている。&lt;/p&gt;
+
+&lt;p&gt;実施している内容は主要登場物のセクションに書いている通りだが、いくつかピックアップして解説しよう。&lt;/p&gt;
+
+&lt;h3 id=&#34;infratasterによるテストの内訳とコード:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;Infratasterによるテストの内訳とコード&lt;/h3&gt;
+
+&lt;p&gt;テストの段取りは次の通り。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;AMIMOTOのお約束、インスタンスIDの入力において(所有者確認)
+
+&lt;ol&gt;
+&lt;li&gt;間違ったIDを入力してハネられること。&lt;/li&gt;
+&lt;li&gt;正しいIDを入力し、WordPressのインストール画面に移ること。&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;とりあえずここまでやれば、関連サービスがすべて正常に稼働しているとわかる。
+Infrataster(Capybara)では次のようにコードを書いた。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;describe server(:amimoto) do
+  describe capybara(&#39;http://amimoto&#39;) do
+    it &amp;quot;Blocks invalid string&amp;quot; do
+      visit &#39;/wp-admin/install.php&#39;
+      fill_in &amp;quot;instance_id&amp;quot;, with: &#39;hogehoge&#39;
+      click_button &#39;Next Step&#39;
+      expect(page).to have_content &amp;quot;Sorry, that isn’t a valid instance ID.&amp;quot;
+    end
+
+    it &amp;quot;Unlock Success&amp;quot; do
+      visit &#39;/wp-admin/install.php&#39;
+      fill_in &amp;quot;instance_id&amp;quot;, with: ENV[&#39;KITCHEN_SERVER_ID&#39;]
+      expect(click_button &#39;Next Step&#39;).not_to be_nil
+    end
+
+    it &amp;quot;Should got &#39;Welcome&#39; after unlock&amp;quot; do
+      visit &#39;/wp-admin/install.php&#39;
+      expect(page).to have_content &#39;ようこそ&#39;
+    end
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;インスタンスID(環境変数)は、Test-Kitchenの機能。&lt;/p&gt;
+
+&lt;h3 id=&#34;test-kithcen-shell-verifier:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;Test-Kithcen + Shell-Verifier&lt;/h3&gt;
+
+&lt;p&gt;AMIMOTO DIE HARDの本体はこのTest-Kitchenといえる。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;AMIからインスタンスを作成する。&lt;/li&gt;
+&lt;li&gt;Shell-Provisionerで&lt;code&gt;yum update&lt;/code&gt;をかけ、関連サービスを再起動。&lt;/li&gt;
+&lt;li&gt;Shell-VerifierでInfratasterを実行。&lt;/li&gt;
+&lt;li&gt;テストの結果にかかわらず、インスタンスを破棄。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;インスタンス関連の設定はただec2ドライバを使ってるだけ。&lt;code&gt;.kitchen.yml&lt;/code&gt;をそのまま貼ると次の通り。&lt;/p&gt;
+
+&lt;p&gt;末尾に突然入っているRubyコードはCircleCI向けの小狡い手段だ。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;---
+driver:
+  name: ec2
+  region: ap-northeast-1
+  availability_zone: ap-northeast-1c
+  subnet_id: &amp;lt;%= ENV[&#39;AWS_SUBNET_ID&#39;]  %&amp;gt;
+  associate_public_ip: true
+  instance_type: t2.micro
+
+transport:
+  username: ec2-user
+  aws_ssh_key_id: &amp;lt;%= ENV[&#39;AWS_SSH_KEY_ID&#39;]  %&amp;gt;
+  ssh_key: &amp;lt;%= ENV[&#39;AWS_SSH_KEY_PATH&#39;] %&amp;gt;
+
+provisioner:
+  name: shell
+
+platforms:
+  - name: hiphop-amimoto
+    driver:
+      image_id: ami-xxxxxxxx
+  - name: pvm-amimoto
+    driver:
+      image_id: ami-xxxxxxxx
+      instance_type: m1.small
+  - name: hvm-amimoto
+    driver:
+      image_id: ami-xxxxxxxx
+
+verifier:
+  name: shell
+  command: bundle exec rspec -fd
+
+suites:
+  - name: default
+    run_list:
+    attributes:
+&amp;lt;%
+## Periodic outputs for CircleCI
+if ENV[&#39;CI&#39;]
+  ppid = Process.pid
+  Process.fork {
+    loop {
+      puts &amp;quot;.&amp;quot;
+      begin
+        Process.getpgid( ppid )
+        sleep 20
+      rescue
+        exit 0
+      end
+    }
+  }
+end
+%&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;導入当初、PVMのインスタンスタイプにはt1.microを使っていた。&lt;br /&gt;
+しかしこのインスタンス、WordPressのセットアップ完了直後に&lt;code&gt;yum update&lt;/code&gt;をかけると、わりと高い確率で暫くの間まともに応答しなくなっていた。そのまま10分ほどCircleCIでアウトプット無しの状態が続くと、Failで終わってしまう。&lt;/p&gt;
+
+&lt;p&gt;しかたがないので何か出力しておくため、Test-Kitchen実行時にダミー出力を行うプロセスをフォークで作ったのが末尾のRubyコード部分だ。&lt;br /&gt;
+通常、&lt;code&gt;circle.yml&lt;/code&gt;などでバックグラウンドプロセスを起動すると、安易な時間切れ対策対策？として出力はミュートされる仕組みになっているが、テスト内でのフォークは流石に捕まらないようだ。&lt;/p&gt;
+
+&lt;p&gt;結局t1.microは時間がかかりすぎる事が多かったので、先日smallに変更した。強制終了まで2時間(!)かかることがあったりもしたし。&lt;/p&gt;
+
+&lt;h3 id=&#34;herokuからcircleciのビルドをキック:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;herokuからCircleCIのビルドをキック&lt;/h3&gt;
+
+&lt;p&gt;CircleCIは定期実行する仕組みを提供していない(目的外だし)ため、任意のブランチのHEADをビルドするRakeタスクを作成。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;require &#39;circleci&#39;
+require &#39;logger&#39;
+@logger = Logger.new($stdout)
+
+CircleCi.configure do |config|
+  config.token = ENV[&#39;CIRCLECI_TOKEN&#39;]
+end
+
+task :default do
+  begin
+    @logger.info &amp;quot;Run nightly integration&amp;quot;
+    res = CircleCi::Project.build_branch &#39;Launch-with-1-Click&#39;, &#39;amimoto_die_hard&#39;, &#39;master&#39;
+    @logger.info res.code
+    unless res.success
+      @logger.error &amp;quot;Maybe fail, it will notifies to some service.&amp;quot;
+    end
+  rescue =&amp;gt; e
+    @logger.error e.class
+    @logger.error e.message
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;あとはこれをherokuにおいて、スケジューラから定期的に実行する。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;もともとコケるたびにデジタルキューブさん側で対策込みの改善もしていたので、もうこれにほとんど引っかかったりはしません。&lt;br /&gt;
+ただ、意識外で起こる不思議な障害のなるはや検知には、抜き打ちテストを回しておくのがいいよね。&lt;/p&gt;
+
+&lt;h2 id=&#34;関連項目:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;関連項目&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.adventar.org/calendars/1107&#34;&gt;AMIMOTO Advent Calendar 2015&lt;/a&gt; ひとつ前の記事 =&amp;gt; &lt;a href=&#34;http://wp-kyoto.net/go-to-wordcamp-us/&#34; title=&#34;[AMIMOTOアドベントカレンダー]WordCamp US現地からブースの様子をお送りします - WP-kyoto&#34;&gt;[AMIMOTOアドベントカレンダー]WordCamp US現地からブースの様子をお送りします - WP-kyoto&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.adventar.org/calendars/1107&#34;&gt;AMIMOTO Advent Calendar 2015&lt;/a&gt; 次の記事 =&amp;gt; 公開されたらリンク&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;外部リンク:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;外部リンク&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ja.amimoto-ami.com/&#34; title=&#34;WordPress 専用の AWS + クラウドホスティング AMIMOTO | 超高速 WordPress AMI AMIMOTO&#34;&gt;超高速 WordPress AMI AMIMOTO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     
     
     <item>
