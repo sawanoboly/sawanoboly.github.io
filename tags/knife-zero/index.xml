@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Knife Zero on Sawanoboly.net</title>
-    <link>http://sawanoboly.github.io/tags/knife-zero/</link>
+    <link>http://www.sawanoboly.net/tags/knife-zero/</link>
     <description>Recent content in Knife Zero on Sawanoboly.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Thu, 25 Dec 2014 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://sawanoboly.github.io/tags/knife-zero/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.sawanoboly.net/tags/knife-zero/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Chef-Solo, Chef-Client LocalMode, Knife-Solo, Knife-Zero and us.</title>
-      <link>http://sawanoboly.github.io/2014/12/chef-solo-zero-knife-solo-zero/</link>
+      <link>http://www.sawanoboly.net/2014/12/chef-solo-zero-knife-solo-zero/</link>
       <pubDate>Thu, 25 Dec 2014 00:00:00 +0900</pubDate>
       
-      <guid>http://sawanoboly.github.io/2014/12/chef-solo-zero-knife-solo-zero/</guid>
+      <guid>http://www.sawanoboly.net/2014/12/chef-solo-zero-knife-solo-zero/</guid>
       <description>
 
 &lt;blockquote&gt;

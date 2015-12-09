@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chef on Sawanoboly.net</title>
-    <link>http://sawanoboly.github.io/tags/chef/</link>
+    <link>http://www.sawanoboly.net/tags/chef/</link>
     <description>Recent content in Chef on Sawanoboly.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Thu, 25 Dec 2014 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://sawanoboly.github.io/tags/chef/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.sawanoboly.net/tags/chef/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Chef-Solo, Chef-Client LocalMode, Knife-Solo, Knife-Zero and us.</title>
-      <link>http://sawanoboly.github.io/2014/12/chef-solo-zero-knife-solo-zero/</link>
+      <link>http://www.sawanoboly.net/2014/12/chef-solo-zero-knife-solo-zero/</link>
       <pubDate>Thu, 25 Dec 2014 00:00:00 +0900</pubDate>
       
-      <guid>http://sawanoboly.github.io/2014/12/chef-solo-zero-knife-solo-zero/</guid>
+      <guid>http://www.sawanoboly.net/2014/12/chef-solo-zero-knife-solo-zero/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -141,10 +141,10 @@
     
     <item>
       <title>『Chef活用ガイド コードではじめる構成管理』を書きました</title>
-      <link>http://sawanoboly.github.io/2014/04/chefbook/</link>
+      <link>http://www.sawanoboly.net/2014/04/chefbook/</link>
       <pubDate>Sat, 19 Apr 2014 00:00:00 +0900</pubDate>
       
-      <guid>http://sawanoboly.github.io/2014/04/chefbook/</guid>
+      <guid>http://www.sawanoboly.net/2014/04/chefbook/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -155,7 +155,7 @@
 
 &lt;p&gt;発売を前に手元に２冊届きました、少々ボリュームのあるサイズ(672P)となっています。&lt;/p&gt;
 
-&lt;img src=&#34;http://sawanoboly.github.io/images/2014/chef_book.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+&lt;img src=&#34;http://www.sawanoboly.net/images/2014/chef_book.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
 
 
 &lt;h2 id=&#34;何を書いたのか:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;何を書いたのか&lt;/h2&gt;
@@ -231,7 +231,7 @@
 
 &lt;p&gt;ここでもやっぱりGithubが活躍します。章ごとのブランチを作成して、平行して校正を進めたり、適用漏れを抽出して追跡したり、 gitリポジトリは軽作業などもふくめて、結局2200コミットくらいになりました。&lt;/p&gt;
 
-&lt;img src=&#34;http://sawanoboly.github.io/images/2014/chef_book_commits.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+&lt;img src=&#34;http://www.sawanoboly.net/images/2014/chef_book_commits.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
 
 
 &lt;p&gt;環境用品のうち、特に活躍した3つをピックアップします。&lt;/p&gt;
