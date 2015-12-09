@@ -1,4 +1,4 @@
-baseurl = "http://sawanoboly.github.io/"
+baseurl = "http://www.sawanoboly.net/"
 languageCode = "ja-JP"
 title = "Sawanoboly.net"
 copyright = ""
@@ -7,6 +7,7 @@ paginate = 20
 
 [permalinks]
     post = "/:year/:month/:slug/"
+    blog = "/blog/:slug/"
 
 [taxonomies]
     tag = "tags"
