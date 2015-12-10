@@ -219,7 +219,7 @@ end
 ## 関連項目
 
 - [AMIMOTO Advent Calendar 2015](http://www.adventar.org/calendars/1107) ひとつ前の記事 => [[AMIMOTOアドベントカレンダー]WordCamp US現地からブースの様子をお送りします - WP-kyoto](http://wp-kyoto.net/go-to-wordcamp-us/ "[AMIMOTOアドベントカレンダー]WordCamp US現地からブースの様子をお送りします - WP-kyoto")
-- [AMIMOTO Advent Calendar 2015](http://www.adventar.org/calendars/1107) 次の記事 => 公開されたらリンク
+- [AMIMOTO Advent Calendar 2015](http://www.adventar.org/calendars/1107) 次の記事 => [AMIMOTOブース in WordCamp USフォトレポート | Firegoby](https://firegoby.jp/archives/6450 "AMIMOTOブース in WordCamp USフォトレポート | Firegoby")
 
 
 ## 外部リンク
