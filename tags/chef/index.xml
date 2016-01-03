@@ -155,7 +155,10 @@
 
 &lt;p&gt;発売を前に手元に２冊届きました、少々ボリュームのあるサイズ(672P)となっています。&lt;/p&gt;
 
-&lt;img src=&#34;http://www.sawanoboly.net/images/2014/chef_book.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+&lt;figure&gt;
+  &lt;img src=&#34;http://www.sawanoboly.net/images/2014/chef_book.png&#34; alt=&#34;Chef活用ガイド&#34; class=&#34;pure-img&#34; &gt;
+  &lt;figcaption&gt;Chef活用ガイド&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 
 &lt;h2 id=&#34;何を書いたのか:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;何を書いたのか&lt;/h2&gt;
@@ -231,7 +234,10 @@
 
 &lt;p&gt;ここでもやっぱりGithubが活躍します。章ごとのブランチを作成して、平行して校正を進めたり、適用漏れを抽出して追跡したり、 gitリポジトリは軽作業などもふくめて、結局2200コミットくらいになりました。&lt;/p&gt;
 
-&lt;img src=&#34;http://www.sawanoboly.net/images/2014/chef_book_commits.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+&lt;figure&gt;
+  &lt;img src=&#34;http://www.sawanoboly.net/images/2014/chef_book_commits.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 
 &lt;p&gt;環境用品のうち、特に活躍した3つをピックアップします。&lt;/p&gt;
@@ -323,7 +329,10 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/OpsRockin/vagrantwithchefzero_example&#34;&gt;https://github.com/OpsRockin/vagrantwithchefzero_example&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;img src=&#34;http://www.sawanoboly.net/images/2014/vagrant_with_chef-zero.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+&lt;figure&gt;
+  &lt;img src=&#34;http://www.sawanoboly.net/images/2014/vagrant_with_chef-zero.png&#34; alt=&#34;Vagrant with Chef-Zero&#34; class=&#34;pure-img&#34; &gt;
+  &lt;figcaption&gt;Vagrant with Chef-Zero&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 
 &lt;p&gt;これならvagrant up chefzeroするだけでChef-zeroをほぼChef-Serverとして使い放題です。&lt;/p&gt;
