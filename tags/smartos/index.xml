@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smartos on Sawanoboly.net</title>
+    <link>http://www.sawanoboly.net/tags/smartos/</link>
+    <description>Recent content in Smartos on Sawanoboly.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Thu, 06 Feb 2014 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://www.sawanoboly.net/tags/smartos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install fail2ban to the SmartOS</title>
+      <link>http://www.sawanoboly.net/2014/02/fail2ban-for-smartos/</link>
+      <pubDate>Thu, 06 Feb 2014 00:00:00 +0900</pubDate>
+      
+      <guid>http://www.sawanoboly.net/2014/02/fail2ban-for-smartos/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.fail2ban.org/wiki/index.php/Main_Page&#34;&gt;fail2ban&lt;/a&gt;がSolaris(OpenSolaris)に対応していたので、Joyent SmartOSに導入する。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fail2ban/fail2ban/blob/0.8.12/README.Solaris&#34;&gt;0.8.12/README.Solaris&lt;/a&gt;
+上記Solarisの内容ではちょっと困る。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;patch-for-the-smartos:9c0a86430b54992cf85420e07dbabbca&#34;&gt;Patch for the SmartOS&lt;/h2&gt;
+
+&lt;p&gt;パスの問題程度だったので、最新安定版の0.8.12をベースにパッチを作成した。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gist.github.com/sawanoboly/8838359&#34;&gt;https://gist.github.com/sawanoboly/8838359&lt;/a&gt;&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/sawanoboly/8838359.js?file=0.8.12_smartos.patch&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;install-to-the-smartos:9c0a86430b54992cf85420e07dbabbca&#34;&gt;Install to the SmartOS&lt;/h2&gt;
+
+&lt;p&gt;インストールはこのように。&lt;/p&gt;
+
+&lt;p&gt;GitリポジトリでもアーカイブでもOKだが、パッチファイルはコピペするとインデントが怪しくなるのでgistのdownloadリンクを使うのがいい。&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/sawanoboly/8838359.js?file=README.smartos.md&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;ban:9c0a86430b54992cf85420e07dbabbca&#34;&gt;Ban&lt;/h2&gt;
+
+&lt;p&gt;Banする方式はTCP WrapperとIpfilterが使える。&lt;/p&gt;
+
+&lt;h3 id=&#34;tcp-wrapperでban:9c0a86430b54992cf85420e07dbabbca&#34;&gt;TCP WrapperでBan&lt;/h3&gt;
+
+&lt;p&gt;hosts.denyに設定を出し入れするやりかた。&lt;/p&gt;
+
+&lt;p&gt;READMEにもあるけど、TCP Wrapperは有効にしておく。&lt;/p&gt;
+
+&lt;p&gt;inetadm -pで確認。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# inetadm -p
+
+-- snip --
+
+tcp_wrappers=TRUE
+
+-- snip --
+inetadm -Mで設定変更。
+
+inetadm -M tcp_wrappers=true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;SSH(TCP/22)をBanするサンプル。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;## cat /etc/fail2ban/jail.local 
+
+[ssh-tcpwrapper]
+
+enabled = true
+filter = sshd
+action = hostsdeny[daemon_list=sshd]
+logpath = /var/log/authlog
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;SmartOSのバージョンによっては /var/log/auth.logだったり、syslogの設定がそもそも無かったりするので調整しよう。&lt;/p&gt;
+
+&lt;p&gt;このとおりJail listが登録される。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# fail2ban-client status
+Status
+|- Number of jail:      1
+`- Jail list:           ssh-tcpwrapper
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;ipfilterでban:9c0a86430b54992cf85420e07dbabbca&#34;&gt;IPFilterでBan&lt;/h3&gt;
+
+&lt;p&gt;ipfコマンドでルールの管理をするやりかた。&lt;/p&gt;
+
+&lt;p&gt;ちなみにリストの最後にquickで出し入れするやり方になるので、既存のルールと干渉します。&lt;/p&gt;
+
+&lt;p&gt;fail2banと一緒に使うため、blockとpass対象ではquickを使わないようにします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;## Example of filter rules with using fail2ban.
+pass out quick from any to any keep state
+block in all                                                                                ## without quick
+pass in quick from 127.0.0.0/8 to any keep state
+pass in quick proto icmp from any to any keep state
+pass in proto tcp from any to any port = 22 keep state   ## without quick
+pass in quick proto tcp from any to any port = 80 keep state
+pass in quick proto tcp from any to any port = 443 keep state
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;SSH(TCP/22)をBanするサンプル。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;## cat /etc/fail2ban/jail.local 
+
+[ssh-tcpwrapper]
+
+enabled = true
+filter = sshd
+action = ipfilter
+logpath = /var/log/authlog
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;このとおりJail listが登録される。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# fail2ban-client status        
+Status
+|- Number of jail:      1
+`- Jail list:           ssh-ipfilter
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;result:9c0a86430b54992cf85420e07dbabbca&#34;&gt;Result&lt;/h3&gt;
+
+&lt;p&gt;TCP WrapperでBanしたらこんな感じ。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#  tail -f /var/log/fail2ban.log
+2014-02-06 04:01:51,728 fail2ban.server [85350]: INFO    Changed logging target to /var/log/fail2ban.log for Fail2ban v0.8.12
+2014-02-06 04:01:51,740 fail2ban.jail   [85350]: INFO    Creating new jail &#39;ssh-tcpwrapper&#39;
+2014-02-06 04:01:51,746 fail2ban.jail   [85350]: INFO    Jail &#39;ssh-tcpwrapper&#39; uses poller
+2014-02-06 04:01:51,821 fail2ban.jail   [85350]: INFO    Initiated &#39;polling&#39; backend
+2014-02-06 04:01:51,832 fail2ban.filter [85350]: INFO    Added logfile = /var/log/authlog
+2014-02-06 04:01:51,836 fail2ban.filter [85350]: INFO    Set maxRetry = 3
+2014-02-06 04:01:51,840 fail2ban.filter [85350]: INFO    Set findtime = 600
+2014-02-06 04:01:51,841 fail2ban.actions[85350]: INFO    Set banTime = 600
+2014-02-06 04:01:51,933 fail2ban.jail   [85350]: INFO    Jail &#39;ssh-tcpwrapper&#39; started
+
+-- ban log
+
+2014-02-06 04:03:32,957 fail2ban.actions[85350]: WARNING [ssh-tcpwrapper] Ban xxx.xxx.xxx.xxx
+2014-02-06 04:03:34,978 fail2ban.actions[85350]: INFO    [ssh-tcpwrapper] xxx.xxx.xxx.xxx already banned
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;パッチは本家にIssueでお知らせしたので、そのうち含まれたらええなあと。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/fail2ban/fail2ban/issues/607&#34;&gt;fail2ban/issues#607&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    
+  </channel>
+</rss>

@@ -42,4 +42,19 @@
     <lastmod>2014-04-19T00:00:00+09:00</lastmod>
   </url>
   
+  <url>
+    <loc>http://www.sawanoboly.net/2014/03/vagrant-with-chef-zero/</loc>
+    <lastmod>2014-03-05T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.sawanoboly.net/2014/02/xegg-sakura-with-chef/</loc>
+    <lastmod>2014-02-16T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.sawanoboly.net/2014/02/fail2ban-for-smartos/</loc>
+    <lastmod>2014-02-06T00:00:00+09:00</lastmod>
+  </url>
+  
 </urlset>

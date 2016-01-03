@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vagrant on Sawanoboly.net</title>
+    <link>http://www.sawanoboly.net/tags/vagrant/</link>
+    <description>Recent content in Vagrant on Sawanoboly.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 05 Mar 2014 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://www.sawanoboly.net/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chef-Server環境で使うCookbookをVagrantとChef-zeroで開発する</title>
+      <link>http://www.sawanoboly.net/2014/03/vagrant-with-chef-zero/</link>
+      <pubDate>Wed, 05 Mar 2014 00:00:00 +0900</pubDate>
+      
+      <guid>http://www.sawanoboly.net/2014/03/vagrant-with-chef-zero/</guid>
+      <description>
+
+&lt;p&gt;最近はChef-Severの導入も簡単になりました。 &lt;a href=&#34;http://www.getchef.com/chef/install/&#34;&gt;パッケージから導入&lt;/a&gt;はもちろん、&lt;a href=&#34;https://aws.amazon.com/marketplace/pp/B010OMNV2W&#34;&gt;aws marketplace&lt;/a&gt;からすぐ使用できたりと。&lt;/p&gt;
+
+&lt;p&gt;とはいえテスト環境にChef-Serverを強いるのも大変なので、Chef-Zeroで代わりをしてもよいでしょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;chef-zero:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;Chef-zero&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/chef/chef-zero&#34;&gt;https://github.com/chef/chef-zero&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Chef-zeroはChef-Serverのホットモックのようなものです。ほぼChef-Serverとして動作する小さなプロセスですが次の特徴があります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;認証はするフリで全部OK&lt;/li&gt;
+&lt;li&gt;データはメモリに保存、永続化なし&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Chef-Serverを使ったCookbookの開発をする際に、データをクリアしたい場合もありますが意外と後処理が面倒です。 Chef-zeroならプロセスのリスタートで綺麗な状態になるので、knifeで必要な要素を戻すだけで再度テストを行なうことができます。&lt;/p&gt;
+
+&lt;p&gt;詳細は次のリンクが参考になります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.creationline.com/lab/2749&#34;&gt;軽量簡易Chef Server「chef-zero」を使ってみよう #opschef_ja « CREATIONLINE, INC.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;vagrantでchef-zero:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;VagrantでChef-zero&lt;/h2&gt;
+
+&lt;p&gt;ではChef-zeroのプロセスをどこに立てるか。&lt;a href=&#34;https://github.com/test-kitchen/test-kitchen&#34;&gt;test-kitchen&lt;/a&gt;ではCookbookをテストするVMで直接Chef-zeroを起動して、ダミーのChef要素を入れることができますが、現時点ではそのままシームレスにChef-Server環境に持って行こうとするにはいまいち感があります。&lt;/p&gt;
+
+&lt;p&gt;じゃあVagrantだろうなということで、一式書いてリポジトリに登録しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/OpsRockin/vagrantwithchefzero_example&#34;&gt;https://github.com/OpsRockin/vagrantwithchefzero_example&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;./images/2014/vagrant_with_chef-zero.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;これならvagrant up chefzeroするだけでChef-zeroをほぼChef-Serverとして使い放題です。&lt;/p&gt;
+
+&lt;p&gt;chefzeroのVMだけはChef-Soloで構築しますが、ほかのVMはChef-zeroに対するChef-ClientとしてProvisioningすることができます。&lt;/p&gt;
+
+&lt;p&gt;最初は手元だけ直して、Cookbookのアップロードを忘れることもありますが、すぐ慣れるでしょう。&lt;/p&gt;
+
+&lt;p&gt;通常操作はknifeを使えるので、他の環境に持っていく際にknife.rb指定の切り替えで済むのが助かりますね。&lt;/p&gt;
+
+&lt;h2 id=&#34;開発作業用のrakefile:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;開発作業用のRakefile&lt;/h2&gt;
+
+&lt;p&gt;レシピ開発＆テストを効率よく行なうには、とりあえずRakeのタスクを作っておくとよいです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;task :default =&amp;gt; &#39;upload&#39;
+$stdin.sync = true
+
+desc &#39;upload chef-repos to chefzero vm&#39;
+task :upload do
+  system(&#39;knife cookbook upload --all&#39;)
+  system(&#39;knife upload environments/ &#39;)
+  system(&#39;knife upload roles/ &#39;)
+end
+
+desc &#39;reset chefzero&#39;
+task :reset do
+  system(&#39;vagrant reload chefzero&#39;)
+  Rake::Task[&#39;chefzero:upload&#39;].invoke
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;それぞれこんな作業をやらせています。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;rake upload # Chef要素のアップロード
+rake reset  # Chef-zero内容クリア＆要素の再アップロード
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;その他:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;その他&lt;/h2&gt;
+
+&lt;p&gt;ちなみに&lt;a href=&#34;https://github.com/whitepages/vagrant-chefzero&#34;&gt;vagrant-chefzero&lt;/a&gt;というプラグインもあり、これはEnvやRole要素の投入までVagrantファイル内でやるようです。&lt;/p&gt;
+
+&lt;p&gt;knifeを使わないのが逆に気になるので今回はCookbookでChef-zeroをセットアップしてます。&lt;/p&gt;
+</description>
+    </item>
+    
+    
+  </channel>
+</rss>

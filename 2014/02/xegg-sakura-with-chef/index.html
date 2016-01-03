@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ja-JP">
+<head>
+  <meta charset="utf-8">
+  <title>第一回XEggで『さくらのクラウドフォーメーション with Chef 』 - Sawanoboly.net</title>
+  <meta name="description" content="第一回XEggで『さくらのクラウドフォーメーション with Chef 』">
+  <meta name="author" content="SAWANOBORI Yukihiko">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="http://www.sawanoboly.net/css/blog.css">
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://www.sawanoboly.net/css/custom.css">
+
+  <link href="http://www.sawanoboly.net/css/prism.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+<div class="pure-g">
+  <div class="pure-u-2-24 pure-u-md-4-24"></div>
+  <div class="pure-u-20-24 pure-u-md-16-24">
+
+    <div class="header">
+  <h1 class="brand-title"><a href="http://www.sawanoboly.net/" >Sawanoboly.net</a></h1>
+  <img class="post-avatar" alt="" height="64" width="64" src="http://www.gravatar.com/avatar/50bbf334b745f1468246a76b93fe2dde">
+  <h2 class="brand-tagline"> via www </h2>
+</div>
+
+
+    <div class="post">
+
+      <p class="post-meta">
+      <time class="">2014-02-16</time>
+      
+      
+      |
+      
+      
+      <a class="post-category" href="http://www.sawanoboly.net/tags/chef">chef</a> <a class="post-category" href="http://www.sawanoboly.net/tags/sakura_internet">sakura_internet</a> <a class="post-category" href="http://www.sawanoboly.net/tags/event">event</a> 
+      
+
+      </p>
+      <h2 class="post-title">第一回XEggで『さくらのクラウドフォーメーション with Chef 』</h1>
+
+      <div class="post-content">
+        
+
+<p>2月15日に大阪のグランフロントで開催された、<a href="http://innovationegg.doorkeeper.jp/events/7435">Innovation EGG 第二回 XEgg 1st『クラウド未経験者向けITコミュニティ＆クラウドベンダー合同勉強会』</a>で行ったセッションの話。</p>
+
+<ul>
+<li><a href="http://innovationegg.doorkeeper.jp/">Innovation EGGとは？</a></li>
+</ul>
+
+<h2 id="イベントのテーマと課題:abd5cc46a07d774db12ec7a3776e3d26">イベントのテーマと課題</h2>
+
+<p>今回声がかかったのはXEgg(クロスエッグ)と題されたイベントで、テーマによって選出されたベンダにITコミュニティを組み合わせてなんかやってくれと言う話だった。</p>
+
+<p>第一回XEggのテーマはクラウド、私は<a href="http://chef-meetup-kansai.doorkeeper.jp/">Chef meetup Kansai</a>の主催者としてITコミュニティ枠で参加。 さわる対象のクラウドベンダは『さくらインターネット』、要は『さくらのクラウド』を触りましょうと。</p>
+
+<p><iframe src="//www.slideshare.net/slideshow/embed_code/key/oTufMIf9dcRFMa" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/YukihikoSawanobori/x-egg01-chef" title="さくらのクラウドフォーメーション with Chef [XEgg session]" target="_blank">さくらのクラウドフォーメーション with Chef [XEgg session]</a> </strong> from <strong><a href="//www.slideshare.net/YukihikoSawanobori" target="_blank">Yukihiko SAWANOBORI</a></strong> </div></p>
+
+<h2 id="セッション裏話:abd5cc46a07d774db12ec7a3776e3d26">セッション裏話</h2>
+
+<p>セッションの大筋はスライドの通りで、話した内容はその場で聞いていただいた方々がご存知です。 ブログではどうしてあんなセッションになったのか振り返ってみます。</p>
+
+<h3 id="ターゲットの決定:abd5cc46a07d774db12ec7a3776e3d26">ターゲットの決定</h3>
+
+<p>イベントの参加対象者は、『クラウド未経験者』とのことでした。ずいぶんもやっとしています。</p>
+
+<p>セッションの内容をChef初心者向けに丁寧に解説とすることも考えましたが、テーマからいって参加者がChefに興味あるとも限らないうえ、同時に動いていたプロジェクトのこともあわせて、そういうのは 私が飽きていました 。</p>
+
+<p>そもそも私はChefを売ってるわけでもないし、イベントの主軸はクラウドベンダだし、どうせなら自分が興味あることをセッションにしてしまうほうが楽しい。</p>
+
+<p>ということでセッションのターゲットはクラウドベンダの『さくらインターネットのスタッフ』と、同枠の『MongoDBコミュニティ』に絞りました。</p>
+
+<h3 id="chefの紹介:abd5cc46a07d774db12ec7a3776e3d26">Chefの紹介</h3>
+
+<p>Chefはその特性上適用できる範囲がとても広く、組織によって様々に使い方を選べます。 そもそもChefには決まった使い方も無く、あるのは各組織のワークフローやポリシーに合わせてシステムの構成管理をできる柔軟性くらいです。</p>
+
+<p>説明したってきりがないので、旧態依然とした構成管理への皮肉を交えつつ、最初から視聴者全員置いてきぼりを目標にさっと流しました。</p>
+
+<p>イベントテーマ的に主役では無いですし。</p>
+
+<h3 id="使ってみました系と海外との比較:abd5cc46a07d774db12ec7a3776e3d26">使ってみました系と海外との比較</h3>
+
+<p>このへんは裏表あまりなく、結構思うまま言ったらこうなった。</p>
+
+<p><blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">sawanoboly氏、さくらの田中さんの前でさくらのクラウドAPIのdisを繰り広げている。でもこういうのは参考意見として良いよね。 <a href="https://twitter.com/hashtag/xegg?src=hash">#xegg</a></p>&mdash; MATSUMOTO, Ryosuke (@matsumotory) <a href="https://twitter.com/matsumotory/status/434508042814513152">2014, 2月 15</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<p>コンピュータリソースに特化したサービスと比べるのは少々ごまかしを含みますが、ややインパクトを重視してChefと手っ取り早く連携させたりとりあえずサービスをリリースしようといった視点からあえて見た体で展開することにしました。</p>
+
+<p>実際、『ボクのデータセンター』を作りたい方には非常にいいと思います。</p>
+
+<p>ここの中で『ホビー対傭兵』という比喩が出てきますが、この表現にもうちょっとだけ突っ込んでみます。</p>
+
+<p>日本の企業は上流工程をプロパーが行い、開発や現場やを外注に任せるという図式がよく見られます。 自社好みにカスタマイズ可能なプロパーと、プロとして現場の取り仕切りを任せる外注さんと。スライドの傭兵さんはいわば外注に当たるわけですね。</p>
+
+<p>国内ベンダと海外ベンダで提供するサービスと需要とに、なんだかちょっとねじれがあるような気がしています。</p>
+
+<h3 id="fogの-さくらのクラウド-サポートについて:abd5cc46a07d774db12ec7a3776e3d26">Fogの『さくらのクラウド』サポートについて</h3>
+
+<p>以前から国内クラウド向けにはChefに関連したライブラリ(<a href="http://rubygems.org/gems/knife-zcloudjp">knife-zcloudjp</a>,<a href="http://rubygems.org/gems/kitchen-zcloudjp">kitchen-zcloudjp</a>など)を公開しており、機会があればFogのプロバイダも書いてみたいと思っていました。</p>
+
+<p>そもそもFogに日本のプロバイダがないのは前々から気に入らなかったこともあって、今回の『さくらのクラウド』はそこそこ渡りに船でした。<br />
+日本語がわからないとサインアップが困難だったりするのですが、そこは気にしないことにします。</p>
+
+<p>このFog対応に思ったより時間をとられたので、他のやりたかったことができなかった弊害はありましたが、コンピュータリソースがカジュアルに上がってこないと(Chef的に)使いづらかったことは確かなので仕方がありませんでした。</p>
+
+<h3 id="chefとインテグレーション:abd5cc46a07d774db12ec7a3776e3d26">Chefとインテグレーション</h3>
+
+<p>スタートアップスクリプトのような使い捨てでなく、クラウドAPIを叩く瞬間からChefの支配は始まっているんですよというアピールをしてみました。 せいぜい計算リソースにすぎないコンピュータインスタンスに、たとえばわざわざ名前をつけて可愛がりながら育てるなんて、もはやナンセンスではないのかという啓発も込めています。</p>
+
+<h2 id="まとめと今後の展開:abd5cc46a07d774db12ec7a3776e3d26">まとめと今後の展開</h2>
+
+<p>言いたい放題のセッションでしたが、定めたターゲットさくらインターネットのスタッフ一同には田中社長をはじめ『面白かった』と感想をいただいたのでめでたしめでたしと。</p>
+
+<p>しかし今回時間の関係上、『さくらのクラウド』の全力を引き出したとは言いがたい。<br />
+そしてクラウドフォーメーションと銘打っておきながら、ネットワーク関係やLB、それと先日発表されたクラウドストレージにも手を出していません。</p>
+
+<p>できればyamlかjsonの定義ファイルを食わせればシステム構築するところまで、それこそ某クラウドフォーメーション程度の実装までしておきたいなあ。</p>
+
+        <span class='st_twitter' displayText=''></span>
+<span class='st_facebook' displayText=''></span>
+<span class='st_pocket' displayText=''></span>
+<span class='st_hatena' displayText=''></span>
+<span class='st_linkedin' displayText=''></span>
+
+      </div>
+    </div>
+  </div>
+  <div class="pure-u-2-24 pure-u-md-4-24"></div>
+</div>
+
+    <ul>
+     
+    </ul>
+<div class="footer" name="footer">
+    <div class="list-group">
+      <a title="feed" class="list-group-item" style="color:#FD9F13" href="/index.xml">
+        <i class="fa fa-4x fa-feed"></i></a>
+      <a title="github" class="list-group-item" style="color:#333333" href="https://github.com/sawanoboly">
+        <i class="fa fa-4x fa-github-square"></i></a>
+      <a title="twitter" class="list-group-item" style="color:#5EA9DD" href="https://twitter.com/sawanoboly">
+        <i class="fa fa-4x fa-twitter-square"></i></a>
+      <a title="facebook" class="list-group-item" style="color:#3A5795" href="https://www.facebook.com/yukihiko.sawanobori">
+        <i class="fa fa-4x fa-facebook-square"></i></a>
+      <a title="slideshare" class="list-group-item" style="color:#313131" href="http://www.slideshare.net/YukihikoSawanobori">
+        <i class="fa fa-4x fa-slideshare"></i></a>
+      <a title="linkedin" class="list-group-item" style="color:#0077B5" href="https://jp.linkedin.com/in/SAWANOBORIYukihiko">
+        <i class="fa fa-4x fa-linkedin-square"></i></a>
+      <a title="qiita" class="list-group-item" style="color:#79B74A" href="http://qiita.com/sawanoboly">
+        <i class="fa fa-4x">Q</i></a>
+      </a>
+    </div>
+      <script src="http://www.sawanoboly.net/js/prism.js"></script>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-70801805-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "8a656625-d66d-4054-ac8e-cbd38a4622a3", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+</body>
+</html>
