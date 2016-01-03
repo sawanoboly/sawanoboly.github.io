@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book on Sawanoboly.net</title>
+    <link>http://www.sawanoboly.net/tags/book/</link>
+    <description>Recent content in Book on Sawanoboly.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 11 Jan 2015 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://www.sawanoboly.net/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>オライリー・ジャパンからServerspec</title>
+      <link>http://www.sawanoboly.net/2015/01/serverspec-the-definitive-guide/</link>
+      <pubDate>Sun, 11 Jan 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://www.sawanoboly.net/2015/01/serverspec-the-definitive-guide/</guid>
+      <description>
+
+&lt;p&gt;2015年1月17日にオライリー・ジャパンから出版の&lt;a href=&#34;http://www.oreilly.co.jp/books/9784873117096/&#34;&gt;Serverspec&lt;/a&gt;が発売されます。&lt;/p&gt;
+
+&lt;p&gt;著者のmizzyこと宮下剛輔さんによる紹介記事はこちら。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://mizzy.org/blog/2014/12/25/1/&#34;&gt;「Serverspec」という本が出ます - Gosuke Miyashita&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;『Serverspec』正誤表(公式サイト版)はこちら&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://serverspec.org/book/ja/&#34;&gt;Serverspec - 『Serverspec』正誤表&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;さてこの本、幸いなことに執筆時にレビュワーに誘っていただきました。&lt;br /&gt;
+レビューでは思想や解説の内容を中心に、言いたいことが伝わるだろうかという見方でIssueを切りました。&lt;/p&gt;
+
+&lt;p&gt;微力ながら制作のお手伝いをした書籍をご恵贈いただき、手元に来た現物をみてニヤニヤしています。&lt;/p&gt;
+
+&lt;img src=&#34;http://www.sawanoboly.net/images/2015/Serverspec-the-definitive-guide.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+
+&lt;p&gt;※ iPhone5Cは大きさ比較用。&lt;/p&gt;
+
+&lt;p&gt;扱いやすいサイズで持ち運びやすいですね。電子版も出るので、そちらは購入する予定です。&lt;/p&gt;
+
+&lt;p&gt;では折角なのでおすすめの章を2つ。&lt;/p&gt;
+
+&lt;h2 id=&#34;使う人向けの3章:de8e932130afe1e91333390ec5c31e27&#34;&gt;使う人向けの3章&lt;/h2&gt;
+
+&lt;p&gt;簡素な公式ドキュメントの行間を解説してくれる3章は、テストコードをどう書けばよいのかから始まり、コードの使いまわしや環境およびセキュリティ要件へ対応するTipsが書かれています。&lt;br /&gt;
+また、良くある悩みの『何をどこまでテストすればいいのか？』に対する指標が書いてあります。&lt;/p&gt;
+
+&lt;p&gt;Serverspecを使うことに関しては、3章を読めばしばらく困らないでしょう。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;3章　Serverspecの本格利用
+    3.1 RSpec
+    3.2 リソースとリソースタイプ
+    3.3 SSH経由でのリモートホストのテスト
+    3.4 テスト対象ホストの追加
+    3.5 動作のカスタマイズ
+    3.6 一時的な動作の変更
+    3.7 specファイルを複数のホストで共有
+    3.8 ホスト固有情報の利用
+    3.9 任意コマンドの実行
+    3.10 並列実行
+    3.11 様々なバックエンド
+    3.12 テストコードの指針
+    3.13 本章のまとめ
+※ O&#39;Reilly Japan - Serverspec http://www.oreilly.co.jp/books/9784873117096/ より&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;カスタマイズ-コントリビュートの4章:de8e932130afe1e91333390ec5c31e27&#34;&gt;カスタマイズ・コントリビュートの4章&lt;/h2&gt;
+
+&lt;p&gt;4章はServerspec, SpecInfraの内部を解説してくれます。&lt;br /&gt;
+特にSpecInfraは公式なドキュメントと言えるものがありませんが、4章の内容を理解すれば、Github上のコードをそのままドキュメントとして読めば大丈夫なくらいにはなります。 もちろんSpecを記述する際にも役立つ知識です。&lt;/p&gt;
+
+&lt;p&gt;また、それぞれのカスタマイズや拡張についての丁寧なウォークスルー、さらにはmizzyさんがプルリクをもらうとき(特に個人的に)気になることまで書かれています。&lt;/p&gt;
+
+&lt;p&gt;Serverspecを使い倒す、貢献する(オプション)なら4章で手を動かすといいですね。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;4章　Serverspec内部の詳細
+    4.1 Serverspecのアーキテクチャ
+    4.2 Serverspecの処理の流れ
+    4.3 コマンドクラス
+    4.4 バックエンドクラス
+    4.5 Serverspecのリソースタイプ拡張
+    4.6 Specinfraの OSに関する処理
+    4.7 Pryによる内部解析
+    4.8 Serverspec自身のテスト
+    4.9 コントリビュートの際の心構え
+    4.10 本章のまとめ
+※ O&#39;Reilly Japan - Serverspec http://www.oreilly.co.jp/books/9784873117096/ より&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;その他:de8e932130afe1e91333390ec5c31e27&#34;&gt;その他&lt;/h2&gt;
+
+&lt;p&gt;Serverspecはmizzyさんの活動テーマの1つ、継続的な改善の副産物だと思います。 中でもなぜServerspecが広まったのかは、伊藤直也(naoya)さんのまえがきに推察があります。&lt;/p&gt;
+
+&lt;p&gt;本エントリで紹介しなかった章には、mizzyさん曰く『思いを綴ったエッセイ』が多く含まれます。&lt;br /&gt;
+Serverspecの活用法を把握(おそらく書籍を入手する当初の目的を達成)したら、これらのエッセイを読み返してみることをおすすめします。&lt;br /&gt;
+この本の読者が触発され、何かしらの常識や慣習を改善する新しいツールを出してくると嬉しい。。？かもしれない。&lt;/p&gt;
+
+&lt;p&gt;最後に、mizzyさん無事出版おつかれさまです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.sawanoboly.net/images/2015/Serverspec-commit-graph.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    
+  </channel>
+</rss>

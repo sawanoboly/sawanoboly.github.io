@@ -53,7 +53,8 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/OpsRockin/vagrantwithchefzero_example&#34;&gt;https://github.com/OpsRockin/vagrantwithchefzero_example&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;./images/2014/vagrant_with_chef-zero.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;http://www.sawanoboly.net/images/2014/vagrant_with_chef-zero.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
 
 &lt;p&gt;これならvagrant up chefzeroするだけでChef-zeroをほぼChef-Serverとして使い放題です。&lt;/p&gt;
 
