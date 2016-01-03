@@ -23,7 +23,7 @@ title = "オライリー・ジャパンからServerspec"
 
 微力ながら制作のお手伝いをした書籍をご恵贈いただき、手元に来た現物をみてニヤニヤしています。
 
-{{% img-responsive "/images/2015/Serverspec-the-definitive-guide.png" "Serverspec the definitive guide" %}}
+{{% img-responsive "/images/2015/Serverspec-the-definitive-guide.png" %}}
 
 ※ iPhone5Cは大きさ比較用。
 
@@ -87,5 +87,5 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 最後に、mizzyさん無事出版おつかれさまです。
 
-{{% img-responsive "/images/2015/Serverspec-commit-graph.png" "Network" %}}
+{{% img-responsive "/images/2015/Serverspec-commit-graph.png" %}}
 

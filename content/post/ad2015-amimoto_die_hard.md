@@ -10,7 +10,7 @@ title = "AMIMOTO DIE HARD - 死んでも死なないタフさが必要だ。"
 この記事は[AMIMOTO Advent Calendar 2015](http://www.adventar.org/calendars/1107) 、12月7日(月)のエントリです。
 
 
-{{% img-responsive "/images/2015/amimoto_banner.jpg" "" %}}
+{{% img-responsive "/images/2015/amimoto_banner.jpg" %}}
 
 
 ## あらすじ

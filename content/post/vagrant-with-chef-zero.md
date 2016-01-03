@@ -34,7 +34,7 @@ Chef-Serverを使ったCookbookの開発をする際に、データをクリア�
 
 - [https://github.com/OpsRockin/vagrantwithchefzero_example](https://github.com/OpsRockin/vagrantwithchefzero_example)
 
-{{% img-responsive "/images/2014/vagrant_with_chef-zero.png" "Vagrant with Chef-Zero" %}}
+{{% img-responsive "/images/2014/vagrant_with_chef-zero.png" %}}
 
 
 これならvagrant up chefzeroするだけでChef-zeroをほぼChef-Serverとして使い放題です。
