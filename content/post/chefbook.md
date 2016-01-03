@@ -13,7 +13,7 @@ title = "『Chef活用ガイド コードではじめる構成管理』を書き
 
 発売を前に手元に２冊届きました、少々ボリュームのあるサイズ(672P)となっています。
 
-{{% img-responsive "/images/2014/chef_book.png" %}}
+{{% img-responsive "/images/2014/chef_book.png" "Chef活用ガイド" %}}
 
 ## 何を書いたのか
 
@@ -80,7 +80,7 @@ Chefの解説については書き下ろしと、公式ドキュメントにあ�
 
 ここでもやっぱりGithubが活躍します。章ごとのブランチを作成して、平行して校正を進めたり、適用漏れを抽出して追跡したり、 gitリポジトリは軽作業などもふくめて、結局2200コミットくらいになりました。
 
-{{% img-responsive "/images/2014/chef_book_commits.png" %}}
+{{% img-responsive "/images/2014/chef_book_commits.png" "" %}}
 
 環境用品のうち、特に活躍した3つをピックアップします。
 
