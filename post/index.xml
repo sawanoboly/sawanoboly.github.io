@@ -842,6 +842,106 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
     
     
     <item>
+      <title>JAWS DAYS 2014のImmutable Infrastructure(II)トラックで話した</title>
+      <link>http://www.sawanoboly.net/2014/03/jaws-days-2014immutable-infrastructure/</link>
+      <pubDate>Mon, 17 Mar 2014 00:00:00 +0900</pubDate>
+      
+      <guid>http://www.sawanoboly.net/2014/03/jaws-days-2014immutable-infrastructure/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://jawsdays2014.jaws-ug.jp/&#34;&gt;JAWS DAYS 2014&lt;/a&gt;セッションで話しました。&lt;/p&gt;
+
+&lt;h2 id=&#34;infrastructure-as-codeと-組織のドキュメンテーション-immutable-infrastructure事例:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;Infrastructure as Codeと 組織のドキュメンテーション ＋ Immutable Infrastructure事例&lt;/h2&gt;
+
+&lt;p&gt;スライドはこちら。&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/3mW6FcWxSUvS6Q&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/YukihikoSawanobori/jawsdays-infra&#34; title=&#34;Infrastructure as Codeと 組織のドキュメンテーション ＋ Immutable Infrastructure事例&#34; target=&#34;_blank&#34;&gt;Infrastructure as Codeと 組織のドキュメンテーション ＋ Immutable Infrastructure事例&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;//www.slideshare.net/YukihikoSawanobori&#34; target=&#34;_blank&#34;&gt;Yukihiko SAWANOBORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;現場にいらっしゃった方の反応などもTogetterにまとめて頂いています。 &lt;a href=&#34;http://togetter.com/li/639910&#34;&gt;2014/03/15 JAWS DAYS 2014 - Immutable Infrastructureトラック #jawsdays #infra - Togetterまとめ&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;immutable-infrastructure-事例について:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;『Immutable Infrastructure』事例について&lt;/h3&gt;
+
+&lt;p&gt;大阪某所でやっているGiraffiから事例を紹介しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.facebook.com/giraffi.devops&#34;&gt;FBページ:Giraffi DevOps&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;当時はImmutable Infrastructureなんて&amp;rsquo;名前&amp;rsquo;は全く意識していません。 構成を検討する際ベースにしたのは、従来のサービス死活監視に対する不満でした。&lt;/p&gt;
+
+&lt;p&gt;サービス継続性とサーバ単体の死活が直結しないよう抽象化し、アラートの粒度や優先度を分類して、即時対応しなければいけないケースを減らそうという目的で構成をDeveloperと一緒に検討したんですよね。&lt;/p&gt;
+
+&lt;p&gt;その結果、従来のSPOFはDisposable Componentsになり、運用の方法としてImmutableも選択できる構成となった事例です。&lt;/p&gt;
+
+&lt;p&gt;パネルセッションでは言いそびれましたが、どの層が『Immutable Infrastructure』するべきか、また恩恵をうけるかというところでは、『夜中にアラートで起こされる人』こそが。じゃんじゃんやるべきなのかもしれませんね。&lt;/p&gt;
+
+&lt;h3 id=&#34;infrastructure-as-codeと-組織のドキュメンテーション-について:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;『Infrastructure as Codeと 組織のドキュメンテーション』について&lt;/h3&gt;
+
+&lt;p&gt;『Immutable Infrastructure』トラックでなんか話せと言われてから、普通に説明したって全員被るに決まってるがなと思いました。 それならば、説明は他のセッションにまかせて、前提知識である『Infrastructure as Code』の導入支援をつくろうとしたらこうなりました。&lt;/p&gt;
+
+&lt;p&gt;この話はもともと、『手順書は芸術品ではないか？』という発想から始まっています。&lt;/p&gt;
+
+&lt;p&gt;で、その会話とクヌース先生の文芸的プログラミングあたりの概念を結びつけた@azukiwasher氏によって書き起こされたのが『ドキュメント礼賛(原題：手順書礼賛)』です。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gist.github.com/azukiwasher/8571505#file-gistfile1-txt&#34;&gt;gist:8571505&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h2 id=&#34;ドキュメント礼賛:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;ドキュメント礼賛&lt;/h2&gt;
+
+&lt;p&gt;断言しよう。ドキュメントこそがマシンを隷属化し、人間のために使役させるための最善の方策である。&lt;br /&gt;
+なぜなら、マシンをコントロールする「ドキュメント」を理解できるのは人間だけであり、
+マシンは決してそれを理解することはできないからだ。&lt;/p&gt;
+
+&lt;p&gt;ドキュメントは、マシンにとって高級すぎる別世界の読解不可能な暗号だ。読解不可能という点が人間
+にとって甚だ都合がいい。人間の企みがマシンに理解されてはおしまいなのだから。&lt;br /&gt;
+企みは、マシンから秘匿され秘密裏のうちに人間の「手」によって着実に行使されねばならない。&lt;/p&gt;
+
+&lt;p&gt;一方、ドキュメントは人間によって書かれ、それを「玩味」できるのも人間だけである。
+人間だけがドキュメントの行間を読み、レトリックを味わい、隠された意味を発見できる。&lt;br /&gt;
+「作者」の意図を自らに与えられた使命に、いま誇らしげにキーボードを叩きはじめる・・・。
+そしてすべての手順が終わったとき、彼は作者との一体感を感じ、ドキュメントをシェアしあう、
+親密なコミュニティ、やさしい仲間たちに迎え入れられる。&lt;/p&gt;
+
+&lt;p&gt;ここに強い人間たちの結束が生まれ、ついにはマシンをコントロールし人間のために永遠に
+労働しつづける奴隷たらしめることに成功する。&lt;/p&gt;
+
+&lt;p&gt;繰り返す。ドキュメントこそがマシンを隷属化し、人間のために使役させるための最善の方策である。&lt;/p&gt;
+
+&lt;p&gt;決してその逆ではない。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;『手順書は芸術品ではないか？』 =&amp;gt; 『洗練される』 =&amp;gt; 『実行可能な機能美』 =&amp;gt; 『Chefのレシピなどに行き着く』 =&amp;gt; 『真の手順書とは(いわゆる)コードなのだ』&lt;/p&gt;
+
+&lt;p&gt;この文書が面白かったので、人類向けのセッションに起こしてみました。&lt;/p&gt;
+
+&lt;p&gt;最近ちょいちょい『ChefおよびInfrastructure as Code』について話を聞きたいという声をかけて頂いて幾つか訪問したり、実際にトレーニングをさせて頂いてますが、やはりみなさん難しく考え過ぎだったり、新しいことへの抵抗勢力があったりと結構モヤモヤするんですよ。&lt;/p&gt;
+
+&lt;p&gt;イベント会場にいらっしゃる方々は、『Infrastructure as Code』の何がよいかなんて十分ご存知でしょうが、さて自社に持ち込んで〜となるとやはり困る。それをどのように説得するかの一例として考えたメソッドとしても使えるとよいなと考えて、かなり回りくどく色々と言ってみましたがどうだったでしょうか。&lt;/p&gt;
+
+&lt;p&gt;発表後の質問でもでましたが、あらためてアプローチの例を並べてみました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;権威を呼んでくる&lt;/li&gt;
+&lt;li&gt;対象層向けの本を出す&lt;/li&gt;
+&lt;li&gt;自分が出世する&lt;/li&gt;
+&lt;li&gt;実際にやって見せる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;個人的なおすすめは、『実際にやって見せる』ですね。&lt;/p&gt;
+
+&lt;p&gt;例えば社内でのクラブ活動をしてみる。結局、業務内で何とかしようとするのは中々難しいです。 だったら自腹でクラウド使ったり、内輪のシステムを作って研究発表なんかするのが遠回りのようで一番効果的のように思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;パネルセッション:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;パネルセッション&lt;/h2&gt;
+
+&lt;p&gt;お会いしたかった方々と、まとめて会えるという個人的に嬉しい企画でした。 このトラックに放り込んでくれた&lt;a href=&#34;https://twitter.com/urasoko&#34;&gt;@urasoko&lt;/a&gt;さん、そのあと取りまとめいただいた&lt;a href=&#34;https://twitter.com/stanaka&#34;&gt;@stanaka&lt;/a&gt;さんほかスタッフの方に感謝！&lt;/p&gt;
+
+&lt;p&gt;パネルセッションのまとめはこちらに =&amp;gt; &lt;a href=&#34;http://blog.stanaka.org/entry/2014/03/15/215437&#34;&gt;JAWS DAYS 2014 Immutable Infrastructure パネルディスカッション - stanaka&amp;rsquo;s blog&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;時間の都合で普通に喋れなかったのがはちと残念ですが、この日は&lt;a href=&#34;http://mizzy.org/&#34;&gt;@mizzy&lt;/a&gt;さんとたっぷり密談したので、今後はその成果を出していきたいですね。&lt;/p&gt;
+</description>
+    </item>
+    
+    
+    
+    <item>
       <title>Chef-Server環境で使うCookbookをVagrantとChef-zeroで開発する</title>
       <link>http://www.sawanoboly.net/2014/03/vagrant-with-chef-zero/</link>
       <pubDate>Wed, 05 Mar 2014 00:00:00 +0900</pubDate>

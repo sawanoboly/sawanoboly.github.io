@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Event on Sawanoboly.net</title>
-    <link>http://www.sawanoboly.net/tags/event/</link>
-    <description>Recent content in Event on Sawanoboly.net</description>
+    <title>Immutable_infrastructure on Sawanoboly.net</title>
+    <link>http://www.sawanoboly.net/tags/immutable_infrastructure/</link>
+    <description>Recent content in Immutable_infrastructure on Sawanoboly.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Mon, 17 Mar 2014 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://www.sawanoboly.net/tags/event/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.sawanoboly.net/tags/immutable_infrastructure/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -105,92 +105,6 @@
 &lt;p&gt;パネルセッションのまとめはこちらに =&amp;gt; &lt;a href=&#34;http://blog.stanaka.org/entry/2014/03/15/215437&#34;&gt;JAWS DAYS 2014 Immutable Infrastructure パネルディスカッション - stanaka&amp;rsquo;s blog&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;時間の都合で普通に喋れなかったのがはちと残念ですが、この日は&lt;a href=&#34;http://mizzy.org/&#34;&gt;@mizzy&lt;/a&gt;さんとたっぷり密談したので、今後はその成果を出していきたいですね。&lt;/p&gt;
-</description>
-    </item>
-    
-    
-    
-    <item>
-      <title>第一回XEggで『さくらのクラウドフォーメーション with Chef 』</title>
-      <link>http://www.sawanoboly.net/2014/02/xegg-sakura-with-chef/</link>
-      <pubDate>Sun, 16 Feb 2014 00:00:00 +0900</pubDate>
-      
-      <guid>http://www.sawanoboly.net/2014/02/xegg-sakura-with-chef/</guid>
-      <description>
-
-&lt;p&gt;2月15日に大阪のグランフロントで開催された、&lt;a href=&#34;http://innovationegg.doorkeeper.jp/events/7435&#34;&gt;Innovation EGG 第二回 XEgg 1st『クラウド未経験者向けITコミュニティ＆クラウドベンダー合同勉強会』&lt;/a&gt;で行ったセッションの話。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://innovationegg.doorkeeper.jp/&#34;&gt;Innovation EGGとは？&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;イベントのテーマと課題:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;イベントのテーマと課題&lt;/h2&gt;
-
-&lt;p&gt;今回声がかかったのはXEgg(クロスエッグ)と題されたイベントで、テーマによって選出されたベンダにITコミュニティを組み合わせてなんかやってくれと言う話だった。&lt;/p&gt;
-
-&lt;p&gt;第一回XEggのテーマはクラウド、私は&lt;a href=&#34;http://chef-meetup-kansai.doorkeeper.jp/&#34;&gt;Chef meetup Kansai&lt;/a&gt;の主催者としてITコミュニティ枠で参加。 さわる対象のクラウドベンダは『さくらインターネット』、要は『さくらのクラウド』を触りましょうと。&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/oTufMIf9dcRFMa&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/YukihikoSawanobori/x-egg01-chef&#34; title=&#34;さくらのクラウドフォーメーション with Chef [XEgg session]&#34; target=&#34;_blank&#34;&gt;さくらのクラウドフォーメーション with Chef [XEgg session]&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;//www.slideshare.net/YukihikoSawanobori&#34; target=&#34;_blank&#34;&gt;Yukihiko SAWANOBORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;セッション裏話:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;セッション裏話&lt;/h2&gt;
-
-&lt;p&gt;セッションの大筋はスライドの通りで、話した内容はその場で聞いていただいた方々がご存知です。 ブログではどうしてあんなセッションになったのか振り返ってみます。&lt;/p&gt;
-
-&lt;h3 id=&#34;ターゲットの決定:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;ターゲットの決定&lt;/h3&gt;
-
-&lt;p&gt;イベントの参加対象者は、『クラウド未経験者』とのことでした。ずいぶんもやっとしています。&lt;/p&gt;
-
-&lt;p&gt;セッションの内容をChef初心者向けに丁寧に解説とすることも考えましたが、テーマからいって参加者がChefに興味あるとも限らないうえ、同時に動いていたプロジェクトのこともあわせて、そういうのは 私が飽きていました 。&lt;/p&gt;
-
-&lt;p&gt;そもそも私はChefを売ってるわけでもないし、イベントの主軸はクラウドベンダだし、どうせなら自分が興味あることをセッションにしてしまうほうが楽しい。&lt;/p&gt;
-
-&lt;p&gt;ということでセッションのターゲットはクラウドベンダの『さくらインターネットのスタッフ』と、同枠の『MongoDBコミュニティ』に絞りました。&lt;/p&gt;
-
-&lt;h3 id=&#34;chefの紹介:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;Chefの紹介&lt;/h3&gt;
-
-&lt;p&gt;Chefはその特性上適用できる範囲がとても広く、組織によって様々に使い方を選べます。 そもそもChefには決まった使い方も無く、あるのは各組織のワークフローやポリシーに合わせてシステムの構成管理をできる柔軟性くらいです。&lt;/p&gt;
-
-&lt;p&gt;説明したってきりがないので、旧態依然とした構成管理への皮肉を交えつつ、最初から視聴者全員置いてきぼりを目標にさっと流しました。&lt;/p&gt;
-
-&lt;p&gt;イベントテーマ的に主役では無いですし。&lt;/p&gt;
-
-&lt;h3 id=&#34;使ってみました系と海外との比較:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;使ってみました系と海外との比較&lt;/h3&gt;
-
-&lt;p&gt;このへんは裏表あまりなく、結構思うまま言ったらこうなった。&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;sawanoboly氏、さくらの田中さんの前でさくらのクラウドAPIのdisを繰り広げている。でもこういうのは参考意見として良いよね。 &lt;a href=&#34;https://twitter.com/hashtag/xegg?src=hash&#34;&gt;#xegg&lt;/a&gt;&lt;/p&gt;&amp;mdash; MATSUMOTO, Ryosuke (@matsumotory) &lt;a href=&#34;https://twitter.com/matsumotory/status/434508042814513152&#34;&gt;2014, 2月 15&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;コンピュータリソースに特化したサービスと比べるのは少々ごまかしを含みますが、ややインパクトを重視してChefと手っ取り早く連携させたりとりあえずサービスをリリースしようといった視点からあえて見た体で展開することにしました。&lt;/p&gt;
-
-&lt;p&gt;実際、『ボクのデータセンター』を作りたい方には非常にいいと思います。&lt;/p&gt;
-
-&lt;p&gt;ここの中で『ホビー対傭兵』という比喩が出てきますが、この表現にもうちょっとだけ突っ込んでみます。&lt;/p&gt;
-
-&lt;p&gt;日本の企業は上流工程をプロパーが行い、開発や現場やを外注に任せるという図式がよく見られます。 自社好みにカスタマイズ可能なプロパーと、プロとして現場の取り仕切りを任せる外注さんと。スライドの傭兵さんはいわば外注に当たるわけですね。&lt;/p&gt;
-
-&lt;p&gt;国内ベンダと海外ベンダで提供するサービスと需要とに、なんだかちょっとねじれがあるような気がしています。&lt;/p&gt;
-
-&lt;h3 id=&#34;fogの-さくらのクラウド-サポートについて:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;Fogの『さくらのクラウド』サポートについて&lt;/h3&gt;
-
-&lt;p&gt;以前から国内クラウド向けにはChefに関連したライブラリ(&lt;a href=&#34;http://rubygems.org/gems/knife-zcloudjp&#34;&gt;knife-zcloudjp&lt;/a&gt;,&lt;a href=&#34;http://rubygems.org/gems/kitchen-zcloudjp&#34;&gt;kitchen-zcloudjp&lt;/a&gt;など)を公開しており、機会があればFogのプロバイダも書いてみたいと思っていました。&lt;/p&gt;
-
-&lt;p&gt;そもそもFogに日本のプロバイダがないのは前々から気に入らなかったこともあって、今回の『さくらのクラウド』はそこそこ渡りに船でした。&lt;br /&gt;
-日本語がわからないとサインアップが困難だったりするのですが、そこは気にしないことにします。&lt;/p&gt;
-
-&lt;p&gt;このFog対応に思ったより時間をとられたので、他のやりたかったことができなかった弊害はありましたが、コンピュータリソースがカジュアルに上がってこないと(Chef的に)使いづらかったことは確かなので仕方がありませんでした。&lt;/p&gt;
-
-&lt;h3 id=&#34;chefとインテグレーション:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;Chefとインテグレーション&lt;/h3&gt;
-
-&lt;p&gt;スタートアップスクリプトのような使い捨てでなく、クラウドAPIを叩く瞬間からChefの支配は始まっているんですよというアピールをしてみました。 せいぜい計算リソースにすぎないコンピュータインスタンスに、たとえばわざわざ名前をつけて可愛がりながら育てるなんて、もはやナンセンスではないのかという啓発も込めています。&lt;/p&gt;
-
-&lt;h2 id=&#34;まとめと今後の展開:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;まとめと今後の展開&lt;/h2&gt;
-
-&lt;p&gt;言いたい放題のセッションでしたが、定めたターゲットさくらインターネットのスタッフ一同には田中社長をはじめ『面白かった』と感想をいただいたのでめでたしめでたしと。&lt;/p&gt;
-
-&lt;p&gt;しかし今回時間の関係上、『さくらのクラウド』の全力を引き出したとは言いがたい。&lt;br /&gt;
-そしてクラウドフォーメーションと銘打っておきながら、ネットワーク関係やLB、それと先日発表されたクラウドストレージにも手を出していません。&lt;/p&gt;
-
-&lt;p&gt;できればyamlかjsonの定義ファイルを食わせればシステム構築するところまで、それこそ某クラウドフォーメーション程度の実装までしておきたいなあ。&lt;/p&gt;
 </description>
     </item>
     
