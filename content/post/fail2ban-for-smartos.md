@@ -40,7 +40,7 @@ READMEにもあるけど、TCP Wrapperは有効にしておく。
 
 inetadm -pで確認。
 
-```
+```bash
 # inetadm -p
 
 -- snip --
@@ -55,7 +55,7 @@ inetadm -M tcp_wrappers=true
 
 SSH(TCP/22)をBanするサンプル。
 
-```
+```bash
 ## cat /etc/fail2ban/jail.local 
 
 [ssh-tcpwrapper]
@@ -70,7 +70,7 @@ SmartOSのバージョンによっては /var/log/auth.logだったり、syslog�
 
 このとおりJail listが登録される。
 
-```
+```bash
 # fail2ban-client status
 Status
 |- Number of jail:      1
@@ -85,7 +85,7 @@ ipfコマンドでルールの管理をするやりかた。
 
 fail2banと一緒に使うため、blockとpass対象ではquickを使わないようにします。
 
-```
+```bash
 ## Example of filter rules with using fail2ban.
 pass out quick from any to any keep state
 block in all                                                                                ## without quick
@@ -98,7 +98,7 @@ pass in quick proto tcp from any to any port = 443 keep state
 
 SSH(TCP/22)をBanするサンプル。
 
-```
+```bash
 ## cat /etc/fail2ban/jail.local 
 
 [ssh-tcpwrapper]
@@ -111,7 +111,7 @@ logpath = /var/log/authlog
 
 このとおりJail listが登録される。
 
-```
+```bash
 # fail2ban-client status        
 Status
 |- Number of jail:      1
@@ -123,7 +123,7 @@ Status
 
 TCP WrapperでBanしたらこんな感じ。
 
-```
+```bash
 #  tail -f /var/log/fail2ban.log
 2014-02-06 04:01:51,728 fail2ban.server [85350]: INFO    Changed logging target to /var/log/fail2ban.log for Fail2ban v0.8.12
 2014-02-06 04:01:51,740 fail2ban.jail   [85350]: INFO    Creating new jail 'ssh-tcpwrapper'
