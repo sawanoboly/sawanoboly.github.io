@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sawanoboly.net</title>
-    <link>http://www.sawanoboly.net/</link>
+    <link>https://www.sawanoboly.net/</link>
     <description>Recent content on Sawanoboly.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Wed, 09 Dec 2015 15:27:33 +0900</lastBuildDate>
-    <atom:link href="http://www.sawanoboly.net/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sawanoboly.net/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -16,16 +16,16 @@
     
     <item>
       <title>AMIMOTO DIE HARD - 死んでも死なないタフさが必要だ。</title>
-      <link>http://www.sawanoboly.net/2015/12/ad2015-amimoto_die_hard/</link>
+      <link>https://www.sawanoboly.net/2015/12/ad2015-amimoto_die_hard/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2015/12/ad2015-amimoto_die_hard/</guid>
+      <guid>https://www.sawanoboly.net/2015/12/ad2015-amimoto_die_hard/</guid>
       <description>
 
 &lt;p&gt;この記事は&lt;a href=&#34;http://www.adventar.org/calendars/1107&#34;&gt;AMIMOTO Advent Calendar 2015&lt;/a&gt; 、12月7日(月)のエントリです。&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/amimoto_banner.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/amimoto_banner.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -257,10 +257,10 @@ end
     
     <item>
       <title>Test-KitchenのShell-Verifierがマージされた</title>
-      <link>http://www.sawanoboly.net/2015/12/tk-shell-verifier-merged-into-master/</link>
+      <link>https://www.sawanoboly.net/2015/12/tk-shell-verifier-merged-into-master/</link>
       <pubDate>Tue, 01 Dec 2015 14:17:10 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2015/12/tk-shell-verifier-merged-into-master/</guid>
+      <guid>https://www.sawanoboly.net/2015/12/tk-shell-verifier-merged-into-master/</guid>
       <description>&lt;p&gt;これでRubyGemsの&lt;a href=&#34;https://rubygems.org/gems/kitchen-verifier-shell&#34; title=&#34;kitchen-verifier-shell | RubyGems.org | your community gem host&#34;&gt;kitchen-verifier-shell&lt;/a&gt;は御役御免となりそう。&lt;/p&gt;
 
 &lt;p&gt;ことの次第などはQiitaに昔書いちゃったのでそっちに。&lt;/p&gt;
@@ -285,10 +285,10 @@ end
     
     <item>
       <title>ブログをhugoにしておく</title>
-      <link>http://www.sawanoboly.net/2015/11/blog-hugo/</link>
+      <link>https://www.sawanoboly.net/2015/11/blog-hugo/</link>
       <pubDate>Sun, 29 Nov 2015 17:20:22 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2015/11/blog-hugo/</guid>
+      <guid>https://www.sawanoboly.net/2015/11/blog-hugo/</guid>
       <description>&lt;p&gt;ひとつ前は、何かしらまともな運営をしているブログサービスの使い勝手がみたかったのという理由でSquarespaceに置いていた。&lt;/p&gt;
 
 &lt;ul&gt;
@@ -307,16 +307,16 @@ end
     
     <item>
       <title>WEB&#43;DB PRESS vol.85のAWS自動化特集でOpsWorksの記事を担当しました</title>
-      <link>http://www.sawanoboly.net/2015/02/webdb85/</link>
+      <link>https://www.sawanoboly.net/2015/02/webdb85/</link>
       <pubDate>Mon, 23 Feb 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2015/02/webdb85/</guid>
+      <guid>https://www.sawanoboly.net/2015/02/webdb85/</guid>
       <description>
 
 &lt;p&gt;雑誌の概要はこちら =&amp;gt; WEB+DB PRESS Vol.85｜技術評論社 。&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/osh2015-chef.jpeg&#34; alt=&#34;写真はオープンセミナー広島2015での発表から&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/osh2015-chef.jpeg&#34; alt=&#34;写真はオープンセミナー広島2015での発表から&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;写真はオープンセミナー広島2015での発表から&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -357,7 +357,7 @@ end
 &lt;h2 id=&#34;codenize-tools:6e5643ef39b16f7e87325462d6cd65e5&#34;&gt;Codenize.tools&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/Codenize_tools.png&#34; alt=&#34;Codenize.tools&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/Codenize_tools.png&#34; alt=&#34;Codenize.tools&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Codenize.tools&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -392,7 +392,7 @@ end
 噂のとおり編集、執筆者同士のやりとりはほぼすべてがGithubで行われ、やたらと快適でした。これは確立した先人達に感謝。&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/webdb85-sp01-01.png&#34; alt=&#34;Githubの記事リポジトリ&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/webdb85-sp01-01.png&#34; alt=&#34;Githubの記事リポジトリ&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Githubの記事リポジトリ&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -402,7 +402,7 @@ end
 &lt;p&gt;今回私がリポジトリのオーナーだったので、実は自分だけSlack連携で流れを追うのに少しばかり楽をしていました。共著の皆さんごめん。&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/webdb85-sp01-02.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/webdb85-sp01-02.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -433,7 +433,7 @@ end
 &lt;/ol&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/webdb85-sp01-03.png&#34; alt=&#34;菅原式レビューボード&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/webdb85-sp01-03.png&#34; alt=&#34;菅原式レビューボード&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;菅原式レビューボード&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -442,7 +442,7 @@ end
 レビュー及び対応は、各段階の区切りで次のように見やすくなっています&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/webdb85-sp01-04.png&#34; alt=&#34;1つのコミットにある時点の原稿に対するすべてのレビューが集約&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/webdb85-sp01-04.png&#34; alt=&#34;1つのコミットにある時点の原稿に対するすべてのレビューが集約&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;1つのコミットにある時点の原稿に対するすべてのレビューが集約&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -463,10 +463,10 @@ end
     
     <item>
       <title>オライリー・ジャパンからServerspec</title>
-      <link>http://www.sawanoboly.net/2015/01/serverspec-the-definitive-guide/</link>
+      <link>https://www.sawanoboly.net/2015/01/serverspec-the-definitive-guide/</link>
       <pubDate>Sun, 11 Jan 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2015/01/serverspec-the-definitive-guide/</guid>
+      <guid>https://www.sawanoboly.net/2015/01/serverspec-the-definitive-guide/</guid>
       <description>
 
 &lt;p&gt;2015年1月17日にオライリー・ジャパンから出版の&lt;a href=&#34;http://www.oreilly.co.jp/books/9784873117096/&#34;&gt;Serverspec&lt;/a&gt;が発売されます。&lt;/p&gt;
@@ -489,7 +489,7 @@ end
 &lt;p&gt;微力ながら制作のお手伝いをした書籍をご恵贈いただき、手元に来た現物をみてニヤニヤしています。&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/Serverspec-the-definitive-guide.png&#34; alt=&#34;Serverspec the definitive guide&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/Serverspec-the-definitive-guide.png&#34; alt=&#34;Serverspec the definitive guide&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Serverspec the definitive guide&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -560,7 +560,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 &lt;p&gt;最後に、mizzyさん無事出版おつかれさまです。&lt;/p&gt;
 
 &lt;p&gt;&lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/Serverspec-commit-graph.png&#34; alt=&#34;Network&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/Serverspec-commit-graph.png&#34; alt=&#34;Network&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Network&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
@@ -571,10 +571,10 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
     
     <item>
       <title>Chef-Solo, Chef-Client LocalMode, Knife-Solo, Knife-Zero and us.</title>
-      <link>http://www.sawanoboly.net/2014/12/chef-solo-zero-knife-solo-zero/</link>
+      <link>https://www.sawanoboly.net/2014/12/chef-solo-zero-knife-solo-zero/</link>
       <pubDate>Thu, 25 Dec 2014 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2014/12/chef-solo-zero-knife-solo-zero/</guid>
+      <guid>https://www.sawanoboly.net/2014/12/chef-solo-zero-knife-solo-zero/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -700,10 +700,10 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
     
     <item>
       <title>『Chef活用ガイド コードではじめる構成管理』を書きました</title>
-      <link>http://www.sawanoboly.net/2014/04/chefbook/</link>
+      <link>https://www.sawanoboly.net/2014/04/chefbook/</link>
       <pubDate>Sat, 19 Apr 2014 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2014/04/chefbook/</guid>
+      <guid>https://www.sawanoboly.net/2014/04/chefbook/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -715,7 +715,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 &lt;p&gt;発売を前に手元に２冊届きました、少々ボリュームのあるサイズ(672P)となっています。&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2014/chef_book.png&#34; alt=&#34;Chef活用ガイド&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2014/chef_book.png&#34; alt=&#34;Chef活用ガイド&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Chef活用ガイド&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -794,7 +794,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 &lt;p&gt;ここでもやっぱりGithubが活躍します。章ごとのブランチを作成して、平行して校正を進めたり、適用漏れを抽出して追跡したり、 gitリポジトリは軽作業などもふくめて、結局2200コミットくらいになりました。&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2014/chef_book_commits.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2014/chef_book_commits.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -824,9 +824,9 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;本書を書くのは中々骨の折れる作業でしたが、周囲の協力者や家族の理解もあって、ようやく書店に置かれる所までこぎつけました。 あとは料理本のコーナーに並ばないことだけを祈っておきます。&lt;/p&gt;
 
-&lt;p&gt;&lt;iframe src=&#34;http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=netsawa-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=4048919857&#34; style=&#34;width:120px;height:240px;&#34; scrolling=&#34;no&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;iframe src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=netsawa-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=4048919857&#34; style=&#34;width:120px;height:240px;&#34; scrolling=&#34;no&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
-&lt;iframe src=&#34;http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=netsawa-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=B0008JIECE&#34; style=&#34;width:120px;height:240px;&#34; scrolling=&#34;no&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=netsawa-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=B0008JIECE&#34; style=&#34;width:120px;height:240px;&#34; scrolling=&#34;no&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;追記-chef活用ガイド-読者アンケートを作成しました:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;追記、『Chef活用ガイド』読者アンケートを作成しました。&lt;/h3&gt;
@@ -847,10 +847,10 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
     
     <item>
       <title>JAWS DAYS 2014のImmutable Infrastructure(II)トラックで話した</title>
-      <link>http://www.sawanoboly.net/2014/03/jaws-days-2014immutable-infrastructure/</link>
+      <link>https://www.sawanoboly.net/2014/03/jaws-days-2014immutable-infrastructure/</link>
       <pubDate>Mon, 17 Mar 2014 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2014/03/jaws-days-2014immutable-infrastructure/</guid>
+      <guid>https://www.sawanoboly.net/2014/03/jaws-days-2014immutable-infrastructure/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://jawsdays2014.jaws-ug.jp/&#34;&gt;JAWS DAYS 2014&lt;/a&gt;セッションで話しました。&lt;/p&gt;
@@ -947,10 +947,10 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
     
     <item>
       <title>Chef-Server環境で使うCookbookをVagrantとChef-zeroで開発する</title>
-      <link>http://www.sawanoboly.net/2014/03/vagrant-with-chef-zero/</link>
+      <link>https://www.sawanoboly.net/2014/03/vagrant-with-chef-zero/</link>
       <pubDate>Wed, 05 Mar 2014 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2014/03/vagrant-with-chef-zero/</guid>
+      <guid>https://www.sawanoboly.net/2014/03/vagrant-with-chef-zero/</guid>
       <description>
 
 &lt;p&gt;最近はChef-Severの導入も簡単になりました。 &lt;a href=&#34;http://www.getchef.com/chef/install/&#34;&gt;パッケージから導入&lt;/a&gt;はもちろん、&lt;a href=&#34;https://aws.amazon.com/marketplace/pp/B010OMNV2W&#34;&gt;aws marketplace&lt;/a&gt;からすぐ使用できたりと。&lt;/p&gt;
@@ -989,7 +989,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 &lt;/ul&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2014/vagrant_with_chef-zero.png&#34; alt=&#34;Vagrant with Chef-Zero&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2014/vagrant_with_chef-zero.png&#34; alt=&#34;Vagrant with Chef-Zero&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Vagrant with Chef-Zero&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1041,10 +1041,10 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
     
     <item>
       <title>第一回XEggで『さくらのクラウドフォーメーション with Chef 』</title>
-      <link>http://www.sawanoboly.net/2014/02/xegg-sakura-with-chef/</link>
+      <link>https://www.sawanoboly.net/2014/02/xegg-sakura-with-chef/</link>
       <pubDate>Sun, 16 Feb 2014 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2014/02/xegg-sakura-with-chef/</guid>
+      <guid>https://www.sawanoboly.net/2014/02/xegg-sakura-with-chef/</guid>
       <description>
 
 &lt;p&gt;2月15日に大阪のグランフロントで開催された、&lt;a href=&#34;http://innovationegg.doorkeeper.jp/events/7435&#34;&gt;Innovation EGG 第二回 XEgg 1st『クラウド未経験者向けITコミュニティ＆クラウドベンダー合同勉強会』&lt;/a&gt;で行ったセッションの話。&lt;/p&gt;
@@ -1127,10 +1127,10 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
     
     <item>
       <title>Install fail2ban to the SmartOS</title>
-      <link>http://www.sawanoboly.net/2014/02/fail2ban-for-smartos/</link>
+      <link>https://www.sawanoboly.net/2014/02/fail2ban-for-smartos/</link>
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2014/02/fail2ban-for-smartos/</guid>
+      <guid>https://www.sawanoboly.net/2014/02/fail2ban-for-smartos/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://www.fail2ban.org/wiki/index.php/Main_Page&#34;&gt;fail2ban&lt;/a&gt;がSolaris(OpenSolaris)に対応していたので、Joyent SmartOSに導入する。&lt;/p&gt;

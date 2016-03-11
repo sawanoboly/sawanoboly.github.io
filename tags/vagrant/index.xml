@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vagrant on Sawanoboly.net</title>
-    <link>http://www.sawanoboly.net/tags/vagrant/</link>
+    <link>https://www.sawanoboly.net/tags/vagrant/</link>
     <description>Recent content in Vagrant on Sawanoboly.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Wed, 05 Mar 2014 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://www.sawanoboly.net/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sawanoboly.net/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Chef-Server環境で使うCookbookをVagrantとChef-zeroで開発する</title>
-      <link>http://www.sawanoboly.net/2014/03/vagrant-with-chef-zero/</link>
+      <link>https://www.sawanoboly.net/2014/03/vagrant-with-chef-zero/</link>
       <pubDate>Wed, 05 Mar 2014 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2014/03/vagrant-with-chef-zero/</guid>
+      <guid>https://www.sawanoboly.net/2014/03/vagrant-with-chef-zero/</guid>
       <description>
 
 &lt;p&gt;最近はChef-Severの導入も簡単になりました。 &lt;a href=&#34;http://www.getchef.com/chef/install/&#34;&gt;パッケージから導入&lt;/a&gt;はもちろん、&lt;a href=&#34;https://aws.amazon.com/marketplace/pp/B010OMNV2W&#34;&gt;aws marketplace&lt;/a&gt;からすぐ使用できたりと。&lt;/p&gt;
@@ -54,7 +54,7 @@
 &lt;/ul&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2014/vagrant_with_chef-zero.png&#34; alt=&#34;Vagrant with Chef-Zero&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2014/vagrant_with_chef-zero.png&#34; alt=&#34;Vagrant with Chef-Zero&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Vagrant with Chef-Zero&lt;/figcaption&gt;
 &lt;/figure&gt;
 

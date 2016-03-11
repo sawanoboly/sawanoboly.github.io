@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Smartos on Sawanoboly.net</title>
-    <link>http://www.sawanoboly.net/tags/smartos/</link>
+    <link>https://www.sawanoboly.net/tags/smartos/</link>
     <description>Recent content in Smartos on Sawanoboly.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Thu, 06 Feb 2014 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://www.sawanoboly.net/tags/smartos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sawanoboly.net/tags/smartos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Install fail2ban to the SmartOS</title>
-      <link>http://www.sawanoboly.net/2014/02/fail2ban-for-smartos/</link>
+      <link>https://www.sawanoboly.net/2014/02/fail2ban-for-smartos/</link>
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2014/02/fail2ban-for-smartos/</guid>
+      <guid>https://www.sawanoboly.net/2014/02/fail2ban-for-smartos/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://www.fail2ban.org/wiki/index.php/Main_Page&#34;&gt;fail2ban&lt;/a&gt;がSolaris(OpenSolaris)に対応していたので、Joyent SmartOSに導入する。&lt;/p&gt;

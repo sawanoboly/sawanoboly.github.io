@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aws on Sawanoboly.net</title>
-    <link>http://www.sawanoboly.net/tags/aws/</link>
+    <link>https://www.sawanoboly.net/tags/aws/</link>
     <description>Recent content in Aws on Sawanoboly.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Mon, 23 Feb 2015 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://www.sawanoboly.net/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sawanoboly.net/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>WEB&#43;DB PRESS vol.85のAWS自動化特集でOpsWorksの記事を担当しました</title>
-      <link>http://www.sawanoboly.net/2015/02/webdb85/</link>
+      <link>https://www.sawanoboly.net/2015/02/webdb85/</link>
       <pubDate>Mon, 23 Feb 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2015/02/webdb85/</guid>
+      <guid>https://www.sawanoboly.net/2015/02/webdb85/</guid>
       <description>
 
 &lt;p&gt;雑誌の概要はこちら =&amp;gt; WEB+DB PRESS Vol.85｜技術評論社 。&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/osh2015-chef.jpeg&#34; alt=&#34;写真はオープンセミナー広島2015での発表から&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/osh2015-chef.jpeg&#34; alt=&#34;写真はオープンセミナー広島2015での発表から&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;写真はオープンセミナー広島2015での発表から&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -62,7 +62,7 @@
 &lt;h2 id=&#34;codenize-tools:6e5643ef39b16f7e87325462d6cd65e5&#34;&gt;Codenize.tools&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/Codenize_tools.png&#34; alt=&#34;Codenize.tools&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/Codenize_tools.png&#34; alt=&#34;Codenize.tools&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Codenize.tools&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -97,7 +97,7 @@
 噂のとおり編集、執筆者同士のやりとりはほぼすべてがGithubで行われ、やたらと快適でした。これは確立した先人達に感謝。&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/webdb85-sp01-01.png&#34; alt=&#34;Githubの記事リポジトリ&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/webdb85-sp01-01.png&#34; alt=&#34;Githubの記事リポジトリ&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Githubの記事リポジトリ&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -107,7 +107,7 @@
 &lt;p&gt;今回私がリポジトリのオーナーだったので、実は自分だけSlack連携で流れを追うのに少しばかり楽をしていました。共著の皆さんごめん。&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/webdb85-sp01-02.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/webdb85-sp01-02.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -138,7 +138,7 @@
 &lt;/ol&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/webdb85-sp01-03.png&#34; alt=&#34;菅原式レビューボード&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/webdb85-sp01-03.png&#34; alt=&#34;菅原式レビューボード&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;菅原式レビューボード&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -147,7 +147,7 @@
 レビュー及び対応は、各段階の区切りで次のように見やすくなっています&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/webdb85-sp01-04.png&#34; alt=&#34;1つのコミットにある時点の原稿に対するすべてのレビューが集約&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/webdb85-sp01-04.png&#34; alt=&#34;1つのコミットにある時点の原稿に対するすべてのレビューが集約&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;1つのコミットにある時点の原稿に対するすべてのレビューが集約&lt;/figcaption&gt;
 &lt;/figure&gt;
 

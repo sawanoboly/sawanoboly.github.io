@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Book on Sawanoboly.net</title>
-    <link>http://www.sawanoboly.net/tags/book/</link>
+    <link>https://www.sawanoboly.net/tags/book/</link>
     <description>Recent content in Book on Sawanoboly.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Sun, 11 Jan 2015 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://www.sawanoboly.net/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sawanoboly.net/tags/book/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>オライリー・ジャパンからServerspec</title>
-      <link>http://www.sawanoboly.net/2015/01/serverspec-the-definitive-guide/</link>
+      <link>https://www.sawanoboly.net/2015/01/serverspec-the-definitive-guide/</link>
       <pubDate>Sun, 11 Jan 2015 00:00:00 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2015/01/serverspec-the-definitive-guide/</guid>
+      <guid>https://www.sawanoboly.net/2015/01/serverspec-the-definitive-guide/</guid>
       <description>
 
 &lt;p&gt;2015年1月17日にオライリー・ジャパンから出版の&lt;a href=&#34;http://www.oreilly.co.jp/books/9784873117096/&#34;&gt;Serverspec&lt;/a&gt;が発売されます。&lt;/p&gt;
@@ -38,7 +38,7 @@
 &lt;p&gt;微力ながら制作のお手伝いをした書籍をご恵贈いただき、手元に来た現物をみてニヤニヤしています。&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/Serverspec-the-definitive-guide.png&#34; alt=&#34;Serverspec the definitive guide&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/Serverspec-the-definitive-guide.png&#34; alt=&#34;Serverspec the definitive guide&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Serverspec the definitive guide&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -109,7 +109,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 &lt;p&gt;最後に、mizzyさん無事出版おつかれさまです。&lt;/p&gt;
 
 &lt;p&gt;&lt;figure&gt;
-  &lt;img src=&#34;http://www.sawanoboly.net/images/2015/Serverspec-commit-graph.png&#34; alt=&#34;Network&#34; class=&#34;pure-img&#34; &gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2015/Serverspec-commit-graph.png&#34; alt=&#34;Network&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Network&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/p&gt;

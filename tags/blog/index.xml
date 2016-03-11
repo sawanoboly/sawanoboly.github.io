@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Sawanoboly.net</title>
-    <link>http://www.sawanoboly.net/tags/blog/</link>
+    <link>https://www.sawanoboly.net/tags/blog/</link>
     <description>Recent content in Blog on Sawanoboly.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Sun, 29 Nov 2015 17:20:22 +0900</lastBuildDate>
-    <atom:link href="http://www.sawanoboly.net/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sawanoboly.net/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ブログをhugoにしておく</title>
-      <link>http://www.sawanoboly.net/2015/11/blog-hugo/</link>
+      <link>https://www.sawanoboly.net/2015/11/blog-hugo/</link>
       <pubDate>Sun, 29 Nov 2015 17:20:22 +0900</pubDate>
       
-      <guid>http://www.sawanoboly.net/2015/11/blog-hugo/</guid>
+      <guid>https://www.sawanoboly.net/2015/11/blog-hugo/</guid>
       <description>&lt;p&gt;ひとつ前は、何かしらまともな運営をしているブログサービスの使い勝手がみたかったのという理由でSquarespaceに置いていた。&lt;/p&gt;
 
 &lt;ul&gt;
