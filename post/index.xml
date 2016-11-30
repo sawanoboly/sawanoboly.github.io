@@ -6,8 +6,125 @@
     <description>Recent content in Posts on Sawanoboly.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Mon, 07 Dec 2015 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 27 Nov 2016 17:00:22 +0900</lastBuildDate>
     <atom:link href="https://www.sawanoboly.net/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OSSやPodcastのような個人活動ってBitcoinと相性いいんじゃねえかという話</title>
+      <link>https://www.sawanoboly.net/2016/11/bitcoin-as-donation/</link>
+      <pubDate>Sun, 27 Nov 2016 17:00:22 +0900</pubDate>
+      
+      <guid>https://www.sawanoboly.net/2016/11/bitcoin-as-donation/</guid>
+      <description>
+
+&lt;p&gt;先日、&lt;a href=&#34;https://cloudinfra.audio&#34;&gt;自分のPodcast&lt;/a&gt;に応援窓口を作ろうと考えました。少し色々試して、最終的に設置したのはBitcoinのアドレス。&lt;/p&gt;
+
+&lt;p&gt;QRコードをすっと読んで、金額を入れてタップ。これだけで、個人宛にコインを送れるってのが小気味よい。実際使ってみると、デジタルおひねりとして、結構優れた体験です。&lt;/p&gt;
+
+&lt;p&gt;そんなBitcoinの話。&lt;/p&gt;
+
+&lt;h2 id=&#34;国境がない感じがよい-しがらみレス:d1d5170e5bd7e6955ec405b6d0e95403&#34;&gt;国境がない感じがよい、しがらみレス&lt;/h2&gt;
+
+&lt;p&gt;Podcastを応援できる仕組みをなにか作ろうと考えて、Paypalとか、Stripeとかで作ろうかなとちょいちょい見ました。
+特にStripeは使いやすくて良いですね。PaypalもフォームをPaypal側にもてて嬉しかったりします。&lt;/p&gt;
+
+&lt;p&gt;しかし、どうもそこまでキッチリした感じの徴収はやだなあ、というありがちな割り切れなさなんかもあるわけです。
+更新は計画的ではないし特典をつけるためにカスタマー管理したいというほどでもないし。
+Paypalでは日本アカウントで寄付の設置も駄目だったりしますし。(あとちょっと実装いるし)&lt;/p&gt;
+
+&lt;p&gt;そこで気になったのが何かと話題のBlockChain、使ったことがないのでBitcoinってどうなんやと。で、実際Walletを作ってみると必要なものはQRコードの画像一枚、これは楽だ！&lt;/p&gt;
+
+&lt;p&gt;そのアドレスに送金するのも、冒頭の記述のようにまた楽なもんだと。&lt;/p&gt;
+
+&lt;p&gt;いわゆるお金を取扱うWebサービスを通すと、まあまあ手数料を取ってくるわけです。
+それが悪いわけではありませんが、『俺はコイツに寄付したいだけなんだよ！』ってときに、そんなに色々と中間ナントカを通さなくてもいいじゃないのという気がしなくもありません。(※そもそも貨幣経済における信用とか、そういう規模の話ではなくて、ごく小規模の範囲で。)&lt;/p&gt;
+
+&lt;p&gt;その点でBitcoinは、もはや貝殻を適当に投げているような感覚、とても平坦な印象ですごくしがらみレス？しがらまない。&lt;/p&gt;
+
+&lt;h2 id=&#34;トランザクションは見えちゃうよ:d1d5170e5bd7e6955ec405b6d0e95403&#34;&gt;トランザクションは見えちゃうよ&lt;/h2&gt;
+
+&lt;p&gt;ちなみに、特定のアドレスにどれだけのコインが送られたかはオープンな情報です。&lt;/p&gt;
+
+&lt;p&gt;(この投稿時点で)Podcastのサイトに貼ってあるアドレス &lt;a href=&#34;https://blockchain.info/address/17JHWTuLJHGd3KTR3esm1nzDeNDkCCi7Y7&#34;&gt;17JHWTuLJHGd3KTR3esm1nzDeNDkCCi7Y7&lt;/a&gt; では、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;試しに放り込んだ自分から&lt;/li&gt;
+&lt;li&gt;たかって払わせた知人から&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;の2つトランザクションが見えており、総計 0.011935 BTC をせしめているのがわかります。こういう点もなんだか面白い。&lt;/p&gt;
+
+&lt;h2 id=&#34;まず手持ちのコインを0から0以上にする時点に敷居がある:d1d5170e5bd7e6955ec405b6d0e95403&#34;&gt;まず手持ちのコインを0から0以上にする時点に敷居がある&lt;/h2&gt;
+
+&lt;p&gt;コインを持つためのWalletはメールアドレスやiOS/Androidのアプリケーションを使うだけで簡単につくることができます。受取用のアドレスもすぐ使えます。&lt;/p&gt;
+
+&lt;p&gt;しかし、(誰かに寄付するための)コインの入手には少々難があります。経路は次の2通りでしょう。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;持ってる人にもらう&lt;/li&gt;
+&lt;li&gt;日本円を販売所で購入する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;とにかく、コインを持ってる人にもらうのが手っ取り早いです。そうでない場合はちょっと面倒くさいかな。。&lt;/p&gt;
+
+&lt;p&gt;とりあえずやってみたい、とかであれば私からBTC送ってもいいですよ。&lt;/p&gt;
+
+&lt;h2 id=&#34;ツールについて:d1d5170e5bd7e6955ec405b6d0e95403&#34;&gt;ツールについて&lt;/h2&gt;
+
+&lt;p&gt;Bitcoin(というか、BlockChain系)では、コインの所属を示すWalletは一箇所でなく、用途に合わせたり分散目的で複数持つのが普通っぽい。
+このへんはまあ、現実の通貨と似たようなもんで、タンスと財布と銀行とかそんな関係。&lt;/p&gt;
+
+&lt;p&gt;だいたいこんな感じで複数持つようです。自分が今回使い始めたのもあわせて載せておきます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;モバイル端末/ハードウェアのローカル所有
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/breadwallet-bitcoin-wallet/id885251393&#34;&gt;breadwallet&lt;/a&gt; TouchID対応でさくっと送金&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;受け渡し用のWeb Wallet
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blockchain.info/&#34;&gt;blockchain.info&lt;/a&gt; 受取アドレスを用途別につくれて便利&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;(オプション：他の通貨との両替用)
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://bitflyer.jp/&#34;&gt;bitflyer&lt;/a&gt; とりあえずコインを日本円で買いたいときに。今回の動作確認用にいくらか両替しました。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ここらはお好みですが、どれも使いやすいです。
+送金に手間賃とかが含まれたりする仕組みもあるので、使い倒すならまたいくらか不満もでるのかもしれません。
+まあそれはおいおい。&lt;/p&gt;
+
+&lt;h2 id=&#34;その他落ち穂:d1d5170e5bd7e6955ec405b6d0e95403&#34;&gt;その他落ち穂&lt;/h2&gt;
+
+&lt;p&gt;実際これ、課税されたり確定申告で何かしないとマズイ？ などと狸の皮を数えるような考えもでてきます。
+仮想通貨法次第なんですが、今のところモノあつかいの、当面は譲渡所得でいいようで。。まあ各自でも都度、申告時にご確認で。&lt;/p&gt;
+
+&lt;p&gt;あとコイン自体の価値について気になったり円にさっさと変えて使いたい、とか考えるなら普通にPaypalとかStripeを使うとか、Amazonギフトで貰うほうがお勧めです。
+受け渡しのカジュアルさ加減という点でBitcoinいいかもー、としてるだけなので。&lt;/p&gt;
+
+&lt;p&gt;ついでに、フリーランスのIT系エンジニアが電子貨幣をホイホイやりとりする世界を舞台にしたこんな小説もあります。&lt;/p&gt;
+
+&lt;iframe src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=netsawa-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=B01IGR0TA4&#34; style=&#34;width:120px;height:240px;&#34; scrolling=&#34;no&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;今回の狼藉はわりとこれの影響ですよ多分。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに:d1d5170e5bd7e6955ec405b6d0e95403&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;誰かの活動をゆるく応援したいとか、またはその逆で、自分で何かしらオープンに活動しているのでゆるめに寄付を受け付けておきたい(きたら嬉しい)。
+っていう考えがあったりするんですよ私。皆さんはどうなんだろう。&lt;/p&gt;
+
+&lt;p&gt;とりあえずBitcoinで投げとく、程度のやりとりで個人のオープンな活動を支援するような仕組みが流行るといいなと思います。&lt;/p&gt;
+
+&lt;p&gt;まあ、寄付窓口をBitcoinのみ対応で設置したときのモチベーションは『ちょっと面白そう』、とか『送れるもんなら送ってみやがれ（ｗ』という平常運転のメンタルによるものです。&lt;/p&gt;
+</description>
+    </item>
+    
     
     
     <item>
