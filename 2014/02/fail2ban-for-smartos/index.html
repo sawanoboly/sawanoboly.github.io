@@ -60,7 +60,7 @@
 上記Solarisの内容ではちょっと困る。</li>
 </ul>
 
-<h2 id="patch-for-the-smartos:9c0a86430b54992cf85420e07dbabbca">Patch for the SmartOS</h2>
+<h2 id="patch-for-the-smartos">Patch for the SmartOS</h2>
 
 <p>パスの問題程度だったので、最新安定版の0.8.12をベースにパッチを作成した。</p>
 
@@ -68,7 +68,7 @@
 
 <script src="https://gist.github.com/sawanoboly/8838359.js?file=0.8.12_smartos.patch"></script>
 
-<h2 id="install-to-the-smartos:9c0a86430b54992cf85420e07dbabbca">Install to the SmartOS</h2>
+<h2 id="install-to-the-smartos">Install to the SmartOS</h2>
 
 <p>インストールはこのように。</p>
 
@@ -76,11 +76,11 @@
 
 <script src="https://gist.github.com/sawanoboly/8838359.js?file=README.smartos.md"></script>
 
-<h2 id="ban:9c0a86430b54992cf85420e07dbabbca">Ban</h2>
+<h2 id="ban">Ban</h2>
 
 <p>Banする方式はTCP WrapperとIpfilterが使える。</p>
 
-<h3 id="tcp-wrapperでban:9c0a86430b54992cf85420e07dbabbca">TCP WrapperでBan</h3>
+<h3 id="tcp-wrapperでban">TCP WrapperでBan</h3>
 
 <p>hosts.denyに設定を出し入れするやりかた。</p>
 
@@ -122,7 +122,7 @@ Status
 `- Jail list:           ssh-tcpwrapper
 </code></pre>
 
-<h3 id="ipfilterでban:9c0a86430b54992cf85420e07dbabbca">IPFilterでBan</h3>
+<h3 id="ipfilterでban">IPFilterでBan</h3>
 
 <p>ipfコマンドでルールの管理をするやりかた。</p>
 
@@ -160,7 +160,7 @@ Status
 `- Jail list:           ssh-ipfilter
 </code></pre>
 
-<h3 id="result:9c0a86430b54992cf85420e07dbabbca">Result</h3>
+<h3 id="result">Result</h3>
 
 <p>TCP WrapperでBanしたらこんな感じ。</p>
 

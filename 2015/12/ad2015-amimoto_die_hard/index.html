@@ -61,7 +61,7 @@
 </figure>
 
 
-<h2 id="あらすじ:8c9a8fc68efb413605d2b51dc15e5bec">あらすじ</h2>
+<h2 id="あらすじ">あらすじ</h2>
 
 <p><a href="https://ja.amimoto-ami.com">AMIMOTO AMI</a>はAWSのPublic AMIとして生まれ、好評を博したのちAWS MarketPlaceに進出した<a href="https://wordpress.com/">WordPress</a>のAMIである。自前で構築するより大抵楽で、今日ではそこいらのWordPress環境より当然応答が速いチートガイに成長した。</p>
 
@@ -76,7 +76,7 @@
 
 <p>少なくともユーザより先に(AMIからみた)外部要因による問題の発生を検知し、いち早く修正を行なえるようにしたいという相談に対して私が提供した仕組みとは．．．？</p>
 
-<h2 id="主要登場物:8c9a8fc68efb413605d2b51dc15e5bec">主要登場物</h2>
+<h2 id="主要登場物">主要登場物</h2>
 
 <dl>
 <dt><a href="https://ja.amimoto-ami.com">AMIMOTO AMI</a></dt>
@@ -93,7 +93,7 @@
 <dd>条件によってシンプルなタスクを実行するサービス。<br />セットアップタスクの変更をRSSで取得し、CircleCIのビルドをキックする遊撃手として暗躍する。</dd>
 </dl>
 
-<h2 id="amimoto-die-hard-解説:8c9a8fc68efb413605d2b51dc15e5bec">『AMIMOTO DIE HARD』 解説</h2>
+<h2 id="amimoto-die-hard-解説">『AMIMOTO DIE HARD』 解説</h2>
 
 <p>結論からいうと、次の条件でテストを回すことにした。対象はAMIMOTOシリーズ全部。</p>
 
@@ -115,7 +115,7 @@ AMI起動からの大元の仕組みが変わることも考慮にいれて、�
 
 <p>実施している内容は主要登場物のセクションに書いている通りだが、いくつかピックアップして解説しよう。</p>
 
-<h3 id="infratasterによるテストの内訳とコード:8c9a8fc68efb413605d2b51dc15e5bec">Infratasterによるテストの内訳とコード</h3>
+<h3 id="infratasterによるテストの内訳とコード">Infratasterによるテストの内訳とコード</h3>
 
 <p>テストの段取りは次の通り。</p>
 
@@ -156,7 +156,7 @@ end
 
 <p>インスタンスID(環境変数)は、Test-Kitchenの機能。</p>
 
-<h3 id="test-kithcen-shell-verifier:8c9a8fc68efb413605d2b51dc15e5bec">Test-Kithcen + Shell-Verifier</h3>
+<h3 id="test-kithcen-shell-verifier">Test-Kithcen + Shell-Verifier</h3>
 
 <p>AMIMOTO DIE HARDの本体はこのTest-Kitchenといえる。</p>
 
@@ -235,7 +235,7 @@ end
 
 <p>結局t1.microは時間がかかりすぎる事が多かったので、先日smallに変更した。強制終了まで2時間(!)かかることがあったりもしたし。</p>
 
-<h3 id="herokuからcircleciのビルドをキック:8c9a8fc68efb413605d2b51dc15e5bec">herokuからCircleCIのビルドをキック</h3>
+<h3 id="herokuからcircleciのビルドをキック">herokuからCircleCIのビルドをキック</h3>
 
 <p>CircleCIは定期実行する仕組みを提供していない(目的外だし)ため、任意のブランチのHEADをビルドするRakeタスクを作成。</p>
 
@@ -264,19 +264,19 @@ end
 
 <p>あとはこれをherokuにおいて、スケジューラから定期的に実行する。</p>
 
-<h2 id="まとめ:8c9a8fc68efb413605d2b51dc15e5bec">まとめ</h2>
+<h2 id="まとめ">まとめ</h2>
 
 <p>もともとコケるたびにデジタルキューブさん側で対策込みの改善もしていたので、もうこれにほとんど引っかかったりはしません。<br />
 ただ、意識外で起こる不思議な障害のなるはや検知には、抜き打ちテストを回しておくのがいいよね。</p>
 
-<h2 id="関連項目:8c9a8fc68efb413605d2b51dc15e5bec">関連項目</h2>
+<h2 id="関連項目">関連項目</h2>
 
 <ul>
 <li><a href="http://www.adventar.org/calendars/1107">AMIMOTO Advent Calendar 2015</a> ひとつ前の記事 =&gt; <a href="http://wp-kyoto.net/go-to-wordcamp-us/" title="[AMIMOTOアドベントカレンダー]WordCamp US現地からブースの様子をお送りします - WP-kyoto">[AMIMOTOアドベントカレンダー]WordCamp US現地からブースの様子をお送りします - WP-kyoto</a></li>
 <li><a href="http://www.adventar.org/calendars/1107">AMIMOTO Advent Calendar 2015</a> 次の記事 =&gt; <a href="https://firegoby.jp/archives/6450" title="AMIMOTOブース in WordCamp USフォトレポート | Firegoby">AMIMOTOブース in WordCamp USフォトレポート | Firegoby</a></li>
 </ul>
 
-<h2 id="外部リンク:8c9a8fc68efb413605d2b51dc15e5bec">外部リンク</h2>
+<h2 id="外部リンク">外部リンク</h2>
 
 <ul>
 <li><a href="https://ja.amimoto-ami.com/" title="WordPress 専用の AWS + クラウドホスティング AMIMOTO | 超高速 WordPress AMI AMIMOTO">超高速 WordPress AMI AMIMOTO</a></li>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.sawanoboly.net/</loc>
-    <lastmod>2016-11-27T17:00:22+09:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.sawanoboly.net/2017/11/discord-ah/</loc>
+    <lastmod>2017-11-11T22:00:00+09:00</lastmod>
   </url>
   
   <url>
@@ -75,6 +75,150 @@
   <url>
     <loc>https://www.sawanoboly.net/2014/02/fail2ban-for-smartos/</loc>
     <lastmod>2014-02-06T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/aws/</loc>
+    <lastmod>2015-02-23T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/bitcoin/</loc>
+    <lastmod>2016-11-27T17:00:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/blog/</loc>
+    <lastmod>2015-11-29T17:20:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/blog/</loc>
+    <lastmod>2015-12-09T15:27:33+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/book/</loc>
+    <lastmod>2015-01-11T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/chef/</loc>
+    <lastmod>2014-12-25T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/ci/</loc>
+    <lastmod>2015-12-07T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/event/</loc>
+    <lastmod>2014-03-17T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/hugo/</loc>
+    <lastmod>2015-11-29T17:20:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/immutable_infrastructure/</loc>
+    <lastmod>2014-03-17T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/infrastructure_as_code/</loc>
+    <lastmod>2014-03-17T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/integration/</loc>
+    <lastmod>2015-12-07T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/knife-zero/</loc>
+    <lastmod>2014-12-25T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/magazine/</loc>
+    <lastmod>2015-02-23T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/opsworks/</loc>
+    <lastmod>2015-02-23T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/podcast/</loc>
+    <lastmod>2017-11-11T22:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/post/</loc>
+    <lastmod>2017-11-11T22:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/sakura_internet/</loc>
+    <lastmod>2014-02-16T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/</loc>
+    <lastmod>2017-11-11T22:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/serverspec/</loc>
+    <lastmod>2015-01-11T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/smartos/</loc>
+    <lastmod>2014-02-06T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/</loc>
+    <lastmod>2015-02-23T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/test-kitchen/</loc>
+    <lastmod>2015-12-07T00:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sawanoboly.net/tags/vagrant/</loc>
+    <lastmod>2014-03-05T00:00:00+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

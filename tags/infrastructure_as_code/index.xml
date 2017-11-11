@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Mon, 17 Mar 2014 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://www.sawanoboly.net/tags/infrastructure_as_code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/infrastructure_as_code/" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,7 +20,7 @@
 
 &lt;p&gt;&lt;a href=&#34;http://jawsdays2014.jaws-ug.jp/&#34;&gt;JAWS DAYS 2014&lt;/a&gt;セッションで話しました。&lt;/p&gt;
 
-&lt;h2 id=&#34;infrastructure-as-codeと-組織のドキュメンテーション-immutable-infrastructure事例:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;Infrastructure as Codeと 組織のドキュメンテーション ＋ Immutable Infrastructure事例&lt;/h2&gt;
+&lt;h2 id=&#34;infrastructure-as-codeと-組織のドキュメンテーション-immutable-infrastructure事例&#34;&gt;Infrastructure as Codeと 組織のドキュメンテーション ＋ Immutable Infrastructure事例&lt;/h2&gt;
 
 &lt;p&gt;スライドはこちら。&lt;/p&gt;
 
@@ -28,7 +28,7 @@
 
 &lt;p&gt;現場にいらっしゃった方の反応などもTogetterにまとめて頂いています。 &lt;a href=&#34;http://togetter.com/li/639910&#34;&gt;2014/03/15 JAWS DAYS 2014 - Immutable Infrastructureトラック #jawsdays #infra - Togetterまとめ&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;immutable-infrastructure-事例について:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;『Immutable Infrastructure』事例について&lt;/h3&gt;
+&lt;h3 id=&#34;immutable-infrastructure-事例について&#34;&gt;『Immutable Infrastructure』事例について&lt;/h3&gt;
 
 &lt;p&gt;大阪某所でやっているGiraffiから事例を紹介しました。&lt;/p&gt;
 
@@ -42,7 +42,7 @@
 
 &lt;p&gt;パネルセッションでは言いそびれましたが、どの層が『Immutable Infrastructure』するべきか、また恩恵をうけるかというところでは、『夜中にアラートで起こされる人』こそが。じゃんじゃんやるべきなのかもしれませんね。&lt;/p&gt;
 
-&lt;h3 id=&#34;infrastructure-as-codeと-組織のドキュメンテーション-について:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;『Infrastructure as Codeと 組織のドキュメンテーション』について&lt;/h3&gt;
+&lt;h3 id=&#34;infrastructure-as-codeと-組織のドキュメンテーション-について&#34;&gt;『Infrastructure as Codeと 組織のドキュメンテーション』について&lt;/h3&gt;
 
 &lt;p&gt;『Immutable Infrastructure』トラックでなんか話せと言われてから、普通に説明したって全員被るに決まってるがなと思いました。 それならば、説明は他のセッションにまかせて、前提知識である『Infrastructure as Code』の導入支援をつくろうとしたらこうなりました。&lt;/p&gt;
 
@@ -53,7 +53,7 @@
 &lt;p&gt;&lt;a href=&#34;https://gist.github.com/azukiwasher/8571505#file-gistfile1-txt&#34;&gt;gist:8571505&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;h2 id=&#34;ドキュメント礼賛:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;ドキュメント礼賛&lt;/h2&gt;
+&lt;h2 id=&#34;ドキュメント礼賛&#34;&gt;ドキュメント礼賛&lt;/h2&gt;
 
 &lt;p&gt;断言しよう。ドキュメントこそがマシンを隷属化し、人間のために使役させるための最善の方策である。&lt;br /&gt;
 なぜなら、マシンをコントロールする「ドキュメント」を理解できるのは人間だけであり、
@@ -98,7 +98,7 @@
 
 &lt;p&gt;例えば社内でのクラブ活動をしてみる。結局、業務内で何とかしようとするのは中々難しいです。 だったら自腹でクラウド使ったり、内輪のシステムを作って研究発表なんかするのが遠回りのようで一番効果的のように思います。&lt;/p&gt;
 
-&lt;h2 id=&#34;パネルセッション:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;パネルセッション&lt;/h2&gt;
+&lt;h2 id=&#34;パネルセッション&#34;&gt;パネルセッション&lt;/h2&gt;
 
 &lt;p&gt;お会いしたかった方々と、まとめて会えるという個人的に嬉しい企画でした。 このトラックに放り込んでくれた&lt;a href=&#34;https://twitter.com/urasoko&#34;&gt;@urasoko&lt;/a&gt;さん、そのあと取りまとめいただいた&lt;a href=&#34;https://twitter.com/stanaka&#34;&gt;@stanaka&lt;/a&gt;さんほかスタッフの方に感謝！&lt;/p&gt;
 

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Podcast on Sawanoboly.net</title>
+    <link>https://www.sawanoboly.net/tags/podcast/</link>
+    <description>Recent content in Podcast on Sawanoboly.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 11 Nov 2017 22:00:00 +0900</lastBuildDate>
+    <atom:link href="/tags/podcast/" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DiscordとAudio Hijackでたぶん快適なPodcast収録</title>
+      <link>https://www.sawanoboly.net/2017/11/discord-ah/</link>
+      <pubDate>Sat, 11 Nov 2017 22:00:00 +0900</pubDate>
+      
+      <guid>https://www.sawanoboly.net/2017/11/discord-ah/</guid>
+      <description>
+
+&lt;p&gt;更新不定期で細々と&lt;a href=&#34;https://cloudinfra.audio&#34;&gt;のぼりーさんのクラウドインフラPodcast&lt;/a&gt;というのをやっているわけですが、
+収録の環境をDiscordをベースにリニューアルしてみました。&lt;/p&gt;
+
+&lt;h3 id=&#34;自分と相手を別のトラックに録音したい&#34;&gt;自分と相手を別のトラックに録音したい&lt;/h3&gt;
+
+&lt;p&gt;自分のPodcastは収録した音声をそのまま使用することはなく、ある程度編集してから配信しています。&lt;/p&gt;
+
+&lt;p&gt;さて、いざ編集となった時に、色々な理由から私とゲストの方の音声は別の音源として扱えると助かります。
+双方が慣れていればお互いで自分のみをローカルに録音し、それを使用すればよいのですが、基本的に単発出演のゲストさんにあまり手間をかけさせたり、なおかつ録音失敗したりするのはマズイっていうかダメです。&lt;/p&gt;
+
+&lt;p&gt;そのため、できるだけ自分の環境側でそれぞれの音声を個別に録音しておきたいところなのですが、これがツール選定の課題になりやすい。&lt;/p&gt;
+
+&lt;p&gt;これまでの収録では主にSkypeのプラグイン、&lt;a href=&#34;http://www.ecamm.com/mac/callrecorder/&#34;&gt;Call Recorder for Skype&lt;/a&gt; を使用しています。音質は悪くないし設定も簡単なので重宝していましたが、最近Skypeがなんとも不安定(Mac版だけかも)なため、乗り換え先を探してみることに。&lt;/p&gt;
+
+&lt;p&gt;で、以前から気になっていた&lt;a href=&#34;https://discordapp.com&#34;&gt;Discord&lt;/a&gt;、ビデオつきでの通話も可能になったことだし使ってみることにしました。&lt;/p&gt;
+
+&lt;h3 id=&#34;audio-hijack-よい&#34;&gt;Audio Hijack よい&lt;/h3&gt;
+
+&lt;p&gt;Discord単体では、プラグインを含めて音声を別々に録音する手段はなさそうです。そこで目をつけたのがAudio Hijack。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rogueamoeba.com/audiohijack/&#34;&gt;Audio Hijack | Rogue Amoeba&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;macos上のオーディオを良い感じに振り分けたり録音することができます。例えば次のように、複数のソース、複数の保存先を繋げて録音するような使い方です。&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2017/discord_001.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;セッティングについて補足すると、入力ソースにDiscordが2つあり、それぞれでIn/Outを左右に振り分けるオプションを使っています。&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2017/discord_002.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;この設定を有効にしたDiscordを入力指定した後、右だけ、左だけを通すチャンネルセレクタをかますことで自分と相手の声を別々に録音するようになっています。(図でもう一つ系統がありますが、比較テスト用なので気にしないで。)&lt;/p&gt;
+
+&lt;p&gt;このようなセッティングはテンプレートとして保存でき、使いたいときにすぐ再利用できるのが何より嬉しいですね。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;参考:  一応、フリーのツール(※)によるVirtual Input/Outputデバイスを組み合わせて実現はできますが、結構に煩雑なので毎回セットアップするのが大変です。&lt;br&gt;
+※) &lt;a href=&#34;http://rogueamoeba.com/legacy/&#34;&gt;LineIn&lt;/a&gt;や&lt;a href=&#34;https://soundflower.softonic.jp/mac&#34;&gt;SoundFlower&lt;/a&gt;など。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;また、Audio HijackはDiscordに限らず汎用的に使えるため、プラグイン形式のように特定のアプリケーションに依存しなくてすみます。有料ではありますが、一度導入しておくと収録に利用するアプリケーションを変更しても勝手が変わらないのでおすすめです。&lt;/p&gt;
+
+&lt;h3 id=&#34;discord-もう一つの用途&#34;&gt;Discord、もう一つの用途&lt;/h3&gt;
+
+&lt;p&gt;余談ですが、Discordってそもそもゲームなどの実況向けなわけで。折角なのでイベント中継の裏で雑談するようなサーバを運営してみます。
+まだちゃんとはオープンしておらず、そのうち告知用の配信をしようと思っていますが、興味ある方は&lt;a href=&#34;https://discord.gg/AxAwMER&#34;&gt;Discord 招待リンク - nobolycloudサーバ &lt;/a&gt;から勝手に入って来ていただいてもOKです。&lt;/p&gt;
+</description>
+    </item>
+    
+    
+  </channel>
+</rss>

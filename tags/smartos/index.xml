@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Thu, 06 Feb 2014 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://www.sawanoboly.net/tags/smartos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/smartos/" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -25,7 +25,7 @@
 上記Solarisの内容ではちょっと困る。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;patch-for-the-smartos:9c0a86430b54992cf85420e07dbabbca&#34;&gt;Patch for the SmartOS&lt;/h2&gt;
+&lt;h2 id=&#34;patch-for-the-smartos&#34;&gt;Patch for the SmartOS&lt;/h2&gt;
 
 &lt;p&gt;パスの問題程度だったので、最新安定版の0.8.12をベースにパッチを作成した。&lt;/p&gt;
 
@@ -33,7 +33,7 @@
 
 &lt;script src=&#34;https://gist.github.com/sawanoboly/8838359.js?file=0.8.12_smartos.patch&#34;&gt;&lt;/script&gt;
 
-&lt;h2 id=&#34;install-to-the-smartos:9c0a86430b54992cf85420e07dbabbca&#34;&gt;Install to the SmartOS&lt;/h2&gt;
+&lt;h2 id=&#34;install-to-the-smartos&#34;&gt;Install to the SmartOS&lt;/h2&gt;
 
 &lt;p&gt;インストールはこのように。&lt;/p&gt;
 
@@ -41,11 +41,11 @@
 
 &lt;script src=&#34;https://gist.github.com/sawanoboly/8838359.js?file=README.smartos.md&#34;&gt;&lt;/script&gt;
 
-&lt;h2 id=&#34;ban:9c0a86430b54992cf85420e07dbabbca&#34;&gt;Ban&lt;/h2&gt;
+&lt;h2 id=&#34;ban&#34;&gt;Ban&lt;/h2&gt;
 
 &lt;p&gt;Banする方式はTCP WrapperとIpfilterが使える。&lt;/p&gt;
 
-&lt;h3 id=&#34;tcp-wrapperでban:9c0a86430b54992cf85420e07dbabbca&#34;&gt;TCP WrapperでBan&lt;/h3&gt;
+&lt;h3 id=&#34;tcp-wrapperでban&#34;&gt;TCP WrapperでBan&lt;/h3&gt;
 
 &lt;p&gt;hosts.denyに設定を出し入れするやりかた。&lt;/p&gt;
 
@@ -87,7 +87,7 @@ Status
 `- Jail list:           ssh-tcpwrapper
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;ipfilterでban:9c0a86430b54992cf85420e07dbabbca&#34;&gt;IPFilterでBan&lt;/h3&gt;
+&lt;h3 id=&#34;ipfilterでban&#34;&gt;IPFilterでBan&lt;/h3&gt;
 
 &lt;p&gt;ipfコマンドでルールの管理をするやりかた。&lt;/p&gt;
 
@@ -125,7 +125,7 @@ Status
 `- Jail list:           ssh-ipfilter
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;result:9c0a86430b54992cf85420e07dbabbca&#34;&gt;Result&lt;/h3&gt;
+&lt;h3 id=&#34;result&#34;&gt;Result&lt;/h3&gt;
 
 &lt;p&gt;TCP WrapperでBanしたらこんな感じ。&lt;/p&gt;
 

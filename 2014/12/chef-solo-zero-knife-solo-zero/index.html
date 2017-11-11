@@ -61,7 +61,7 @@
 
 <p>最初に言っておくと、今Chef-Solo、Knife-Soloを使っている人、多分何もしなくていい。</p>
 
-<h2 id="登場人物一覧:8859dd2aeb8fa59e101fd23fc46b536d">登場人物一覧</h2>
+<h2 id="登場人物一覧">登場人物一覧</h2>
 
 <ul>
 <li>Chef-Solo
@@ -88,7 +88,7 @@
 </ul></li>
 </ul>
 
-<h2 id="全てのchef-solo関連がにchef-zero-chef-client-localmode-に変更されるというのは飛躍的な判断:8859dd2aeb8fa59e101fd23fc46b536d">全てのChef-Solo関連がにChef-Zero(Chef-Client LocalMode)に変更されるというのは飛躍的な判断</h2>
+<h2 id="全てのchef-solo関連がにchef-zero-chef-client-localmode-に変更されるというのは飛躍的な判断">全てのChef-Solo関連がにChef-Zero(Chef-Client LocalMode)に変更されるというのは飛躍的な判断</h2>
 
 <p>なんとなく騒がれているのは、これの元記事からなのかしら。</p>
 
@@ -104,7 +104,7 @@
 
 <p>で、リモートでやるKnife-Soloについて考えた時に、&rdquo;Chef-Solo無くなる&rdquo;＝&rdquo;Knife-Solo使えなくなる&rdquo;でもないわけです。 Knife-Soloは単なる非公式のプラグインであって、公式がこういう記事でいちいち言及しないでしょうね。</p>
 
-<h3 id="少なくともknife-soloはchef-soloと心中なんてしないだろう:8859dd2aeb8fa59e101fd23fc46b536d">少なくともKnife-SoloはChef-Soloと心中なんてしないだろう</h3>
+<h3 id="少なくともknife-soloはchef-soloと心中なんてしないだろう">少なくともKnife-SoloはChef-Soloと心中なんてしないだろう</h3>
 
 <p>日本でKnife-Soloがそこそこ広い認知度を持っているのは、<a href="http://www.amazon.co.jp/dp/B00BSPH158">伊藤直也さんの入門Chef Solo - Infrastructure as Code</a>によるところが大きいでしょう。多分そう、部分的にそう。</p>
 
@@ -116,7 +116,7 @@
 
 <p>ということでKnife-Soloでやっているものは、基本的にそのまま使い続けることもできそうだと思ってます。 実際Chef-Soloって無くなるのかも不明、もしかしたらChef14とか15になれば居なくなるのかもしれませんね。</p>
 
-<h2 id="knife-zeroはミニマムなchef-server環境とのアップ-ダウングレード移行パス:8859dd2aeb8fa59e101fd23fc46b536d">Knife-ZeroはミニマムなChef-Server環境とのアップ/ダウングレード移行パス</h2>
+<h2 id="knife-zeroはミニマムなchef-server環境とのアップ-ダウングレード移行パス">Knife-ZeroはミニマムなChef-Server環境とのアップ/ダウングレード移行パス</h2>
 
 <p>じゃあKnife-Zeroはどういう位置かというと、Chef-Server環境との相互移行がやりやすいChefの導入方法(の一つ)です。 SSH越しにリモートで実行されるChef-ClientはLocalModeではなく、通常のClientモードとしてChef-Server(SSH元のChef-Zero)に対して接続します。</p>
 
@@ -129,7 +129,7 @@
 
 <p>Knife-Zeroは、概ねお一人様用Chef-Serverという感じです。node情報ををgit管理できたり、エディタで手元からしれっとattributeを追加できたりという利点とかありますが。 大人数で保守する場合や、継続的にChef-Clientを実行したい場合、Nodeがとても多い場合は多分Chef-Serverのほうがよいのかと思います。</p>
 
-<h2 id="knife-zero豆知識:8859dd2aeb8fa59e101fd23fc46b536d">Knife-Zero豆知識</h2>
+<h2 id="knife-zero豆知識">Knife-Zero豆知識</h2>
 
 <ul>
 <li>Chef-Zeroは2,000nodeくらいまでなら性能的に問題ない。 (<a href="http://qiita.com/sawanoboly/items/35dd2f117262f4f21969">Chef-Zeroのキャパシティが気になったのでRubyでベンチマークをとった - Qiita</a>)</li>

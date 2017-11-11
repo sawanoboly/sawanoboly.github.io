@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Sun, 11 Jan 2015 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://www.sawanoboly.net/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/book/" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -49,7 +49,7 @@
 
 &lt;p&gt;では折角なのでおすすめの章を2つ。&lt;/p&gt;
 
-&lt;h2 id=&#34;使う人向けの3章:de8e932130afe1e91333390ec5c31e27&#34;&gt;使う人向けの3章&lt;/h2&gt;
+&lt;h2 id=&#34;使う人向けの3章&#34;&gt;使う人向けの3章&lt;/h2&gt;
 
 &lt;p&gt;簡素な公式ドキュメントの行間を解説してくれる3章は、テストコードをどう書けばよいのかから始まり、コードの使いまわしや環境およびセキュリティ要件へ対応するTipsが書かれています。&lt;br /&gt;
 また、良くある悩みの『何をどこまでテストすればいいのか？』に対する指標が書いてあります。&lt;/p&gt;
@@ -74,7 +74,7 @@
 ※ O&#39;Reilly Japan - Serverspec http://www.oreilly.co.jp/books/9784873117096/ より&lt;/pre&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;カスタマイズ-コントリビュートの4章:de8e932130afe1e91333390ec5c31e27&#34;&gt;カスタマイズ・コントリビュートの4章&lt;/h2&gt;
+&lt;h2 id=&#34;カスタマイズ-コントリビュートの4章&#34;&gt;カスタマイズ・コントリビュートの4章&lt;/h2&gt;
 
 &lt;p&gt;4章はServerspec, SpecInfraの内部を解説してくれます。&lt;br /&gt;
 特にSpecInfraは公式なドキュメントと言えるものがありませんが、4章の内容を理解すれば、Github上のコードをそのままドキュメントとして読めば大丈夫なくらいにはなります。 もちろんSpecを記述する際にも役立つ知識です。&lt;/p&gt;
@@ -98,7 +98,7 @@
 ※ O&#39;Reilly Japan - Serverspec http://www.oreilly.co.jp/books/9784873117096/ より&lt;/pre&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;その他:de8e932130afe1e91333390ec5c31e27&#34;&gt;その他&lt;/h2&gt;
+&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
 
 &lt;p&gt;Serverspecはmizzyさんの活動テーマの1つ、継続的な改善の副産物だと思います。 中でもなぜServerspecが広まったのかは、伊藤直也(naoya)さんのまえがきに推察があります。&lt;/p&gt;
 
@@ -108,11 +108,11 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;最後に、mizzyさん無事出版おつかれさまです。&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;
+&lt;figure&gt;
   &lt;img src=&#34;https://www.sawanoboly.net/images/2015/Serverspec-commit-graph.png&#34; alt=&#34;Network&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Network&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;/p&gt;
+
 </description>
     </item>
     

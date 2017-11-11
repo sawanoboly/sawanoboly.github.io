@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Thu, 25 Dec 2014 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://www.sawanoboly.net/tags/knife-zero/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/knife-zero/" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -26,7 +26,7 @@
 
 &lt;p&gt;最初に言っておくと、今Chef-Solo、Knife-Soloを使っている人、多分何もしなくていい。&lt;/p&gt;
 
-&lt;h2 id=&#34;登場人物一覧:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;登場人物一覧&lt;/h2&gt;
+&lt;h2 id=&#34;登場人物一覧&#34;&gt;登場人物一覧&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Chef-Solo
@@ -53,7 +53,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;全てのchef-solo関連がにchef-zero-chef-client-localmode-に変更されるというのは飛躍的な判断:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;全てのChef-Solo関連がにChef-Zero(Chef-Client LocalMode)に変更されるというのは飛躍的な判断&lt;/h2&gt;
+&lt;h2 id=&#34;全てのchef-solo関連がにchef-zero-chef-client-localmode-に変更されるというのは飛躍的な判断&#34;&gt;全てのChef-Solo関連がにChef-Zero(Chef-Client LocalMode)に変更されるというのは飛躍的な判断&lt;/h2&gt;
 
 &lt;p&gt;なんとなく騒がれているのは、これの元記事からなのかしら。&lt;/p&gt;
 
@@ -69,7 +69,7 @@
 
 &lt;p&gt;で、リモートでやるKnife-Soloについて考えた時に、&amp;rdquo;Chef-Solo無くなる&amp;rdquo;＝&amp;rdquo;Knife-Solo使えなくなる&amp;rdquo;でもないわけです。 Knife-Soloは単なる非公式のプラグインであって、公式がこういう記事でいちいち言及しないでしょうね。&lt;/p&gt;
 
-&lt;h3 id=&#34;少なくともknife-soloはchef-soloと心中なんてしないだろう:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;少なくともKnife-SoloはChef-Soloと心中なんてしないだろう&lt;/h3&gt;
+&lt;h3 id=&#34;少なくともknife-soloはchef-soloと心中なんてしないだろう&#34;&gt;少なくともKnife-SoloはChef-Soloと心中なんてしないだろう&lt;/h3&gt;
 
 &lt;p&gt;日本でKnife-Soloがそこそこ広い認知度を持っているのは、&lt;a href=&#34;http://www.amazon.co.jp/dp/B00BSPH158&#34;&gt;伊藤直也さんの入門Chef Solo - Infrastructure as Code&lt;/a&gt;によるところが大きいでしょう。多分そう、部分的にそう。&lt;/p&gt;
 
@@ -81,7 +81,7 @@
 
 &lt;p&gt;ということでKnife-Soloでやっているものは、基本的にそのまま使い続けることもできそうだと思ってます。 実際Chef-Soloって無くなるのかも不明、もしかしたらChef14とか15になれば居なくなるのかもしれませんね。&lt;/p&gt;
 
-&lt;h2 id=&#34;knife-zeroはミニマムなchef-server環境とのアップ-ダウングレード移行パス:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;Knife-ZeroはミニマムなChef-Server環境とのアップ/ダウングレード移行パス&lt;/h2&gt;
+&lt;h2 id=&#34;knife-zeroはミニマムなchef-server環境とのアップ-ダウングレード移行パス&#34;&gt;Knife-ZeroはミニマムなChef-Server環境とのアップ/ダウングレード移行パス&lt;/h2&gt;
 
 &lt;p&gt;じゃあKnife-Zeroはどういう位置かというと、Chef-Server環境との相互移行がやりやすいChefの導入方法(の一つ)です。 SSH越しにリモートで実行されるChef-ClientはLocalModeではなく、通常のClientモードとしてChef-Server(SSH元のChef-Zero)に対して接続します。&lt;/p&gt;
 
@@ -94,7 +94,7 @@
 
 &lt;p&gt;Knife-Zeroは、概ねお一人様用Chef-Serverという感じです。node情報ををgit管理できたり、エディタで手元からしれっとattributeを追加できたりという利点とかありますが。 大人数で保守する場合や、継続的にChef-Clientを実行したい場合、Nodeがとても多い場合は多分Chef-Serverのほうがよいのかと思います。&lt;/p&gt;
 
-&lt;h2 id=&#34;knife-zero豆知識:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;Knife-Zero豆知識&lt;/h2&gt;
+&lt;h2 id=&#34;knife-zero豆知識&#34;&gt;Knife-Zero豆知識&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Chef-Zeroは2,000nodeくらいまでなら性能的に問題ない。 (&lt;a href=&#34;http://qiita.com/sawanoboly/items/35dd2f117262f4f21969&#34;&gt;Chef-Zeroのキャパシティが気になったのでRubyでベンチマークをとった - Qiita&lt;/a&gt;)&lt;/li&gt;

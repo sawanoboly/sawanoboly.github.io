@@ -1,13 +1,81 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sawanoboly.net</title>
+    <title>Sawanoboly.net on Sawanoboly.net</title>
     <link>https://www.sawanoboly.net/</link>
-    <description>Recent content on Sawanoboly.net</description>
+    <description>Recent content in Sawanoboly.net on Sawanoboly.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Sun, 27 Nov 2016 17:00:22 +0900</lastBuildDate>
-    <atom:link href="https://www.sawanoboly.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Nov 2017 22:00:00 +0900</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DiscordとAudio Hijackでたぶん快適なPodcast収録</title>
+      <link>https://www.sawanoboly.net/2017/11/discord-ah/</link>
+      <pubDate>Sat, 11 Nov 2017 22:00:00 +0900</pubDate>
+      
+      <guid>https://www.sawanoboly.net/2017/11/discord-ah/</guid>
+      <description>
+
+&lt;p&gt;更新不定期で細々と&lt;a href=&#34;https://cloudinfra.audio&#34;&gt;のぼりーさんのクラウドインフラPodcast&lt;/a&gt;というのをやっているわけですが、
+収録の環境をDiscordをベースにリニューアルしてみました。&lt;/p&gt;
+
+&lt;h3 id=&#34;自分と相手を別のトラックに録音したい&#34;&gt;自分と相手を別のトラックに録音したい&lt;/h3&gt;
+
+&lt;p&gt;自分のPodcastは収録した音声をそのまま使用することはなく、ある程度編集してから配信しています。&lt;/p&gt;
+
+&lt;p&gt;さて、いざ編集となった時に、色々な理由から私とゲストの方の音声は別の音源として扱えると助かります。
+双方が慣れていればお互いで自分のみをローカルに録音し、それを使用すればよいのですが、基本的に単発出演のゲストさんにあまり手間をかけさせたり、なおかつ録音失敗したりするのはマズイっていうかダメです。&lt;/p&gt;
+
+&lt;p&gt;そのため、できるだけ自分の環境側でそれぞれの音声を個別に録音しておきたいところなのですが、これがツール選定の課題になりやすい。&lt;/p&gt;
+
+&lt;p&gt;これまでの収録では主にSkypeのプラグイン、&lt;a href=&#34;http://www.ecamm.com/mac/callrecorder/&#34;&gt;Call Recorder for Skype&lt;/a&gt; を使用しています。音質は悪くないし設定も簡単なので重宝していましたが、最近Skypeがなんとも不安定(Mac版だけかも)なため、乗り換え先を探してみることに。&lt;/p&gt;
+
+&lt;p&gt;で、以前から気になっていた&lt;a href=&#34;https://discordapp.com&#34;&gt;Discord&lt;/a&gt;、ビデオつきでの通話も可能になったことだし使ってみることにしました。&lt;/p&gt;
+
+&lt;h3 id=&#34;audio-hijack-よい&#34;&gt;Audio Hijack よい&lt;/h3&gt;
+
+&lt;p&gt;Discord単体では、プラグインを含めて音声を別々に録音する手段はなさそうです。そこで目をつけたのがAudio Hijack。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rogueamoeba.com/audiohijack/&#34;&gt;Audio Hijack | Rogue Amoeba&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;macos上のオーディオを良い感じに振り分けたり録音することができます。例えば次のように、複数のソース、複数の保存先を繋げて録音するような使い方です。&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2017/discord_001.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;セッティングについて補足すると、入力ソースにDiscordが2つあり、それぞれでIn/Outを左右に振り分けるオプションを使っています。&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://www.sawanoboly.net/images/2017/discord_002.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;この設定を有効にしたDiscordを入力指定した後、右だけ、左だけを通すチャンネルセレクタをかますことで自分と相手の声を別々に録音するようになっています。(図でもう一つ系統がありますが、比較テスト用なので気にしないで。)&lt;/p&gt;
+
+&lt;p&gt;このようなセッティングはテンプレートとして保存でき、使いたいときにすぐ再利用できるのが何より嬉しいですね。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;参考:  一応、フリーのツール(※)によるVirtual Input/Outputデバイスを組み合わせて実現はできますが、結構に煩雑なので毎回セットアップするのが大変です。&lt;br&gt;
+※) &lt;a href=&#34;http://rogueamoeba.com/legacy/&#34;&gt;LineIn&lt;/a&gt;や&lt;a href=&#34;https://soundflower.softonic.jp/mac&#34;&gt;SoundFlower&lt;/a&gt;など。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;また、Audio HijackはDiscordに限らず汎用的に使えるため、プラグイン形式のように特定のアプリケーションに依存しなくてすみます。有料ではありますが、一度導入しておくと収録に利用するアプリケーションを変更しても勝手が変わらないのでおすすめです。&lt;/p&gt;
+
+&lt;h3 id=&#34;discord-もう一つの用途&#34;&gt;Discord、もう一つの用途&lt;/h3&gt;
+
+&lt;p&gt;余談ですが、Discordってそもそもゲームなどの実況向けなわけで。折角なのでイベント中継の裏で雑談するようなサーバを運営してみます。
+まだちゃんとはオープンしておらず、そのうち告知用の配信をしようと思っていますが、興味ある方は&lt;a href=&#34;https://discord.gg/AxAwMER&#34;&gt;Discord 招待リンク - nobolycloudサーバ &lt;/a&gt;から勝手に入って来ていただいてもOKです。&lt;/p&gt;
+</description>
+    </item>
+    
     
     
     <item>
@@ -24,7 +92,7 @@
 
 &lt;p&gt;そんなBitcoinの話。&lt;/p&gt;
 
-&lt;h2 id=&#34;国境がない感じがよい-しがらみレス:d1d5170e5bd7e6955ec405b6d0e95403&#34;&gt;国境がない感じがよい、しがらみレス&lt;/h2&gt;
+&lt;h2 id=&#34;国境がない感じがよい-しがらみレス&#34;&gt;国境がない感じがよい、しがらみレス&lt;/h2&gt;
 
 &lt;p&gt;Podcastを応援できる仕組みをなにか作ろうと考えて、Paypalとか、Stripeとかで作ろうかなとちょいちょい見ました。
 特にStripeは使いやすくて良いですね。PaypalもフォームをPaypal側にもてて嬉しかったりします。&lt;/p&gt;
@@ -44,7 +112,7 @@ Paypalでは日本アカウントで寄付の設置も駄目だったりしま�
 
 &lt;p&gt;その点でBitcoinは、もはや貝殻を適当に投げているような感覚、とても平坦な印象ですごくしがらみレス？しがらまない。&lt;/p&gt;
 
-&lt;h2 id=&#34;トランザクションは見えちゃうよ:d1d5170e5bd7e6955ec405b6d0e95403&#34;&gt;トランザクションは見えちゃうよ&lt;/h2&gt;
+&lt;h2 id=&#34;トランザクションは見えちゃうよ&#34;&gt;トランザクションは見えちゃうよ&lt;/h2&gt;
 
 &lt;p&gt;ちなみに、特定のアドレスにどれだけのコインが送られたかはオープンな情報です。&lt;/p&gt;
 
@@ -57,7 +125,7 @@ Paypalでは日本アカウントで寄付の設置も駄目だったりしま�
 
 &lt;p&gt;の2つトランザクションが見えており、総計 0.011935 BTC をせしめているのがわかります。こういう点もなんだか面白い。&lt;/p&gt;
 
-&lt;h2 id=&#34;まず手持ちのコインを0から0以上にする時点に敷居がある:d1d5170e5bd7e6955ec405b6d0e95403&#34;&gt;まず手持ちのコインを0から0以上にする時点に敷居がある&lt;/h2&gt;
+&lt;h2 id=&#34;まず手持ちのコインを0から0以上にする時点に敷居がある&#34;&gt;まず手持ちのコインを0から0以上にする時点に敷居がある&lt;/h2&gt;
 
 &lt;p&gt;コインを持つためのWalletはメールアドレスやiOS/Androidのアプリケーションを使うだけで簡単につくることができます。受取用のアドレスもすぐ使えます。&lt;/p&gt;
 
@@ -72,7 +140,7 @@ Paypalでは日本アカウントで寄付の設置も駄目だったりしま�
 
 &lt;p&gt;とりあえずやってみたい、とかであれば私からBTC送ってもいいですよ。&lt;/p&gt;
 
-&lt;h2 id=&#34;ツールについて:d1d5170e5bd7e6955ec405b6d0e95403&#34;&gt;ツールについて&lt;/h2&gt;
+&lt;h2 id=&#34;ツールについて&#34;&gt;ツールについて&lt;/h2&gt;
 
 &lt;p&gt;Bitcoin(というか、BlockChain系)では、コインの所属を示すWalletは一箇所でなく、用途に合わせたり分散目的で複数持つのが普通っぽい。
 このへんはまあ、現実の通貨と似たようなもんで、タンスと財布と銀行とかそんな関係。&lt;/p&gt;
@@ -101,7 +169,7 @@ Paypalでは日本アカウントで寄付の設置も駄目だったりしま�
 送金に手間賃とかが含まれたりする仕組みもあるので、使い倒すならまたいくらか不満もでるのかもしれません。
 まあそれはおいおい。&lt;/p&gt;
 
-&lt;h2 id=&#34;その他落ち穂:d1d5170e5bd7e6955ec405b6d0e95403&#34;&gt;その他落ち穂&lt;/h2&gt;
+&lt;h2 id=&#34;その他落ち穂&#34;&gt;その他落ち穂&lt;/h2&gt;
 
 &lt;p&gt;実際これ、課税されたり確定申告で何かしないとマズイ？ などと狸の皮を数えるような考えもでてきます。
 仮想通貨法次第なんですが、今のところモノあつかいの、当面は譲渡所得でいいようで。。まあ各自でも都度、申告時にご確認で。&lt;/p&gt;
@@ -116,7 +184,7 @@ Paypalでは日本アカウントで寄付の設置も駄目だったりしま�
 
 &lt;p&gt;今回の狼藉はわりとこれの影響ですよ多分。&lt;/p&gt;
 
-&lt;h2 id=&#34;おわりに:d1d5170e5bd7e6955ec405b6d0e95403&#34;&gt;おわりに&lt;/h2&gt;
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
 
 &lt;p&gt;誰かの活動をゆるく応援したいとか、またはその逆で、自分で何かしらオープンに活動しているのでゆるめに寄付を受け付けておきたい(きたら嬉しい)。
 っていう考えがあったりするんですよ私。皆さんはどうなんだろう。&lt;/p&gt;
@@ -149,7 +217,7 @@ Paypalでは日本アカウントで寄付の設置も駄目だったりしま�
 &lt;/figure&gt;
 
 
-&lt;h2 id=&#34;あらすじ:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;あらすじ&lt;/h2&gt;
+&lt;h2 id=&#34;あらすじ&#34;&gt;あらすじ&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://ja.amimoto-ami.com&#34;&gt;AMIMOTO AMI&lt;/a&gt;はAWSのPublic AMIとして生まれ、好評を博したのちAWS MarketPlaceに進出した&lt;a href=&#34;https://wordpress.com/&#34;&gt;WordPress&lt;/a&gt;のAMIである。自前で構築するより大抵楽で、今日ではそこいらのWordPress環境より当然応答が速いチートガイに成長した。&lt;/p&gt;
 
@@ -164,7 +232,7 @@ Paypalでは日本アカウントで寄付の設置も駄目だったりしま�
 
 &lt;p&gt;少なくともユーザより先に(AMIからみた)外部要因による問題の発生を検知し、いち早く修正を行なえるようにしたいという相談に対して私が提供した仕組みとは．．．？&lt;/p&gt;
 
-&lt;h2 id=&#34;主要登場物:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;主要登場物&lt;/h2&gt;
+&lt;h2 id=&#34;主要登場物&#34;&gt;主要登場物&lt;/h2&gt;
 
 &lt;dl&gt;
 &lt;dt&gt;&lt;a href=&#34;https://ja.amimoto-ami.com&#34;&gt;AMIMOTO AMI&lt;/a&gt;&lt;/dt&gt;
@@ -181,7 +249,7 @@ Paypalでは日本アカウントで寄付の設置も駄目だったりしま�
 &lt;dd&gt;条件によってシンプルなタスクを実行するサービス。&lt;br /&gt;セットアップタスクの変更をRSSで取得し、CircleCIのビルドをキックする遊撃手として暗躍する。&lt;/dd&gt;
 &lt;/dl&gt;
 
-&lt;h2 id=&#34;amimoto-die-hard-解説:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;『AMIMOTO DIE HARD』 解説&lt;/h2&gt;
+&lt;h2 id=&#34;amimoto-die-hard-解説&#34;&gt;『AMIMOTO DIE HARD』 解説&lt;/h2&gt;
 
 &lt;p&gt;結論からいうと、次の条件でテストを回すことにした。対象はAMIMOTOシリーズ全部。&lt;/p&gt;
 
@@ -203,7 +271,7 @@ AMI起動からの大元の仕組みが変わることも考慮にいれて、�
 
 &lt;p&gt;実施している内容は主要登場物のセクションに書いている通りだが、いくつかピックアップして解説しよう。&lt;/p&gt;
 
-&lt;h3 id=&#34;infratasterによるテストの内訳とコード:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;Infratasterによるテストの内訳とコード&lt;/h3&gt;
+&lt;h3 id=&#34;infratasterによるテストの内訳とコード&#34;&gt;Infratasterによるテストの内訳とコード&lt;/h3&gt;
 
 &lt;p&gt;テストの段取りは次の通り。&lt;/p&gt;
 
@@ -244,7 +312,7 @@ end
 
 &lt;p&gt;インスタンスID(環境変数)は、Test-Kitchenの機能。&lt;/p&gt;
 
-&lt;h3 id=&#34;test-kithcen-shell-verifier:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;Test-Kithcen + Shell-Verifier&lt;/h3&gt;
+&lt;h3 id=&#34;test-kithcen-shell-verifier&#34;&gt;Test-Kithcen + Shell-Verifier&lt;/h3&gt;
 
 &lt;p&gt;AMIMOTO DIE HARDの本体はこのTest-Kitchenといえる。&lt;/p&gt;
 
@@ -323,7 +391,7 @@ end
 
 &lt;p&gt;結局t1.microは時間がかかりすぎる事が多かったので、先日smallに変更した。強制終了まで2時間(!)かかることがあったりもしたし。&lt;/p&gt;
 
-&lt;h3 id=&#34;herokuからcircleciのビルドをキック:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;herokuからCircleCIのビルドをキック&lt;/h3&gt;
+&lt;h3 id=&#34;herokuからcircleciのビルドをキック&#34;&gt;herokuからCircleCIのビルドをキック&lt;/h3&gt;
 
 &lt;p&gt;CircleCIは定期実行する仕組みを提供していない(目的外だし)ため、任意のブランチのHEADをビルドするRakeタスクを作成。&lt;/p&gt;
 
@@ -352,19 +420,19 @@ end
 
 &lt;p&gt;あとはこれをherokuにおいて、スケジューラから定期的に実行する。&lt;/p&gt;
 
-&lt;h2 id=&#34;まとめ:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;まとめ&lt;/h2&gt;
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
 &lt;p&gt;もともとコケるたびにデジタルキューブさん側で対策込みの改善もしていたので、もうこれにほとんど引っかかったりはしません。&lt;br /&gt;
 ただ、意識外で起こる不思議な障害のなるはや検知には、抜き打ちテストを回しておくのがいいよね。&lt;/p&gt;
 
-&lt;h2 id=&#34;関連項目:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;関連項目&lt;/h2&gt;
+&lt;h2 id=&#34;関連項目&#34;&gt;関連項目&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.adventar.org/calendars/1107&#34;&gt;AMIMOTO Advent Calendar 2015&lt;/a&gt; ひとつ前の記事 =&amp;gt; &lt;a href=&#34;http://wp-kyoto.net/go-to-wordcamp-us/&#34; title=&#34;[AMIMOTOアドベントカレンダー]WordCamp US現地からブースの様子をお送りします - WP-kyoto&#34;&gt;[AMIMOTOアドベントカレンダー]WordCamp US現地からブースの様子をお送りします - WP-kyoto&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.adventar.org/calendars/1107&#34;&gt;AMIMOTO Advent Calendar 2015&lt;/a&gt; 次の記事 =&amp;gt; &lt;a href=&#34;https://firegoby.jp/archives/6450&#34; title=&#34;AMIMOTOブース in WordCamp USフォトレポート | Firegoby&#34;&gt;AMIMOTOブース in WordCamp USフォトレポート | Firegoby&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;外部リンク:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;外部リンク&lt;/h2&gt;
+&lt;h2 id=&#34;外部リンク&#34;&gt;外部リンク&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ja.amimoto-ami.com/&#34; title=&#34;WordPress 専用の AWS + クラウドホスティング AMIMOTO | 超高速 WordPress AMI AMIMOTO&#34;&gt;超高速 WordPress AMI AMIMOTO&lt;/a&gt;&lt;/li&gt;
@@ -460,7 +528,7 @@ end
 
 &lt;p&gt;詳細はもうタップリ出てますし、実物も本屋にも並んでいます。折角なので少し記事の裏側で個人的に面白かった話などを書きます。&lt;/p&gt;
 
-&lt;h2 id=&#34;記事の経緯を聞いたよ:6e5643ef39b16f7e87325462d6cd65e5&#34;&gt;記事の経緯を聞いたよ&lt;/h2&gt;
+&lt;h2 id=&#34;記事の経緯を聞いたよ&#34;&gt;記事の経緯を聞いたよ&lt;/h2&gt;
 
 &lt;p&gt;できあがりは『AWS特集』でしたが、原案は&lt;a href=&#34;https://twitter.com/gosukenator&#34;&gt;@gosukenator(mizzy)&lt;/a&gt;さんとのこと。&lt;/p&gt;
 
@@ -473,7 +541,7 @@ end
 &lt;p&gt;そのままいけばクックパッドの&lt;a href=&#34;http://codenize.tools/&#34;&gt;Codenize.tools&lt;/a&gt;や&lt;a href=&#34;http://itamae.kitchen/&#34;&gt;Itamae&lt;/a&gt;、&lt;a href=&#34;http://infrataster.net/&#34;&gt;Infrataster&lt;/a&gt;ほかの記事になっていたのかもしれませんね。&lt;br /&gt;
 (これはこれで読みたい方も多そうだし、雑誌から盛り上げるような方向もあっていいような気はしました。)&lt;/p&gt;
 
-&lt;h2 id=&#34;codenize-tools:6e5643ef39b16f7e87325462d6cd65e5&#34;&gt;Codenize.tools&lt;/h2&gt;
+&lt;h2 id=&#34;codenize-tools&#34;&gt;Codenize.tools&lt;/h2&gt;
 
 &lt;figure&gt;
   &lt;img src=&#34;https://www.sawanoboly.net/images/2015/Codenize_tools.png&#34; alt=&#34;Codenize.tools&#34; class=&#34;pure-img&#34; &gt;
@@ -505,7 +573,7 @@ end
 
 &lt;p&gt;実際私が本特集で一番気に入っているのは4章の『Codenize.toolsによるメンテナンスの自動化』、その中でも「Codenize.toolsのしくみ」で密かに語られるコードを用いて運用するということへのこだわりの部分です。&lt;/p&gt;
 
-&lt;h2 id=&#34;githubでの記事執筆:6e5643ef39b16f7e87325462d6cd65e5&#34;&gt;Githubでの記事執筆&lt;/h2&gt;
+&lt;h2 id=&#34;githubでの記事執筆&#34;&gt;Githubでの記事執筆&lt;/h2&gt;
 
 &lt;p&gt;技評さんとのお仕事、ひいては雑誌に記事を書くことは今回がはじめてでした。&lt;br /&gt;
 噂のとおり編集、執筆者同士のやりとりはほぼすべてがGithubで行われ、やたらと快適でした。これは確立した先人達に感謝。&lt;/p&gt;
@@ -526,7 +594,7 @@ end
 &lt;/figure&gt;
 
 
-&lt;h2 id=&#34;菅原式レビューボード:6e5643ef39b16f7e87325462d6cd65e5&#34;&gt;菅原式レビューボード&lt;/h2&gt;
+&lt;h2 id=&#34;菅原式レビューボード&#34;&gt;菅原式レビューボード&lt;/h2&gt;
 
 &lt;p&gt;Githubでの記事執筆に関連して、今回面白かった事件を1つ。&lt;/p&gt;
 
@@ -568,7 +636,7 @@ end
 
 &lt;p&gt;手法は名称がつくと流行りやすいこと、個人的に苗字＋技名は浪漫と思っていることから、この手法を私は『菅原式レビューボード』と名づけました。浸透はしませんでした。&lt;/p&gt;
 
-&lt;h2 id=&#34;おわりに:6e5643ef39b16f7e87325462d6cd65e5&#34;&gt;おわりに&lt;/h2&gt;
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
 
 &lt;p&gt;なんやかんやで、共著の御三方[&lt;a href=&#34;https://twitter.com/sgwr_dts&#34;&gt;@sgwr_dts(winebarrel)&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/muramasa64&#34;&gt;@muramasa64&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/y015i&#34;&gt;@y15i(y13i)&lt;/a&gt;]と編集の&lt;a href=&#34;https://twitter.com/inao&#34;&gt;@inao&lt;/a&gt;さんのおかげで良い感じにまとまりました。&lt;br /&gt;
 機会があればまた書いてみたいですね。&lt;/p&gt;
@@ -619,7 +687,7 @@ end
 
 &lt;p&gt;では折角なのでおすすめの章を2つ。&lt;/p&gt;
 
-&lt;h2 id=&#34;使う人向けの3章:de8e932130afe1e91333390ec5c31e27&#34;&gt;使う人向けの3章&lt;/h2&gt;
+&lt;h2 id=&#34;使う人向けの3章&#34;&gt;使う人向けの3章&lt;/h2&gt;
 
 &lt;p&gt;簡素な公式ドキュメントの行間を解説してくれる3章は、テストコードをどう書けばよいのかから始まり、コードの使いまわしや環境およびセキュリティ要件へ対応するTipsが書かれています。&lt;br /&gt;
 また、良くある悩みの『何をどこまでテストすればいいのか？』に対する指標が書いてあります。&lt;/p&gt;
@@ -644,7 +712,7 @@ end
 ※ O&#39;Reilly Japan - Serverspec http://www.oreilly.co.jp/books/9784873117096/ より&lt;/pre&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;カスタマイズ-コントリビュートの4章:de8e932130afe1e91333390ec5c31e27&#34;&gt;カスタマイズ・コントリビュートの4章&lt;/h2&gt;
+&lt;h2 id=&#34;カスタマイズ-コントリビュートの4章&#34;&gt;カスタマイズ・コントリビュートの4章&lt;/h2&gt;
 
 &lt;p&gt;4章はServerspec, SpecInfraの内部を解説してくれます。&lt;br /&gt;
 特にSpecInfraは公式なドキュメントと言えるものがありませんが、4章の内容を理解すれば、Github上のコードをそのままドキュメントとして読めば大丈夫なくらいにはなります。 もちろんSpecを記述する際にも役立つ知識です。&lt;/p&gt;
@@ -668,7 +736,7 @@ end
 ※ O&#39;Reilly Japan - Serverspec http://www.oreilly.co.jp/books/9784873117096/ より&lt;/pre&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;その他:de8e932130afe1e91333390ec5c31e27&#34;&gt;その他&lt;/h2&gt;
+&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
 
 &lt;p&gt;Serverspecはmizzyさんの活動テーマの1つ、継続的な改善の副産物だと思います。 中でもなぜServerspecが広まったのかは、伊藤直也(naoya)さんのまえがきに推察があります。&lt;/p&gt;
 
@@ -678,11 +746,11 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;最後に、mizzyさん無事出版おつかれさまです。&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;
+&lt;figure&gt;
   &lt;img src=&#34;https://www.sawanoboly.net/images/2015/Serverspec-commit-graph.png&#34; alt=&#34;Network&#34; class=&#34;pure-img&#34; &gt;
   &lt;figcaption&gt;Network&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;/p&gt;
+
 </description>
     </item>
     
@@ -704,7 +772,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;最初に言っておくと、今Chef-Solo、Knife-Soloを使っている人、多分何もしなくていい。&lt;/p&gt;
 
-&lt;h2 id=&#34;登場人物一覧:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;登場人物一覧&lt;/h2&gt;
+&lt;h2 id=&#34;登場人物一覧&#34;&gt;登場人物一覧&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Chef-Solo
@@ -731,7 +799,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;全てのchef-solo関連がにchef-zero-chef-client-localmode-に変更されるというのは飛躍的な判断:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;全てのChef-Solo関連がにChef-Zero(Chef-Client LocalMode)に変更されるというのは飛躍的な判断&lt;/h2&gt;
+&lt;h2 id=&#34;全てのchef-solo関連がにchef-zero-chef-client-localmode-に変更されるというのは飛躍的な判断&#34;&gt;全てのChef-Solo関連がにChef-Zero(Chef-Client LocalMode)に変更されるというのは飛躍的な判断&lt;/h2&gt;
 
 &lt;p&gt;なんとなく騒がれているのは、これの元記事からなのかしら。&lt;/p&gt;
 
@@ -747,7 +815,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;で、リモートでやるKnife-Soloについて考えた時に、&amp;rdquo;Chef-Solo無くなる&amp;rdquo;＝&amp;rdquo;Knife-Solo使えなくなる&amp;rdquo;でもないわけです。 Knife-Soloは単なる非公式のプラグインであって、公式がこういう記事でいちいち言及しないでしょうね。&lt;/p&gt;
 
-&lt;h3 id=&#34;少なくともknife-soloはchef-soloと心中なんてしないだろう:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;少なくともKnife-SoloはChef-Soloと心中なんてしないだろう&lt;/h3&gt;
+&lt;h3 id=&#34;少なくともknife-soloはchef-soloと心中なんてしないだろう&#34;&gt;少なくともKnife-SoloはChef-Soloと心中なんてしないだろう&lt;/h3&gt;
 
 &lt;p&gt;日本でKnife-Soloがそこそこ広い認知度を持っているのは、&lt;a href=&#34;http://www.amazon.co.jp/dp/B00BSPH158&#34;&gt;伊藤直也さんの入門Chef Solo - Infrastructure as Code&lt;/a&gt;によるところが大きいでしょう。多分そう、部分的にそう。&lt;/p&gt;
 
@@ -759,7 +827,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;ということでKnife-Soloでやっているものは、基本的にそのまま使い続けることもできそうだと思ってます。 実際Chef-Soloって無くなるのかも不明、もしかしたらChef14とか15になれば居なくなるのかもしれませんね。&lt;/p&gt;
 
-&lt;h2 id=&#34;knife-zeroはミニマムなchef-server環境とのアップ-ダウングレード移行パス:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;Knife-ZeroはミニマムなChef-Server環境とのアップ/ダウングレード移行パス&lt;/h2&gt;
+&lt;h2 id=&#34;knife-zeroはミニマムなchef-server環境とのアップ-ダウングレード移行パス&#34;&gt;Knife-ZeroはミニマムなChef-Server環境とのアップ/ダウングレード移行パス&lt;/h2&gt;
 
 &lt;p&gt;じゃあKnife-Zeroはどういう位置かというと、Chef-Server環境との相互移行がやりやすいChefの導入方法(の一つ)です。 SSH越しにリモートで実行されるChef-ClientはLocalModeではなく、通常のClientモードとしてChef-Server(SSH元のChef-Zero)に対して接続します。&lt;/p&gt;
 
@@ -772,7 +840,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;Knife-Zeroは、概ねお一人様用Chef-Serverという感じです。node情報ををgit管理できたり、エディタで手元からしれっとattributeを追加できたりという利点とかありますが。 大人数で保守する場合や、継続的にChef-Clientを実行したい場合、Nodeがとても多い場合は多分Chef-Serverのほうがよいのかと思います。&lt;/p&gt;
 
-&lt;h2 id=&#34;knife-zero豆知識:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;Knife-Zero豆知識&lt;/h2&gt;
+&lt;h2 id=&#34;knife-zero豆知識&#34;&gt;Knife-Zero豆知識&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Chef-Zeroは2,000nodeくらいまでなら性能的に問題ない。 (&lt;a href=&#34;http://qiita.com/sawanoboly/items/35dd2f117262f4f21969&#34;&gt;Chef-Zeroのキャパシティが気になったのでRubyでベンチマークをとった - Qiita&lt;/a&gt;)&lt;/li&gt;
@@ -839,7 +907,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 &lt;/figure&gt;
 
 
-&lt;h2 id=&#34;何を書いたのか:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;何を書いたのか&lt;/h2&gt;
+&lt;h2 id=&#34;何を書いたのか&#34;&gt;何を書いたのか&lt;/h2&gt;
 
 &lt;p&gt;導入はInfrastructure as Codeという概念について述べています。 その後はInfrastructure as Codeの１要素としてChefを利用することへの助けとなるべく、Chefの全要素を出来る限り詳しく解説しています。&lt;/p&gt;
 
@@ -849,13 +917,13 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;本編４５０P、付録が２００P強という内訳です。&lt;/p&gt;
 
-&lt;h3 id=&#34;誰に向けて書いたのか:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;誰に向けて書いたのか&lt;/h3&gt;
+&lt;h3 id=&#34;誰に向けて書いたのか&#34;&gt;誰に向けて書いたのか&lt;/h3&gt;
 
 &lt;p&gt;導入部分はどちらかというとChefの採用を検討するマネジメント層や、極端なところでITサービスプロバイダの経営層に向けて書いています。 Infrastructure as Codeという概念を引き合いに、最近サービスを支えるインフラに対して提言されているのはこのようなことですよと紹介し、コストやリスクを減らしていきましょうという呼びかけをしています。&lt;/p&gt;
 
 &lt;p&gt;導入部以降はいわゆる現場向けといえそうです。Chefを内部の構造からまあまあ詳細に解説しているので、実際にChefを触ってみたい・触っている・もっと使いこなしたいという方々や、Chefの挙動に興味や疑問を持つ方々に是非読んでいただきたいと思っています。&lt;/p&gt;
 
-&lt;h3 id=&#34;書かれていないこと:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;書かれていないこと&lt;/h3&gt;
+&lt;h3 id=&#34;書かれていないこと&#34;&gt;書かれていないこと&lt;/h3&gt;
 
 &lt;p&gt;そもそもChefだけでインフラの管理がよくなるという事は決してありませんし、この本でも出だしにそう断りを入れています。 コンピュータシステムのライフサイクル管理を効率良く行なうには、用途および組織にあったツールチェーンを確立するのが望ましいことは重々承知ですが、Chefから少し離れる要素や、他のツールからワークフローの一部として使われるChefについては、この本ではほぼ解説していません。&lt;/p&gt;
 
@@ -863,7 +931,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;ただ、テーマをChefだけに絞ったこともあり、現状で書籍という形に限れば世界中で比べても一番Chefについて詳しく書かれた本(あとOhaiも)になっていると思います。 検討の材料、導入後のリファレンスとしても十分役に立つでしょう。&lt;/p&gt;
 
-&lt;h3 id=&#34;なぜ書いたのか:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;なぜ書いたのか&lt;/h3&gt;
+&lt;h3 id=&#34;なぜ書いたのか&#34;&gt;なぜ書いたのか&lt;/h3&gt;
 
 &lt;p&gt;至る経緯は諸所ありますが、お話をいただいたからです。&lt;/p&gt;
 
@@ -875,7 +943,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 &lt;li&gt;人からの質問がいくらか具体的になる&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;どのように書いていたのか:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;どのように書いていたのか&lt;/h3&gt;
+&lt;h3 id=&#34;どのように書いていたのか&#34;&gt;どのように書いていたのか&lt;/h3&gt;
 
 &lt;p&gt;動いていたのは2013年7月〜2014年4月、そのうち9月後半〜１月にほとんどの内容が書かれました。
 書き始める前はソースコードや関連資料の調査、１月後半からは校正につぐ校正。&lt;/p&gt;
@@ -939,7 +1007,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;最後に:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;最後に&lt;/h3&gt;
+&lt;h3 id=&#34;最後に&#34;&gt;最後に&lt;/h3&gt;
 
 &lt;p&gt;本書を書くのは中々骨の折れる作業でしたが、周囲の協力者や家族の理解もあって、ようやく書店に置かれる所までこぎつけました。 あとは料理本のコーナーに並ばないことだけを祈っておきます。&lt;/p&gt;
 
@@ -948,7 +1016,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 &lt;iframe src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=netsawa-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=B0008JIECE&#34; style=&#34;width:120px;height:240px;&#34; scrolling=&#34;no&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&#34;追記-chef活用ガイド-読者アンケートを作成しました:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;追記、『Chef活用ガイド』読者アンケートを作成しました。&lt;/h3&gt;
+&lt;h3 id=&#34;追記-chef活用ガイド-読者アンケートを作成しました&#34;&gt;追記、『Chef活用ガイド』読者アンケートを作成しました。&lt;/h3&gt;
 
 &lt;p&gt;この本を読んでいただいた方(購入・回し読み問わず)を対象に、アンケートを作成しました。&lt;/p&gt;
 
@@ -974,7 +1042,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;&lt;a href=&#34;http://jawsdays2014.jaws-ug.jp/&#34;&gt;JAWS DAYS 2014&lt;/a&gt;セッションで話しました。&lt;/p&gt;
 
-&lt;h2 id=&#34;infrastructure-as-codeと-組織のドキュメンテーション-immutable-infrastructure事例:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;Infrastructure as Codeと 組織のドキュメンテーション ＋ Immutable Infrastructure事例&lt;/h2&gt;
+&lt;h2 id=&#34;infrastructure-as-codeと-組織のドキュメンテーション-immutable-infrastructure事例&#34;&gt;Infrastructure as Codeと 組織のドキュメンテーション ＋ Immutable Infrastructure事例&lt;/h2&gt;
 
 &lt;p&gt;スライドはこちら。&lt;/p&gt;
 
@@ -982,7 +1050,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;現場にいらっしゃった方の反応などもTogetterにまとめて頂いています。 &lt;a href=&#34;http://togetter.com/li/639910&#34;&gt;2014/03/15 JAWS DAYS 2014 - Immutable Infrastructureトラック #jawsdays #infra - Togetterまとめ&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;immutable-infrastructure-事例について:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;『Immutable Infrastructure』事例について&lt;/h3&gt;
+&lt;h3 id=&#34;immutable-infrastructure-事例について&#34;&gt;『Immutable Infrastructure』事例について&lt;/h3&gt;
 
 &lt;p&gt;大阪某所でやっているGiraffiから事例を紹介しました。&lt;/p&gt;
 
@@ -996,7 +1064,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;パネルセッションでは言いそびれましたが、どの層が『Immutable Infrastructure』するべきか、また恩恵をうけるかというところでは、『夜中にアラートで起こされる人』こそが。じゃんじゃんやるべきなのかもしれませんね。&lt;/p&gt;
 
-&lt;h3 id=&#34;infrastructure-as-codeと-組織のドキュメンテーション-について:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;『Infrastructure as Codeと 組織のドキュメンテーション』について&lt;/h3&gt;
+&lt;h3 id=&#34;infrastructure-as-codeと-組織のドキュメンテーション-について&#34;&gt;『Infrastructure as Codeと 組織のドキュメンテーション』について&lt;/h3&gt;
 
 &lt;p&gt;『Immutable Infrastructure』トラックでなんか話せと言われてから、普通に説明したって全員被るに決まってるがなと思いました。 それならば、説明は他のセッションにまかせて、前提知識である『Infrastructure as Code』の導入支援をつくろうとしたらこうなりました。&lt;/p&gt;
 
@@ -1007,7 +1075,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 &lt;p&gt;&lt;a href=&#34;https://gist.github.com/azukiwasher/8571505#file-gistfile1-txt&#34;&gt;gist:8571505&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;h2 id=&#34;ドキュメント礼賛:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;ドキュメント礼賛&lt;/h2&gt;
+&lt;h2 id=&#34;ドキュメント礼賛&#34;&gt;ドキュメント礼賛&lt;/h2&gt;
 
 &lt;p&gt;断言しよう。ドキュメントこそがマシンを隷属化し、人間のために使役させるための最善の方策である。&lt;br /&gt;
 なぜなら、マシンをコントロールする「ドキュメント」を理解できるのは人間だけであり、
@@ -1052,7 +1120,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;例えば社内でのクラブ活動をしてみる。結局、業務内で何とかしようとするのは中々難しいです。 だったら自腹でクラウド使ったり、内輪のシステムを作って研究発表なんかするのが遠回りのようで一番効果的のように思います。&lt;/p&gt;
 
-&lt;h2 id=&#34;パネルセッション:3b0c3101610d95ca90b7c268bfa063ee&#34;&gt;パネルセッション&lt;/h2&gt;
+&lt;h2 id=&#34;パネルセッション&#34;&gt;パネルセッション&lt;/h2&gt;
 
 &lt;p&gt;お会いしたかった方々と、まとめて会えるという個人的に嬉しい企画でした。 このトラックに放り込んでくれた&lt;a href=&#34;https://twitter.com/urasoko&#34;&gt;@urasoko&lt;/a&gt;さん、そのあと取りまとめいただいた&lt;a href=&#34;https://twitter.com/stanaka&#34;&gt;@stanaka&lt;/a&gt;さんほかスタッフの方に感謝！&lt;/p&gt;
 
@@ -1076,7 +1144,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;とはいえテスト環境にChef-Serverを強いるのも大変なので、Chef-Zeroで代わりをしてもよいでしょう。&lt;/p&gt;
 
-&lt;h2 id=&#34;chef-zero:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;Chef-zero&lt;/h2&gt;
+&lt;h2 id=&#34;chef-zero&#34;&gt;Chef-zero&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/chef/chef-zero&#34;&gt;https://github.com/chef/chef-zero&lt;/a&gt;&lt;/li&gt;
@@ -1097,7 +1165,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 &lt;li&gt;&lt;a href=&#34;http://www.creationline.com/lab/2749&#34;&gt;軽量簡易Chef Server「chef-zero」を使ってみよう #opschef_ja « CREATIONLINE, INC.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;vagrantでchef-zero:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;VagrantでChef-zero&lt;/h2&gt;
+&lt;h2 id=&#34;vagrantでchef-zero&#34;&gt;VagrantでChef-zero&lt;/h2&gt;
 
 &lt;p&gt;ではChef-zeroのプロセスをどこに立てるか。&lt;a href=&#34;https://github.com/test-kitchen/test-kitchen&#34;&gt;test-kitchen&lt;/a&gt;ではCookbookをテストするVMで直接Chef-zeroを起動して、ダミーのChef要素を入れることができますが、現時点ではそのままシームレスにChef-Server環境に持って行こうとするにはいまいち感があります。&lt;/p&gt;
 
@@ -1121,7 +1189,7 @@ Serverspecの活用法を把握(おそらく書籍を入手する当初の目的
 
 &lt;p&gt;通常操作はknifeを使えるので、他の環境に持っていく際にknife.rb指定の切り替えで済むのが助かりますね。&lt;/p&gt;
 
-&lt;h2 id=&#34;開発作業用のrakefile:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;開発作業用のRakefile&lt;/h2&gt;
+&lt;h2 id=&#34;開発作業用のrakefile&#34;&gt;開発作業用のRakefile&lt;/h2&gt;
 
 &lt;p&gt;レシピ開発＆テストを効率よく行なうには、とりあえずRakeのタスクを作っておくとよいです。&lt;/p&gt;
 
@@ -1148,7 +1216,7 @@ end
 rake reset  # Chef-zero内容クリア＆要素の再アップロード
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;その他:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;その他&lt;/h2&gt;
+&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
 
 &lt;p&gt;ちなみに&lt;a href=&#34;https://github.com/whitepages/vagrant-chefzero&#34;&gt;vagrant-chefzero&lt;/a&gt;というプラグインもあり、これはEnvやRole要素の投入までVagrantファイル内でやるようです。&lt;/p&gt;
 
@@ -1172,7 +1240,7 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 &lt;li&gt;&lt;a href=&#34;http://innovationegg.doorkeeper.jp/&#34;&gt;Innovation EGGとは？&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;イベントのテーマと課題:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;イベントのテーマと課題&lt;/h2&gt;
+&lt;h2 id=&#34;イベントのテーマと課題&#34;&gt;イベントのテーマと課題&lt;/h2&gt;
 
 &lt;p&gt;今回声がかかったのはXEgg(クロスエッグ)と題されたイベントで、テーマによって選出されたベンダにITコミュニティを組み合わせてなんかやってくれと言う話だった。&lt;/p&gt;
 
@@ -1180,11 +1248,11 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 
 &lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/oTufMIf9dcRFMa&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/YukihikoSawanobori/x-egg01-chef&#34; title=&#34;さくらのクラウドフォーメーション with Chef [XEgg session]&#34; target=&#34;_blank&#34;&gt;さくらのクラウドフォーメーション with Chef [XEgg session]&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;//www.slideshare.net/YukihikoSawanobori&#34; target=&#34;_blank&#34;&gt;Yukihiko SAWANOBORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;セッション裏話:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;セッション裏話&lt;/h2&gt;
+&lt;h2 id=&#34;セッション裏話&#34;&gt;セッション裏話&lt;/h2&gt;
 
 &lt;p&gt;セッションの大筋はスライドの通りで、話した内容はその場で聞いていただいた方々がご存知です。 ブログではどうしてあんなセッションになったのか振り返ってみます。&lt;/p&gt;
 
-&lt;h3 id=&#34;ターゲットの決定:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;ターゲットの決定&lt;/h3&gt;
+&lt;h3 id=&#34;ターゲットの決定&#34;&gt;ターゲットの決定&lt;/h3&gt;
 
 &lt;p&gt;イベントの参加対象者は、『クラウド未経験者』とのことでした。ずいぶんもやっとしています。&lt;/p&gt;
 
@@ -1194,7 +1262,7 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 
 &lt;p&gt;ということでセッションのターゲットはクラウドベンダの『さくらインターネットのスタッフ』と、同枠の『MongoDBコミュニティ』に絞りました。&lt;/p&gt;
 
-&lt;h3 id=&#34;chefの紹介:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;Chefの紹介&lt;/h3&gt;
+&lt;h3 id=&#34;chefの紹介&#34;&gt;Chefの紹介&lt;/h3&gt;
 
 &lt;p&gt;Chefはその特性上適用できる範囲がとても広く、組織によって様々に使い方を選べます。 そもそもChefには決まった使い方も無く、あるのは各組織のワークフローやポリシーに合わせてシステムの構成管理をできる柔軟性くらいです。&lt;/p&gt;
 
@@ -1202,7 +1270,7 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 
 &lt;p&gt;イベントテーマ的に主役では無いですし。&lt;/p&gt;
 
-&lt;h3 id=&#34;使ってみました系と海外との比較:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;使ってみました系と海外との比較&lt;/h3&gt;
+&lt;h3 id=&#34;使ってみました系と海外との比較&#34;&gt;使ってみました系と海外との比較&lt;/h3&gt;
 
 &lt;p&gt;このへんは裏表あまりなく、結構思うまま言ったらこうなった。&lt;/p&gt;
 
@@ -1218,7 +1286,7 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 
 &lt;p&gt;国内ベンダと海外ベンダで提供するサービスと需要とに、なんだかちょっとねじれがあるような気がしています。&lt;/p&gt;
 
-&lt;h3 id=&#34;fogの-さくらのクラウド-サポートについて:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;Fogの『さくらのクラウド』サポートについて&lt;/h3&gt;
+&lt;h3 id=&#34;fogの-さくらのクラウド-サポートについて&#34;&gt;Fogの『さくらのクラウド』サポートについて&lt;/h3&gt;
 
 &lt;p&gt;以前から国内クラウド向けにはChefに関連したライブラリ(&lt;a href=&#34;http://rubygems.org/gems/knife-zcloudjp&#34;&gt;knife-zcloudjp&lt;/a&gt;,&lt;a href=&#34;http://rubygems.org/gems/kitchen-zcloudjp&#34;&gt;kitchen-zcloudjp&lt;/a&gt;など)を公開しており、機会があればFogのプロバイダも書いてみたいと思っていました。&lt;/p&gt;
 
@@ -1227,11 +1295,11 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 
 &lt;p&gt;このFog対応に思ったより時間をとられたので、他のやりたかったことができなかった弊害はありましたが、コンピュータリソースがカジュアルに上がってこないと(Chef的に)使いづらかったことは確かなので仕方がありませんでした。&lt;/p&gt;
 
-&lt;h3 id=&#34;chefとインテグレーション:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;Chefとインテグレーション&lt;/h3&gt;
+&lt;h3 id=&#34;chefとインテグレーション&#34;&gt;Chefとインテグレーション&lt;/h3&gt;
 
 &lt;p&gt;スタートアップスクリプトのような使い捨てでなく、クラウドAPIを叩く瞬間からChefの支配は始まっているんですよというアピールをしてみました。 せいぜい計算リソースにすぎないコンピュータインスタンスに、たとえばわざわざ名前をつけて可愛がりながら育てるなんて、もはやナンセンスではないのかという啓発も込めています。&lt;/p&gt;
 
-&lt;h2 id=&#34;まとめと今後の展開:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;まとめと今後の展開&lt;/h2&gt;
+&lt;h2 id=&#34;まとめと今後の展開&#34;&gt;まとめと今後の展開&lt;/h2&gt;
 
 &lt;p&gt;言いたい放題のセッションでしたが、定めたターゲットさくらインターネットのスタッフ一同には田中社長をはじめ『面白かった』と感想をいただいたのでめでたしめでたしと。&lt;/p&gt;
 
@@ -1259,7 +1327,7 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 上記Solarisの内容ではちょっと困る。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;patch-for-the-smartos:9c0a86430b54992cf85420e07dbabbca&#34;&gt;Patch for the SmartOS&lt;/h2&gt;
+&lt;h2 id=&#34;patch-for-the-smartos&#34;&gt;Patch for the SmartOS&lt;/h2&gt;
 
 &lt;p&gt;パスの問題程度だったので、最新安定版の0.8.12をベースにパッチを作成した。&lt;/p&gt;
 
@@ -1267,7 +1335,7 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 
 &lt;script src=&#34;https://gist.github.com/sawanoboly/8838359.js?file=0.8.12_smartos.patch&#34;&gt;&lt;/script&gt;
 
-&lt;h2 id=&#34;install-to-the-smartos:9c0a86430b54992cf85420e07dbabbca&#34;&gt;Install to the SmartOS&lt;/h2&gt;
+&lt;h2 id=&#34;install-to-the-smartos&#34;&gt;Install to the SmartOS&lt;/h2&gt;
 
 &lt;p&gt;インストールはこのように。&lt;/p&gt;
 
@@ -1275,11 +1343,11 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 
 &lt;script src=&#34;https://gist.github.com/sawanoboly/8838359.js?file=README.smartos.md&#34;&gt;&lt;/script&gt;
 
-&lt;h2 id=&#34;ban:9c0a86430b54992cf85420e07dbabbca&#34;&gt;Ban&lt;/h2&gt;
+&lt;h2 id=&#34;ban&#34;&gt;Ban&lt;/h2&gt;
 
 &lt;p&gt;Banする方式はTCP WrapperとIpfilterが使える。&lt;/p&gt;
 
-&lt;h3 id=&#34;tcp-wrapperでban:9c0a86430b54992cf85420e07dbabbca&#34;&gt;TCP WrapperでBan&lt;/h3&gt;
+&lt;h3 id=&#34;tcp-wrapperでban&#34;&gt;TCP WrapperでBan&lt;/h3&gt;
 
 &lt;p&gt;hosts.denyに設定を出し入れするやりかた。&lt;/p&gt;
 
@@ -1321,7 +1389,7 @@ Status
 `- Jail list:           ssh-tcpwrapper
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;ipfilterでban:9c0a86430b54992cf85420e07dbabbca&#34;&gt;IPFilterでBan&lt;/h3&gt;
+&lt;h3 id=&#34;ipfilterでban&#34;&gt;IPFilterでBan&lt;/h3&gt;
 
 &lt;p&gt;ipfコマンドでルールの管理をするやりかた。&lt;/p&gt;
 
@@ -1359,7 +1427,7 @@ Status
 `- Jail list:           ssh-ipfilter
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;result:9c0a86430b54992cf85420e07dbabbca&#34;&gt;Result&lt;/h3&gt;
+&lt;h3 id=&#34;result&#34;&gt;Result&lt;/h3&gt;
 
 &lt;p&gt;TCP WrapperでBanしたらこんな感じ。&lt;/p&gt;
 

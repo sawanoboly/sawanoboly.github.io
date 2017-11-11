@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Mon, 23 Feb 2015 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://www.sawanoboly.net/tags/opsworks/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/opsworks/" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -46,7 +46,7 @@
 
 &lt;p&gt;詳細はもうタップリ出てますし、実物も本屋にも並んでいます。折角なので少し記事の裏側で個人的に面白かった話などを書きます。&lt;/p&gt;
 
-&lt;h2 id=&#34;記事の経緯を聞いたよ:6e5643ef39b16f7e87325462d6cd65e5&#34;&gt;記事の経緯を聞いたよ&lt;/h2&gt;
+&lt;h2 id=&#34;記事の経緯を聞いたよ&#34;&gt;記事の経緯を聞いたよ&lt;/h2&gt;
 
 &lt;p&gt;できあがりは『AWS特集』でしたが、原案は&lt;a href=&#34;https://twitter.com/gosukenator&#34;&gt;@gosukenator(mizzy)&lt;/a&gt;さんとのこと。&lt;/p&gt;
 
@@ -59,7 +59,7 @@
 &lt;p&gt;そのままいけばクックパッドの&lt;a href=&#34;http://codenize.tools/&#34;&gt;Codenize.tools&lt;/a&gt;や&lt;a href=&#34;http://itamae.kitchen/&#34;&gt;Itamae&lt;/a&gt;、&lt;a href=&#34;http://infrataster.net/&#34;&gt;Infrataster&lt;/a&gt;ほかの記事になっていたのかもしれませんね。&lt;br /&gt;
 (これはこれで読みたい方も多そうだし、雑誌から盛り上げるような方向もあっていいような気はしました。)&lt;/p&gt;
 
-&lt;h2 id=&#34;codenize-tools:6e5643ef39b16f7e87325462d6cd65e5&#34;&gt;Codenize.tools&lt;/h2&gt;
+&lt;h2 id=&#34;codenize-tools&#34;&gt;Codenize.tools&lt;/h2&gt;
 
 &lt;figure&gt;
   &lt;img src=&#34;https://www.sawanoboly.net/images/2015/Codenize_tools.png&#34; alt=&#34;Codenize.tools&#34; class=&#34;pure-img&#34; &gt;
@@ -91,7 +91,7 @@
 
 &lt;p&gt;実際私が本特集で一番気に入っているのは4章の『Codenize.toolsによるメンテナンスの自動化』、その中でも「Codenize.toolsのしくみ」で密かに語られるコードを用いて運用するということへのこだわりの部分です。&lt;/p&gt;
 
-&lt;h2 id=&#34;githubでの記事執筆:6e5643ef39b16f7e87325462d6cd65e5&#34;&gt;Githubでの記事執筆&lt;/h2&gt;
+&lt;h2 id=&#34;githubでの記事執筆&#34;&gt;Githubでの記事執筆&lt;/h2&gt;
 
 &lt;p&gt;技評さんとのお仕事、ひいては雑誌に記事を書くことは今回がはじめてでした。&lt;br /&gt;
 噂のとおり編集、執筆者同士のやりとりはほぼすべてがGithubで行われ、やたらと快適でした。これは確立した先人達に感謝。&lt;/p&gt;
@@ -112,7 +112,7 @@
 &lt;/figure&gt;
 
 
-&lt;h2 id=&#34;菅原式レビューボード:6e5643ef39b16f7e87325462d6cd65e5&#34;&gt;菅原式レビューボード&lt;/h2&gt;
+&lt;h2 id=&#34;菅原式レビューボード&#34;&gt;菅原式レビューボード&lt;/h2&gt;
 
 &lt;p&gt;Githubでの記事執筆に関連して、今回面白かった事件を1つ。&lt;/p&gt;
 
@@ -154,7 +154,7 @@
 
 &lt;p&gt;手法は名称がつくと流行りやすいこと、個人的に苗字＋技名は浪漫と思っていることから、この手法を私は『菅原式レビューボード』と名づけました。浸透はしませんでした。&lt;/p&gt;
 
-&lt;h2 id=&#34;おわりに:6e5643ef39b16f7e87325462d6cd65e5&#34;&gt;おわりに&lt;/h2&gt;
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
 
 &lt;p&gt;なんやかんやで、共著の御三方[&lt;a href=&#34;https://twitter.com/sgwr_dts&#34;&gt;@sgwr_dts(winebarrel)&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/muramasa64&#34;&gt;@muramasa64&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/y015i&#34;&gt;@y15i(y13i)&lt;/a&gt;]と編集の&lt;a href=&#34;https://twitter.com/inao&#34;&gt;@inao&lt;/a&gt;さんのおかげで良い感じにまとまりました。&lt;br /&gt;
 機会があればまた書いてみたいですね。&lt;/p&gt;

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Thu, 25 Dec 2014 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://www.sawanoboly.net/tags/chef/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/chef/" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -26,7 +26,7 @@
 
 &lt;p&gt;最初に言っておくと、今Chef-Solo、Knife-Soloを使っている人、多分何もしなくていい。&lt;/p&gt;
 
-&lt;h2 id=&#34;登場人物一覧:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;登場人物一覧&lt;/h2&gt;
+&lt;h2 id=&#34;登場人物一覧&#34;&gt;登場人物一覧&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Chef-Solo
@@ -53,7 +53,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;全てのchef-solo関連がにchef-zero-chef-client-localmode-に変更されるというのは飛躍的な判断:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;全てのChef-Solo関連がにChef-Zero(Chef-Client LocalMode)に変更されるというのは飛躍的な判断&lt;/h2&gt;
+&lt;h2 id=&#34;全てのchef-solo関連がにchef-zero-chef-client-localmode-に変更されるというのは飛躍的な判断&#34;&gt;全てのChef-Solo関連がにChef-Zero(Chef-Client LocalMode)に変更されるというのは飛躍的な判断&lt;/h2&gt;
 
 &lt;p&gt;なんとなく騒がれているのは、これの元記事からなのかしら。&lt;/p&gt;
 
@@ -69,7 +69,7 @@
 
 &lt;p&gt;で、リモートでやるKnife-Soloについて考えた時に、&amp;rdquo;Chef-Solo無くなる&amp;rdquo;＝&amp;rdquo;Knife-Solo使えなくなる&amp;rdquo;でもないわけです。 Knife-Soloは単なる非公式のプラグインであって、公式がこういう記事でいちいち言及しないでしょうね。&lt;/p&gt;
 
-&lt;h3 id=&#34;少なくともknife-soloはchef-soloと心中なんてしないだろう:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;少なくともKnife-SoloはChef-Soloと心中なんてしないだろう&lt;/h3&gt;
+&lt;h3 id=&#34;少なくともknife-soloはchef-soloと心中なんてしないだろう&#34;&gt;少なくともKnife-SoloはChef-Soloと心中なんてしないだろう&lt;/h3&gt;
 
 &lt;p&gt;日本でKnife-Soloがそこそこ広い認知度を持っているのは、&lt;a href=&#34;http://www.amazon.co.jp/dp/B00BSPH158&#34;&gt;伊藤直也さんの入門Chef Solo - Infrastructure as Code&lt;/a&gt;によるところが大きいでしょう。多分そう、部分的にそう。&lt;/p&gt;
 
@@ -81,7 +81,7 @@
 
 &lt;p&gt;ということでKnife-Soloでやっているものは、基本的にそのまま使い続けることもできそうだと思ってます。 実際Chef-Soloって無くなるのかも不明、もしかしたらChef14とか15になれば居なくなるのかもしれませんね。&lt;/p&gt;
 
-&lt;h2 id=&#34;knife-zeroはミニマムなchef-server環境とのアップ-ダウングレード移行パス:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;Knife-ZeroはミニマムなChef-Server環境とのアップ/ダウングレード移行パス&lt;/h2&gt;
+&lt;h2 id=&#34;knife-zeroはミニマムなchef-server環境とのアップ-ダウングレード移行パス&#34;&gt;Knife-ZeroはミニマムなChef-Server環境とのアップ/ダウングレード移行パス&lt;/h2&gt;
 
 &lt;p&gt;じゃあKnife-Zeroはどういう位置かというと、Chef-Server環境との相互移行がやりやすいChefの導入方法(の一つ)です。 SSH越しにリモートで実行されるChef-ClientはLocalModeではなく、通常のClientモードとしてChef-Server(SSH元のChef-Zero)に対して接続します。&lt;/p&gt;
 
@@ -94,7 +94,7 @@
 
 &lt;p&gt;Knife-Zeroは、概ねお一人様用Chef-Serverという感じです。node情報ををgit管理できたり、エディタで手元からしれっとattributeを追加できたりという利点とかありますが。 大人数で保守する場合や、継続的にChef-Clientを実行したい場合、Nodeがとても多い場合は多分Chef-Serverのほうがよいのかと思います。&lt;/p&gt;
 
-&lt;h2 id=&#34;knife-zero豆知識:8859dd2aeb8fa59e101fd23fc46b536d&#34;&gt;Knife-Zero豆知識&lt;/h2&gt;
+&lt;h2 id=&#34;knife-zero豆知識&#34;&gt;Knife-Zero豆知識&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Chef-Zeroは2,000nodeくらいまでなら性能的に問題ない。 (&lt;a href=&#34;http://qiita.com/sawanoboly/items/35dd2f117262f4f21969&#34;&gt;Chef-Zeroのキャパシティが気になったのでRubyでベンチマークをとった - Qiita&lt;/a&gt;)&lt;/li&gt;
@@ -161,7 +161,7 @@
 &lt;/figure&gt;
 
 
-&lt;h2 id=&#34;何を書いたのか:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;何を書いたのか&lt;/h2&gt;
+&lt;h2 id=&#34;何を書いたのか&#34;&gt;何を書いたのか&lt;/h2&gt;
 
 &lt;p&gt;導入はInfrastructure as Codeという概念について述べています。 その後はInfrastructure as Codeの１要素としてChefを利用することへの助けとなるべく、Chefの全要素を出来る限り詳しく解説しています。&lt;/p&gt;
 
@@ -171,13 +171,13 @@
 
 &lt;p&gt;本編４５０P、付録が２００P強という内訳です。&lt;/p&gt;
 
-&lt;h3 id=&#34;誰に向けて書いたのか:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;誰に向けて書いたのか&lt;/h3&gt;
+&lt;h3 id=&#34;誰に向けて書いたのか&#34;&gt;誰に向けて書いたのか&lt;/h3&gt;
 
 &lt;p&gt;導入部分はどちらかというとChefの採用を検討するマネジメント層や、極端なところでITサービスプロバイダの経営層に向けて書いています。 Infrastructure as Codeという概念を引き合いに、最近サービスを支えるインフラに対して提言されているのはこのようなことですよと紹介し、コストやリスクを減らしていきましょうという呼びかけをしています。&lt;/p&gt;
 
 &lt;p&gt;導入部以降はいわゆる現場向けといえそうです。Chefを内部の構造からまあまあ詳細に解説しているので、実際にChefを触ってみたい・触っている・もっと使いこなしたいという方々や、Chefの挙動に興味や疑問を持つ方々に是非読んでいただきたいと思っています。&lt;/p&gt;
 
-&lt;h3 id=&#34;書かれていないこと:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;書かれていないこと&lt;/h3&gt;
+&lt;h3 id=&#34;書かれていないこと&#34;&gt;書かれていないこと&lt;/h3&gt;
 
 &lt;p&gt;そもそもChefだけでインフラの管理がよくなるという事は決してありませんし、この本でも出だしにそう断りを入れています。 コンピュータシステムのライフサイクル管理を効率良く行なうには、用途および組織にあったツールチェーンを確立するのが望ましいことは重々承知ですが、Chefから少し離れる要素や、他のツールからワークフローの一部として使われるChefについては、この本ではほぼ解説していません。&lt;/p&gt;
 
@@ -185,7 +185,7 @@
 
 &lt;p&gt;ただ、テーマをChefだけに絞ったこともあり、現状で書籍という形に限れば世界中で比べても一番Chefについて詳しく書かれた本(あとOhaiも)になっていると思います。 検討の材料、導入後のリファレンスとしても十分役に立つでしょう。&lt;/p&gt;
 
-&lt;h3 id=&#34;なぜ書いたのか:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;なぜ書いたのか&lt;/h3&gt;
+&lt;h3 id=&#34;なぜ書いたのか&#34;&gt;なぜ書いたのか&lt;/h3&gt;
 
 &lt;p&gt;至る経緯は諸所ありますが、お話をいただいたからです。&lt;/p&gt;
 
@@ -197,7 +197,7 @@
 &lt;li&gt;人からの質問がいくらか具体的になる&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;どのように書いていたのか:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;どのように書いていたのか&lt;/h3&gt;
+&lt;h3 id=&#34;どのように書いていたのか&#34;&gt;どのように書いていたのか&lt;/h3&gt;
 
 &lt;p&gt;動いていたのは2013年7月〜2014年4月、そのうち9月後半〜１月にほとんどの内容が書かれました。
 書き始める前はソースコードや関連資料の調査、１月後半からは校正につぐ校正。&lt;/p&gt;
@@ -261,7 +261,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;最後に:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;最後に&lt;/h3&gt;
+&lt;h3 id=&#34;最後に&#34;&gt;最後に&lt;/h3&gt;
 
 &lt;p&gt;本書を書くのは中々骨の折れる作業でしたが、周囲の協力者や家族の理解もあって、ようやく書店に置かれる所までこぎつけました。 あとは料理本のコーナーに並ばないことだけを祈っておきます。&lt;/p&gt;
 
@@ -270,7 +270,7 @@
 &lt;iframe src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=netsawa-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=B0008JIECE&#34; style=&#34;width:120px;height:240px;&#34; scrolling=&#34;no&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&#34;追記-chef活用ガイド-読者アンケートを作成しました:c4c2c2a15aa3f63bc2a9e0adabb4cb59&#34;&gt;追記、『Chef活用ガイド』読者アンケートを作成しました。&lt;/h3&gt;
+&lt;h3 id=&#34;追記-chef活用ガイド-読者アンケートを作成しました&#34;&gt;追記、『Chef活用ガイド』読者アンケートを作成しました。&lt;/h3&gt;
 
 &lt;p&gt;この本を読んでいただいた方(購入・回し読み問わず)を対象に、アンケートを作成しました。&lt;/p&gt;
 
@@ -298,7 +298,7 @@
 
 &lt;p&gt;とはいえテスト環境にChef-Serverを強いるのも大変なので、Chef-Zeroで代わりをしてもよいでしょう。&lt;/p&gt;
 
-&lt;h2 id=&#34;chef-zero:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;Chef-zero&lt;/h2&gt;
+&lt;h2 id=&#34;chef-zero&#34;&gt;Chef-zero&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/chef/chef-zero&#34;&gt;https://github.com/chef/chef-zero&lt;/a&gt;&lt;/li&gt;
@@ -319,7 +319,7 @@
 &lt;li&gt;&lt;a href=&#34;http://www.creationline.com/lab/2749&#34;&gt;軽量簡易Chef Server「chef-zero」を使ってみよう #opschef_ja « CREATIONLINE, INC.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;vagrantでchef-zero:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;VagrantでChef-zero&lt;/h2&gt;
+&lt;h2 id=&#34;vagrantでchef-zero&#34;&gt;VagrantでChef-zero&lt;/h2&gt;
 
 &lt;p&gt;ではChef-zeroのプロセスをどこに立てるか。&lt;a href=&#34;https://github.com/test-kitchen/test-kitchen&#34;&gt;test-kitchen&lt;/a&gt;ではCookbookをテストするVMで直接Chef-zeroを起動して、ダミーのChef要素を入れることができますが、現時点ではそのままシームレスにChef-Server環境に持って行こうとするにはいまいち感があります。&lt;/p&gt;
 
@@ -343,7 +343,7 @@
 
 &lt;p&gt;通常操作はknifeを使えるので、他の環境に持っていく際にknife.rb指定の切り替えで済むのが助かりますね。&lt;/p&gt;
 
-&lt;h2 id=&#34;開発作業用のrakefile:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;開発作業用のRakefile&lt;/h2&gt;
+&lt;h2 id=&#34;開発作業用のrakefile&#34;&gt;開発作業用のRakefile&lt;/h2&gt;
 
 &lt;p&gt;レシピ開発＆テストを効率よく行なうには、とりあえずRakeのタスクを作っておくとよいです。&lt;/p&gt;
 
@@ -370,7 +370,7 @@ end
 rake reset  # Chef-zero内容クリア＆要素の再アップロード
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;その他:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;その他&lt;/h2&gt;
+&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
 
 &lt;p&gt;ちなみに&lt;a href=&#34;https://github.com/whitepages/vagrant-chefzero&#34;&gt;vagrant-chefzero&lt;/a&gt;というプラグインもあり、これはEnvやRole要素の投入までVagrantファイル内でやるようです。&lt;/p&gt;
 
@@ -394,7 +394,7 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 &lt;li&gt;&lt;a href=&#34;http://innovationegg.doorkeeper.jp/&#34;&gt;Innovation EGGとは？&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;イベントのテーマと課題:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;イベントのテーマと課題&lt;/h2&gt;
+&lt;h2 id=&#34;イベントのテーマと課題&#34;&gt;イベントのテーマと課題&lt;/h2&gt;
 
 &lt;p&gt;今回声がかかったのはXEgg(クロスエッグ)と題されたイベントで、テーマによって選出されたベンダにITコミュニティを組み合わせてなんかやってくれと言う話だった。&lt;/p&gt;
 
@@ -402,11 +402,11 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 
 &lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/oTufMIf9dcRFMa&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/YukihikoSawanobori/x-egg01-chef&#34; title=&#34;さくらのクラウドフォーメーション with Chef [XEgg session]&#34; target=&#34;_blank&#34;&gt;さくらのクラウドフォーメーション with Chef [XEgg session]&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;//www.slideshare.net/YukihikoSawanobori&#34; target=&#34;_blank&#34;&gt;Yukihiko SAWANOBORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;セッション裏話:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;セッション裏話&lt;/h2&gt;
+&lt;h2 id=&#34;セッション裏話&#34;&gt;セッション裏話&lt;/h2&gt;
 
 &lt;p&gt;セッションの大筋はスライドの通りで、話した内容はその場で聞いていただいた方々がご存知です。 ブログではどうしてあんなセッションになったのか振り返ってみます。&lt;/p&gt;
 
-&lt;h3 id=&#34;ターゲットの決定:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;ターゲットの決定&lt;/h3&gt;
+&lt;h3 id=&#34;ターゲットの決定&#34;&gt;ターゲットの決定&lt;/h3&gt;
 
 &lt;p&gt;イベントの参加対象者は、『クラウド未経験者』とのことでした。ずいぶんもやっとしています。&lt;/p&gt;
 
@@ -416,7 +416,7 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 
 &lt;p&gt;ということでセッションのターゲットはクラウドベンダの『さくらインターネットのスタッフ』と、同枠の『MongoDBコミュニティ』に絞りました。&lt;/p&gt;
 
-&lt;h3 id=&#34;chefの紹介:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;Chefの紹介&lt;/h3&gt;
+&lt;h3 id=&#34;chefの紹介&#34;&gt;Chefの紹介&lt;/h3&gt;
 
 &lt;p&gt;Chefはその特性上適用できる範囲がとても広く、組織によって様々に使い方を選べます。 そもそもChefには決まった使い方も無く、あるのは各組織のワークフローやポリシーに合わせてシステムの構成管理をできる柔軟性くらいです。&lt;/p&gt;
 
@@ -424,7 +424,7 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 
 &lt;p&gt;イベントテーマ的に主役では無いですし。&lt;/p&gt;
 
-&lt;h3 id=&#34;使ってみました系と海外との比較:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;使ってみました系と海外との比較&lt;/h3&gt;
+&lt;h3 id=&#34;使ってみました系と海外との比較&#34;&gt;使ってみました系と海外との比較&lt;/h3&gt;
 
 &lt;p&gt;このへんは裏表あまりなく、結構思うまま言ったらこうなった。&lt;/p&gt;
 
@@ -440,7 +440,7 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 
 &lt;p&gt;国内ベンダと海外ベンダで提供するサービスと需要とに、なんだかちょっとねじれがあるような気がしています。&lt;/p&gt;
 
-&lt;h3 id=&#34;fogの-さくらのクラウド-サポートについて:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;Fogの『さくらのクラウド』サポートについて&lt;/h3&gt;
+&lt;h3 id=&#34;fogの-さくらのクラウド-サポートについて&#34;&gt;Fogの『さくらのクラウド』サポートについて&lt;/h3&gt;
 
 &lt;p&gt;以前から国内クラウド向けにはChefに関連したライブラリ(&lt;a href=&#34;http://rubygems.org/gems/knife-zcloudjp&#34;&gt;knife-zcloudjp&lt;/a&gt;,&lt;a href=&#34;http://rubygems.org/gems/kitchen-zcloudjp&#34;&gt;kitchen-zcloudjp&lt;/a&gt;など)を公開しており、機会があればFogのプロバイダも書いてみたいと思っていました。&lt;/p&gt;
 
@@ -449,11 +449,11 @@ rake reset  # Chef-zero内容クリア＆要素の再アップロード
 
 &lt;p&gt;このFog対応に思ったより時間をとられたので、他のやりたかったことができなかった弊害はありましたが、コンピュータリソースがカジュアルに上がってこないと(Chef的に)使いづらかったことは確かなので仕方がありませんでした。&lt;/p&gt;
 
-&lt;h3 id=&#34;chefとインテグレーション:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;Chefとインテグレーション&lt;/h3&gt;
+&lt;h3 id=&#34;chefとインテグレーション&#34;&gt;Chefとインテグレーション&lt;/h3&gt;
 
 &lt;p&gt;スタートアップスクリプトのような使い捨てでなく、クラウドAPIを叩く瞬間からChefの支配は始まっているんですよというアピールをしてみました。 せいぜい計算リソースにすぎないコンピュータインスタンスに、たとえばわざわざ名前をつけて可愛がりながら育てるなんて、もはやナンセンスではないのかという啓発も込めています。&lt;/p&gt;
 
-&lt;h2 id=&#34;まとめと今後の展開:abd5cc46a07d774db12ec7a3776e3d26&#34;&gt;まとめと今後の展開&lt;/h2&gt;
+&lt;h2 id=&#34;まとめと今後の展開&#34;&gt;まとめと今後の展開&lt;/h2&gt;
 
 &lt;p&gt;言いたい放題のセッションでしたが、定めたターゲットさくらインターネットのスタッフ一同には田中社長をはじめ『面白かった』と感想をいただいたのでめでたしめでたしと。&lt;/p&gt;
 

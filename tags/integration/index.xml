@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Mon, 07 Dec 2015 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://www.sawanoboly.net/tags/integration/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/integration/" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -26,7 +26,7 @@
 &lt;/figure&gt;
 
 
-&lt;h2 id=&#34;あらすじ:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;あらすじ&lt;/h2&gt;
+&lt;h2 id=&#34;あらすじ&#34;&gt;あらすじ&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://ja.amimoto-ami.com&#34;&gt;AMIMOTO AMI&lt;/a&gt;はAWSのPublic AMIとして生まれ、好評を博したのちAWS MarketPlaceに進出した&lt;a href=&#34;https://wordpress.com/&#34;&gt;WordPress&lt;/a&gt;のAMIである。自前で構築するより大抵楽で、今日ではそこいらのWordPress環境より当然応答が速いチートガイに成長した。&lt;/p&gt;
 
@@ -41,7 +41,7 @@
 
 &lt;p&gt;少なくともユーザより先に(AMIからみた)外部要因による問題の発生を検知し、いち早く修正を行なえるようにしたいという相談に対して私が提供した仕組みとは．．．？&lt;/p&gt;
 
-&lt;h2 id=&#34;主要登場物:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;主要登場物&lt;/h2&gt;
+&lt;h2 id=&#34;主要登場物&#34;&gt;主要登場物&lt;/h2&gt;
 
 &lt;dl&gt;
 &lt;dt&gt;&lt;a href=&#34;https://ja.amimoto-ami.com&#34;&gt;AMIMOTO AMI&lt;/a&gt;&lt;/dt&gt;
@@ -58,7 +58,7 @@
 &lt;dd&gt;条件によってシンプルなタスクを実行するサービス。&lt;br /&gt;セットアップタスクの変更をRSSで取得し、CircleCIのビルドをキックする遊撃手として暗躍する。&lt;/dd&gt;
 &lt;/dl&gt;
 
-&lt;h2 id=&#34;amimoto-die-hard-解説:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;『AMIMOTO DIE HARD』 解説&lt;/h2&gt;
+&lt;h2 id=&#34;amimoto-die-hard-解説&#34;&gt;『AMIMOTO DIE HARD』 解説&lt;/h2&gt;
 
 &lt;p&gt;結論からいうと、次の条件でテストを回すことにした。対象はAMIMOTOシリーズ全部。&lt;/p&gt;
 
@@ -80,7 +80,7 @@ AMI起動からの大元の仕組みが変わることも考慮にいれて、�
 
 &lt;p&gt;実施している内容は主要登場物のセクションに書いている通りだが、いくつかピックアップして解説しよう。&lt;/p&gt;
 
-&lt;h3 id=&#34;infratasterによるテストの内訳とコード:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;Infratasterによるテストの内訳とコード&lt;/h3&gt;
+&lt;h3 id=&#34;infratasterによるテストの内訳とコード&#34;&gt;Infratasterによるテストの内訳とコード&lt;/h3&gt;
 
 &lt;p&gt;テストの段取りは次の通り。&lt;/p&gt;
 
@@ -121,7 +121,7 @@ end
 
 &lt;p&gt;インスタンスID(環境変数)は、Test-Kitchenの機能。&lt;/p&gt;
 
-&lt;h3 id=&#34;test-kithcen-shell-verifier:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;Test-Kithcen + Shell-Verifier&lt;/h3&gt;
+&lt;h3 id=&#34;test-kithcen-shell-verifier&#34;&gt;Test-Kithcen + Shell-Verifier&lt;/h3&gt;
 
 &lt;p&gt;AMIMOTO DIE HARDの本体はこのTest-Kitchenといえる。&lt;/p&gt;
 
@@ -200,7 +200,7 @@ end
 
 &lt;p&gt;結局t1.microは時間がかかりすぎる事が多かったので、先日smallに変更した。強制終了まで2時間(!)かかることがあったりもしたし。&lt;/p&gt;
 
-&lt;h3 id=&#34;herokuからcircleciのビルドをキック:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;herokuからCircleCIのビルドをキック&lt;/h3&gt;
+&lt;h3 id=&#34;herokuからcircleciのビルドをキック&#34;&gt;herokuからCircleCIのビルドをキック&lt;/h3&gt;
 
 &lt;p&gt;CircleCIは定期実行する仕組みを提供していない(目的外だし)ため、任意のブランチのHEADをビルドするRakeタスクを作成。&lt;/p&gt;
 
@@ -229,19 +229,19 @@ end
 
 &lt;p&gt;あとはこれをherokuにおいて、スケジューラから定期的に実行する。&lt;/p&gt;
 
-&lt;h2 id=&#34;まとめ:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;まとめ&lt;/h2&gt;
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
 &lt;p&gt;もともとコケるたびにデジタルキューブさん側で対策込みの改善もしていたので、もうこれにほとんど引っかかったりはしません。&lt;br /&gt;
 ただ、意識外で起こる不思議な障害のなるはや検知には、抜き打ちテストを回しておくのがいいよね。&lt;/p&gt;
 
-&lt;h2 id=&#34;関連項目:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;関連項目&lt;/h2&gt;
+&lt;h2 id=&#34;関連項目&#34;&gt;関連項目&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.adventar.org/calendars/1107&#34;&gt;AMIMOTO Advent Calendar 2015&lt;/a&gt; ひとつ前の記事 =&amp;gt; &lt;a href=&#34;http://wp-kyoto.net/go-to-wordcamp-us/&#34; title=&#34;[AMIMOTOアドベントカレンダー]WordCamp US現地からブースの様子をお送りします - WP-kyoto&#34;&gt;[AMIMOTOアドベントカレンダー]WordCamp US現地からブースの様子をお送りします - WP-kyoto&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.adventar.org/calendars/1107&#34;&gt;AMIMOTO Advent Calendar 2015&lt;/a&gt; 次の記事 =&amp;gt; &lt;a href=&#34;https://firegoby.jp/archives/6450&#34; title=&#34;AMIMOTOブース in WordCamp USフォトレポート | Firegoby&#34;&gt;AMIMOTOブース in WordCamp USフォトレポート | Firegoby&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;外部リンク:8c9a8fc68efb413605d2b51dc15e5bec&#34;&gt;外部リンク&lt;/h2&gt;
+&lt;h2 id=&#34;外部リンク&#34;&gt;外部リンク&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ja.amimoto-ami.com/&#34; title=&#34;WordPress 専用の AWS + クラウドホスティング AMIMOTO | 超高速 WordPress AMI AMIMOTO&#34;&gt;超高速 WordPress AMI AMIMOTO&lt;/a&gt;&lt;/li&gt;

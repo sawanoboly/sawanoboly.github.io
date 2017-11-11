@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <lastBuildDate>Wed, 05 Mar 2014 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://www.sawanoboly.net/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/vagrant/" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -22,7 +22,7 @@
 
 &lt;p&gt;とはいえテスト環境にChef-Serverを強いるのも大変なので、Chef-Zeroで代わりをしてもよいでしょう。&lt;/p&gt;
 
-&lt;h2 id=&#34;chef-zero:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;Chef-zero&lt;/h2&gt;
+&lt;h2 id=&#34;chef-zero&#34;&gt;Chef-zero&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/chef/chef-zero&#34;&gt;https://github.com/chef/chef-zero&lt;/a&gt;&lt;/li&gt;
@@ -43,7 +43,7 @@
 &lt;li&gt;&lt;a href=&#34;http://www.creationline.com/lab/2749&#34;&gt;軽量簡易Chef Server「chef-zero」を使ってみよう #opschef_ja « CREATIONLINE, INC.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;vagrantでchef-zero:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;VagrantでChef-zero&lt;/h2&gt;
+&lt;h2 id=&#34;vagrantでchef-zero&#34;&gt;VagrantでChef-zero&lt;/h2&gt;
 
 &lt;p&gt;ではChef-zeroのプロセスをどこに立てるか。&lt;a href=&#34;https://github.com/test-kitchen/test-kitchen&#34;&gt;test-kitchen&lt;/a&gt;ではCookbookをテストするVMで直接Chef-zeroを起動して、ダミーのChef要素を入れることができますが、現時点ではそのままシームレスにChef-Server環境に持って行こうとするにはいまいち感があります。&lt;/p&gt;
 
@@ -67,7 +67,7 @@
 
 &lt;p&gt;通常操作はknifeを使えるので、他の環境に持っていく際にknife.rb指定の切り替えで済むのが助かりますね。&lt;/p&gt;
 
-&lt;h2 id=&#34;開発作業用のrakefile:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;開発作業用のRakefile&lt;/h2&gt;
+&lt;h2 id=&#34;開発作業用のrakefile&#34;&gt;開発作業用のRakefile&lt;/h2&gt;
 
 &lt;p&gt;レシピ開発＆テストを効率よく行なうには、とりあえずRakeのタスクを作っておくとよいです。&lt;/p&gt;
 
@@ -94,7 +94,7 @@ end
 rake reset  # Chef-zero内容クリア＆要素の再アップロード
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;その他:0368959aa60ef0f09c2c4a2771bc5778&#34;&gt;その他&lt;/h2&gt;
+&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
 
 &lt;p&gt;ちなみに&lt;a href=&#34;https://github.com/whitepages/vagrant-chefzero&#34;&gt;vagrant-chefzero&lt;/a&gt;というプラグインもあり、これはEnvやRole要素の投入までVagrantファイル内でやるようです。&lt;/p&gt;
 

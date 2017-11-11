@@ -57,7 +57,7 @@
 
 <p>とはいえテスト環境にChef-Serverを強いるのも大変なので、Chef-Zeroで代わりをしてもよいでしょう。</p>
 
-<h2 id="chef-zero:0368959aa60ef0f09c2c4a2771bc5778">Chef-zero</h2>
+<h2 id="chef-zero">Chef-zero</h2>
 
 <ul>
 <li><a href="https://github.com/chef/chef-zero">https://github.com/chef/chef-zero</a></li>
@@ -78,7 +78,7 @@
 <li><a href="http://www.creationline.com/lab/2749">軽量簡易Chef Server「chef-zero」を使ってみよう #opschef_ja « CREATIONLINE, INC.</a></li>
 </ul>
 
-<h2 id="vagrantでchef-zero:0368959aa60ef0f09c2c4a2771bc5778">VagrantでChef-zero</h2>
+<h2 id="vagrantでchef-zero">VagrantでChef-zero</h2>
 
 <p>ではChef-zeroのプロセスをどこに立てるか。<a href="https://github.com/test-kitchen/test-kitchen">test-kitchen</a>ではCookbookをテストするVMで直接Chef-zeroを起動して、ダミーのChef要素を入れることができますが、現時点ではそのままシームレスにChef-Server環境に持って行こうとするにはいまいち感があります。</p>
 
@@ -102,7 +102,7 @@
 
 <p>通常操作はknifeを使えるので、他の環境に持っていく際にknife.rb指定の切り替えで済むのが助かりますね。</p>
 
-<h2 id="開発作業用のrakefile:0368959aa60ef0f09c2c4a2771bc5778">開発作業用のRakefile</h2>
+<h2 id="開発作業用のrakefile">開発作業用のRakefile</h2>
 
 <p>レシピ開発＆テストを効率よく行なうには、とりあえずRakeのタスクを作っておくとよいです。</p>
 
@@ -129,7 +129,7 @@ end
 rake reset  # Chef-zero内容クリア＆要素の再アップロード
 </code></pre>
 
-<h2 id="その他:0368959aa60ef0f09c2c4a2771bc5778">その他</h2>
+<h2 id="その他">その他</h2>
 
 <p>ちなみに<a href="https://github.com/whitepages/vagrant-chefzero">vagrant-chefzero</a>というプラグインもあり、これはEnvやRole要素の投入までVagrantファイル内でやるようです。</p>
 
